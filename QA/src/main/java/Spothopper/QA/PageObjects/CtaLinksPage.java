@@ -127,7 +127,7 @@ public class CtaLinksPage extends AbstractComponent {
 					}else {
 						System.out.println(">>>>>>>> j in loop: "+j);
 						JavascriptExecutor js = (JavascriptExecutor) driver;
-						if(j>5) {
+						if(j>3) {
 							js.executeScript("window.scrollTo(0, 0);");
 						}else {
 							js.executeScript("window.scrollBy(0, -113);");

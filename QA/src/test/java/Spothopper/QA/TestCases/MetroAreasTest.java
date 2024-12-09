@@ -34,7 +34,7 @@ public class MetroAreasTest extends BaseTest{
 		String emailFromPopupOrJson = variablesAndUrlsPage.email;
         variablesAndUrlsPage.googleVerification(driver, emailFromPopupOrJson);
         Thread.sleep(2000);
-        metroAreasPage.saveCookies(driver, "data/cookies.json");
+        //metroAreasPage.saveCookies(driver, "data/cookies.json");
         
         
         int firstGoogleAccess=0;
@@ -42,15 +42,15 @@ public class MetroAreasTest extends BaseTest{
 			spotId = spots.get(j).get("spot_id");
 			variablesAndUrlsPage.setUrls(driver, spotId);
 			metroAreasPage.goToWithResponseCode(variablesAndUrlsPage.businessInfoUrl);
-			variablesAndUrlsPage.goTo("https://chatgpt.com/");
-			Thread.sleep(2000);
-			metroAreasPage.saveCookies(driver, "data/cookies.json");
+			//variablesAndUrlsPage.goTo("https://chatgpt.com/");
+			//Thread.sleep(2000);
+			//metroAreasPage.saveCookies(driver, "data/cookies.json");
 			
-			metroAreasPage.skipCaptcha(driver);
-			Thread.sleep(2000);
-			metroAreasPage.clickLoginChatGpt(driver);
-			metroAreasPage.loginWithGoogleChatGpt(driver);
-			Thread.sleep(20000);
+			//metroAreasPage.skipCaptcha(driver);
+			//Thread.sleep(2000);
+			//metroAreasPage.clickLoginChatGpt(driver);
+			//metroAreasPage.loginWithGoogleChatGpt(driver);
+			//Thread.sleep(20000);
 			// First Google Access
 	        if(firstGoogleAccess==0) {
 	        	Thread.sleep(4000);
@@ -63,5 +63,6 @@ public class MetroAreasTest extends BaseTest{
 	        Thread.sleep(2000);
 	        metroAreasPage.saveChanges(driver);
 		}
+		driver.close();
 	}
 }
