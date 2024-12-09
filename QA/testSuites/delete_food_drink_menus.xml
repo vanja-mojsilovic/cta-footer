@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests"  name="Suite">
+  <listeners>
+	  <listener class-name="Spothopper.QA.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Website features">
+	<parameter name="dataProviderCounter" value="0"/>
+    <classes>
+		  <class name="Spothopper.QA.TestCases.DeleteFoodDrinkMenusTest">
+		  	<methods>
+				  
+			</methods>
+		  </class>
+    </classes>
+  </test> 
+</suite> 

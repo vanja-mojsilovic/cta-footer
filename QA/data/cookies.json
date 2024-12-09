@@ -1,0 +1,10 @@
+[
+    {
+        "path": "/",
+        "domain": ".chatgpt.com",
+        "name": "oai-did",
+        "httpOnly": false,
+        "secure": false,
+        "value": "6c539c3d-5417-44e7-b2f3-8586e8f5c08f"
+    }
+]

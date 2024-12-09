@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Spothopper.QA.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Website features(failed)">
+    <parameter name="dataProviderCounter" value="0"/>
+    <classes>
+      <class name="Spothopper.QA.TestCases.MetroAreasTest">
+        <methods>
+          <include name="closeWindow"/>
+          <include name="sinchronizeChanges"/>
+          <include name="launchApplication"/>
+          <include name="bSuite"/>
+        </methods>
+      </class> <!-- Spothopper.QA.TestCases.MetroAreasTest -->
+    </classes>
+  </test> <!-- Website features(failed) -->
+</suite> <!-- Failed suite [Suite] -->
