@@ -133,7 +133,7 @@ public class CTALinksTest extends BaseTest {
 	    //String gitId;
 	    String websiteURL;
 	    String issueKey;
-	    String errorMessage =" SUCCESS! ";
+	    //String errorMessage =" SUCCESS! ";
 	    
 	    // Google verification
         variablesAndUrlsPage.googleVerification(driver, emailFromPopupOrJson);
@@ -141,33 +141,42 @@ public class CTALinksTest extends BaseTest {
         currentTimeString = getStringLocalDateTime();
         int firstGoogleAccess=0;
         int firtsEntering=1;
+        int errorOrderNumber=0;
         for (int j = 0; j<websites.size(); j++) {
-        	errorMessage =" SUCCESS! ";
         	List<FeaturePage> onlineOrderDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> foodMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> drinkMenuDropDownFaetures = new ArrayList<FeaturePage>();
+        	WebsiteFeaturesPage websiteFeaturesPageDesktop = new WebsiteFeaturesPage(driver);
         	spotIdFromPopupOrJson = websites.get(j).get("spot_id");
         	variablesAndUrlsPage.setUrls(driver,spotIdFromPopupOrJson); 
-        	websiteURL = ctaLinksPage.putDashOnEndOfUrl(driver,websites.get(j).get("website_url"));
+        	websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websites.get(j).get("website_url"));
         	System.out.println(websiteURL+", website number "+(j)+".");
         	issueKey = websites.get(j).get("issue_key");
-        	
+        	String errorMessage = issueKey+", "+spotIdFromPopupOrJson+", "+websiteURL;
         	//Website desktop
- 	        WebsiteFeaturesPage websiteFeaturesPageDesktop = new WebsiteFeaturesPage(driver);
+ 	        
  	        Thread.sleep(1000);
  	        int responseCode = websiteFeaturesPageDesktop.goToWithResponseCode(websiteURL);
  	        Thread.sleep(2000);
+ 	        
+ 	        String currentUrl = driver.getCurrentUrl();
+ 	        if(!websiteURL.equals(currentUrl)) {
+ 	        	websiteURL = currentUrl;
+ 	        	System.out.println("websiteURL replaced current url: "+currentUrl);
+ 	        }
  	      
  	        if(responseCode==-1){
- 	        	errorMessage = issueKey+", WEB PAGE CAN NOT BE OPENED!";
- 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	        	errorOrderNumber++;
+ 	        	errorMessage = errorMessage+", WEB PAGE CAN NOT BE OPENED!";
+ 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	    		continue;
  	        }        
  	        
         	List<WebElementPage> navBarElements = websiteFeaturesPageDesktop.getAllementsFromNavBar(driver);
  	        if(navBarElements.isEmpty()) {
- 	        	errorMessage = issueKey+", NO WEB ELEMENTS ON WEBSITE!";
- 	        	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	        	errorOrderNumber++;
+ 	        	errorMessage = errorMessage+", NO WEB ELEMENTS ON WEBSITE!";
+ 	        	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	    		continue;}
  	        
  	        boolean hasDropDown = websiteFeaturesPageDesktop.hasDropDown(driver,navBarElements);
@@ -179,13 +188,15 @@ public class CTALinksTest extends BaseTest {
             	System.out.println("onlineOrderDropDownFaetures: "+onlineOrderDropDownFaetures);
             	if(onlineOrderDropDownFaetures.isEmpty()){ 
             		if(foodMenuDropDownFaetures.size()>1) {
-                		errorMessage = issueKey+", FOOD MENU IN NAV BAR!";
-            			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+            			errorOrderNumber++;
+                		errorMessage = errorMessage+", FOOD MENU IN NAV BAR!";
+            			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
             			continue;
         			}
             		if(!(foodMenuDropDownFaetures.size()==1 && drinkMenuDropDownFaetures.size()==1)) {
-            			errorMessage = issueKey+", DROP DOWN IN NAV BAR!";
-            			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+            			errorOrderNumber++;
+            			errorMessage = errorMessage+", DROP DOWN IN NAV BAR!";
+            			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
             			continue;
             		}
      	    	}
@@ -194,11 +205,12 @@ public class CTALinksTest extends BaseTest {
         	//check all links from home page
         	boolean linkProblem = websiteFeaturesPageDesktop.checkAllLinksFromHomePage(driver,navBarElements); 
         	if(linkProblem){
-    			errorMessage = issueKey+", PROBLEM WITH LINK ON HOME PAGE!";
-    			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+        		errorOrderNumber++;
+    			errorMessage = errorMessage+", PROBLEM WITH LINK ON HOME PAGE!";
+    			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
     			continue;
     		}
-        	
+        	System.out.println("SH features from nav bar:");
     		List<FeaturePage> featurePageListOnWebsite = websiteFeaturesPageDesktop.updateFeatures(
     				driver,
     				navBarElements,
@@ -209,9 +221,10 @@ public class CTALinksTest extends BaseTest {
    			websiteFeaturesPageDesktop.getFeaturesOnButtons(driver,featuresNotOnNavBar,featurePageListOnWebsite);
  	   		boolean giftCardsLinkTooLong = websiteFeaturesPageDesktop.checkGiftCardsFeature(driver,navBarElements);
 	 	   	if(giftCardsLinkTooLong) {
-		    		errorMessage = issueKey+", GIFT CARDS!";
-		    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
-		    		continue; 
+ 	   			errorOrderNumber++;
+	    		errorMessage = errorMessage+", GIFT CARDS!";
+	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+	    		continue; 
 		    }
 	        
 	        // Website smart footer
@@ -236,28 +249,38 @@ public class CTALinksTest extends BaseTest {
  	    	boolean equalListsBeforeAndAfter=listOfAllFeaturesInSmartFooterBefore.equals(listOfAllFeaturesInSmartFooterAfter);
  	    	boolean conditionDrpoUp = websiteFeaturesPageIphone.hasDropUp(driver);
  	    	if(moreThanOneOrderLink && (onlineOrderDropDownFaetures.size()<numberOfOrderLinks)) {
- 	    		errorMessage = issueKey+", ORDER FOOTER LINKS!";
- 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	    		errorOrderNumber++;
+ 	    		errorMessage = errorMessage+", ORDER FOOTER LINKS!";
+ 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
  	    	}
  	    	if(conditionDrpoUp) {
- 	    		errorMessage = issueKey+",DROP UP IN FOOTER LINKS!";
- 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	    		errorOrderNumber++;
+ 	    		errorMessage = errorMessage+",DROP UP IN FOOTER LINKS!";
+ 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
  	    	}
  	    	if(!equalListsBeforeAndAfter && !moreThanOneOrderLink) {
  	    		if(listOfAllFeaturesInSmartFooterAfter.stream()
                         .map(String::trim)
                         .noneMatch("gift cards"::equals)) {
+ 	    			errorOrderNumber++;
  	    			errorMessage = issueKey+", NON TMT FEATURE IN FOOTER LINKS!";
- 	 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	 	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	 	    	continue;
  	    		}
  	    	}
- 	    	boolean targetError=websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
- 	    	if(targetError) {
- 	 	    	errorMessage = issueKey+", CHANGE TARGET TO SELF!";
- 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+ 	    	String targetError = websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
+ 	    	if(targetError.equals("self")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", CHANGE TARGET TO SELF!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	 	    	continue;
+ 	    	}
+ 	    	if(targetError.equals("spotapps")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", SPOTAPPS LINK IN FOOTER!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
  	    	}
     		setDesktopView(driver);
@@ -266,8 +289,9 @@ public class CTALinksTest extends BaseTest {
     		try{
     			ctaLinksPage.goTo(variablesAndUrlsPage.privatePartiesSettingsURL);
     		}catch (TimeoutException e) {
-    			errorMessage = issueKey+", SH PAGE COULD NOT BE OPENED!";
- 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+    			errorOrderNumber++;
+    			errorMessage = errorMessage+", SH PAGE COULD NOT BE OPENED!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
 			}
     		// First Google Access
@@ -280,21 +304,33 @@ public class CTALinksTest extends BaseTest {
 	        System.out.println("TMT features activation status:");
 	        websiteFeaturesPageDesktop.getActiveStatusTmtFeatures(driver,featurePageListOnWebsite,variablesAndUrlsPage);
 		    ctaLinksPage.goTo(variablesAndUrlsPage.ctaLinksUrl);
-		    String activeTmtDifferentLinks = ctaLinksPage.compareShAndWebsiteTmtLinks(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson);
-		    if(activeTmtDifferentLinks=="domain") {
-		    	errorMessage = issueKey+", DIFFERENT LINKS WITH DOMAIN IN SH AND ON WEBSITE!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
- 	    		continue;
-		    }
-		    if(activeTmtDifferentLinks == "spotapps") {
-		    	errorMessage = issueKey+", DIFFERENT LINKS WITH SPOTAPPS IN SH AND ON WEBSITE!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
- 	    		continue;
-		    }
+		    
+		    
+		    
 	    	List<FeaturePage> featurePageListFDSE = websiteFeaturesPageDesktop.getFDSEFeatures(driver, featurePageListOnWebsite);
 	        ctaLinksPage.enterFDSECtaLinks(driver, featurePageListFDSE,spotIdFromPopupOrJson,currentTimeString,websiteURL,websiteFeaturesPageDesktop);
-	        ctaLinksPage.saveChangesCtaLinks(driver);		    
-		    
+	        ctaLinksPage.saveChangesCtaLinks(driver);
+	        Thread.sleep(1000);
+	        ctaLinksPage.enterTmtServices(driver,featurePageListOnWebsite,websiteURL);
+	        Thread.sleep(1000);
+	        ctaLinksPage.saveChangesCtaLinks(driver);
+	        Thread.sleep(1000);
+	        ctaLinksPage.removeCtaLinksFeaturesNotOnHomePage(driver,featuresNotOnNavBar);
+	        ctaLinksPage.saveChangesCtaLinks(driver);
+	        Thread.sleep(1000);
+	        String activeTmtDifferentLinks = ctaLinksPage.compareShAndWebsiteTmtLinks(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson);
+	        if(activeTmtDifferentLinks=="domain") {
+	        	errorOrderNumber++;
+		    	errorMessage = errorMessage+", DIFFERENT LINKS WITH DOMAIN IN SH AND ON WEBSITE!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	    		continue;
+		    }
+	        if(activeTmtDifferentLinks == "spotapps") {
+	        	errorOrderNumber++;
+		    	errorMessage = errorMessage+", DIFFERENT LINKS WITH SPOTAPPS IN SH AND ON WEBSITE!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	    		continue;
+		    }
 	        // website footer links in SH
 		    boolean orderSideBySide = false;
 		    if(!equalListsBeforeAndAfter && numberOfOrderLinks>1) {
@@ -304,15 +340,17 @@ public class CTALinksTest extends BaseTest {
 		    	orderSideBySide = ctaLinksPage.placeOredrsSideBySide(driver,numberOfOrderLinks);
 		    }
 		    if(orderSideBySide) {
-		    	errorMessage=issueKey+", ORDERS IN FOOTER SIDE BY SIDE!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+		    	errorOrderNumber++;
+		    	errorMessage = errorMessage+", ORDERS IN FOOTER SIDE BY SIDE!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 		    	continue;
 		    }
 		  
 		    String featureName = websiteFeaturesPageDesktop.checkIfDeactivateTmtHasLink(driver,featurePageListOnWebsite);
 		    if(!featureName.equals("")) {
-		    	errorMessage = issueKey+", "+featureName+" TOO LONG EXTERNAL LINK!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+		    	errorOrderNumber++;
+		    	errorMessage = errorMessage+", "+featureName+" TOO LONG EXTERNAL LINK!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 		    	continue;
 		    }
 		    
@@ -321,8 +359,9 @@ public class CTALinksTest extends BaseTest {
 		    ctaLinksPage.activeWcache(driver);
 		    boolean stillNotActiveSmartFooter = ctaLinksPage.clickIfNotActiveSmartFooter(driver);
 		    if(stillNotActiveSmartFooter) {
-		    	errorMessage=issueKey+" STILL NOT ACTIVE SMART FOOTER!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+		    	errorOrderNumber++;
+		    	errorMessage = errorMessage+" STILL NOT ACTIVE SMART FOOTER!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 		    	continue;
 		    }
 		    Thread.sleep(1000);
@@ -332,14 +371,16 @@ public class CTALinksTest extends BaseTest {
 		    		ctaLinksPage.clickDropDownSmartFooterVersion(driver);
 		    		boolean problemWithSmartFooterV2 = ctaLinksPage.click2SmartFooterVersion(driver);
 		    		if(problemWithSmartFooterV2){
-		    			errorMessage=issueKey+" PROBLEM WITH V2 SMART FOOTER!";
-				    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+		    			errorOrderNumber++;
+		    			errorMessage = errorMessage+" PROBLEM WITH V2 SMART FOOTER!";
+				    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 				    	continue;
 		    		}
 		    	}
 		    }catch(Exception e) {
-		    	errorMessage=issueKey+" PROBLEM WITH V2 SMART FOOTER!";
-		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,(j+1));
+		    	errorOrderNumber++;
+		    	errorMessage = errorMessage+" PROBLEM WITH V2 SMART FOOTER!";
+		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 		    	continue;
 		    }
 	    	
@@ -347,7 +388,7 @@ public class CTALinksTest extends BaseTest {
 	    	ctaLinksPage.saveAdminPanel(driver);
 	    	
 	    	// error message
-        	System.out.println("<><><> "+issueKey+","+errorMessage+" <><><>");
+        	System.out.println("<><><><><><> "+errorMessage+", SUCCESS! <><><><><><>");
         	readWriteFilePage.createCtaLinksFooterFile(driver, issueKey,currentTimeString,firtsEntering);
         	firtsEntering++;
 	       

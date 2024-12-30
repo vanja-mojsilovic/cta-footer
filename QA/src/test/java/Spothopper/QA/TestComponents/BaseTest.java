@@ -54,7 +54,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class BaseTest {
 	
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	
 	//Variables

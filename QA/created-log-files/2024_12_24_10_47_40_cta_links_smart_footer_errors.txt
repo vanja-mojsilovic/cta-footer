@@ -1,0 +1,3 @@
+5. WEB-150846, 109876, https://rookiesbargrillomaha.com/, DROP DOWN IN NAV BAR!, Previous Hash: 0fe8da0f54a3b61041e8bf58a0ab1b1fa1e2ae4f43849caa63cf81144f911dfe, Hash: 2ce51d899d31c7c54f6ff5bf6df00b27e8dd231712f84fd242457f457e0c320c
+10. WEB-150877, 366102, https://phofresh2u.com/, DROP DOWN IN NAV BAR!, Previous Hash: 2ce51d899d31c7c54f6ff5bf6df00b27e8dd231712f84fd242457f457e0c320c, Hash: 70a51f67377a7ea060425bb3058e6b7e2f6dbe6c3357e5ad0fa9cef2ce471280
+14. WEB-150515, 364256, https://whatyoucravin.com/, CHANGE TARGET TO SELF!, Previous Hash: 70a51f67377a7ea060425bb3058e6b7e2f6dbe6c3357e5ad0fa9cef2ce471280, Hash: c62950fd8d2f4836ef7381b6bd7e2cca291be0f3dceb25869a187164026d7d03

@@ -315,14 +315,7 @@ public class AbstractComponent {
 	public void clickCloseInstagramPopupButton(WebDriver driver){
 			try {
 				WebElement display_element = waitForVisibilityOfElement(driver, closeInstagramPopupButton, 5);
-				if (display_element.isEnabled()) 
-				{
-					display_element.click();
-				}
-				else 
-				{ 
-					System.out.println("no instagram popup");
-				}
+				display_element.click();
 			}	
 			catch(Exception  e){
 				System.out.println("no instagram popup");
@@ -332,9 +325,9 @@ public class AbstractComponent {
 	
 	
 	
-	public void closeHolidayPopupButton(WebDriver driver,String production_staging){
+	public void closeHolidayPopupButton(WebDriver driver){
 		try {
-				WebElement display_element = waitForVisibilityOfElement(driver, closeHolidayPopupButton, 15);
+				WebElement display_element = waitForVisibilityOfElement(driver, closeHolidayPopupButton, 5);
 				if (display_element.isDisplayed()) 
 				{
 					display_element.click();

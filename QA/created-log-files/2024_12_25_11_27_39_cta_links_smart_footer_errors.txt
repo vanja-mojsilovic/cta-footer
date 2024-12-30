@@ -1,0 +1,1 @@
+1. WEB-151183, 307699, https://westsorestaurant.com/, DROP DOWN IN NAV BAR!, Previous Hash: ea97422800b534cc4de527c8363334e4fd21df161ed15ff34eff7e175df56459, Hash: 02aa70ab52044080fc47cc6933ccc5d566b9eb88265097c69c7745b902c0ceb5

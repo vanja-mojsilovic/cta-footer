@@ -59,7 +59,7 @@ public class ErrorHandlingPage extends AbstractComponent {
 			readWriteFilePage.createCtaLinksFooterErrorsFile(driver,currentTimeString,errorMessage);
 			
 		}
-		System.out.println("<><><> "+errorMessage+" <><><>");
+		System.out.println("<><> <><> "+errorMessage+" <><> <><>");
 		
 	}
 	
@@ -68,7 +68,8 @@ public class ErrorHandlingPage extends AbstractComponent {
             String errorMessage,
             ReadWriteFilePage readWriteFilePage,
             String currentTimeString,
-            Blockchain blockchain,int websiteNumber) throws IOException 
+            Blockchain blockchain,
+            int websiteNumber) throws IOException 
 			{
 				errorMessages.add(errorMessage);
 				if (!errorMessages.isEmpty()) {
@@ -83,9 +84,7 @@ public class ErrorHandlingPage extends AbstractComponent {
 					readWriteFilePage.createCtaLinksFooterErrorsFile(driver,currentTimeString,blockData);
 				}
 				System.out.println("<><><> " + errorMessage + " <><><>");
-	}
-	
-		
+	}	
 }
 	
 	

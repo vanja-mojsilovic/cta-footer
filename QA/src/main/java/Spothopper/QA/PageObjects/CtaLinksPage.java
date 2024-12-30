@@ -110,36 +110,129 @@ public class CtaLinksPage extends AbstractComponent {
 
 	
 	// Methods
+	public void removeCtaLinksFeaturesNotOnHomePage(WebDriver driver,List<FeaturePage> featuresNotOnNavBar) {
+		List <WebElement> displayElements = shCtaLinkNameLocator;
+		for(WebElement element:displayElements) {	
+			for(FeaturePage feature:featuresNotOnNavBar) {
+				String cta_feature_name = element.getText();
+				WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
+				String textInInputElement = inputElement.getAttribute("value").trim();
+		        if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase()) && 
+	        		!cta_feature_name.toLowerCase().equals("order link 1")) {
+		        		if(!textInInputElement.equals("")) {
+		        			inputElement.clear();
+		        			System.out.println(textInInputElement+" removed!");
+		        	}
+		        }
+	        }
+		}
+	}
+	
+	public String getEndOfHref(WebDriver driver,String hrefFromWebsite) {
+		int indexOfLastDash = hrefFromWebsite.lastIndexOf("/");
+	    if (indexOfLastDash != -1) {
+	        return hrefFromWebsite.substring(indexOfLastDash);
+	    } else {
+	        return hrefFromWebsite;
+	    }
+	}
+	
+	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain) {
+		List <WebElement> displayElements = shCtaLinkNameLocator;
+		for(WebElement element:displayElements) {	
+			for(FeaturePage feature:featurePageListOnWebsite) {
+				domain = putDashOnEndOfUrl(driver,domain);
+				String domainWithoutHttp = clearUrlFromHttp(driver,domain);
+				String endOfHref = getEndOfHref(driver,feature.href);
+				//  da li je custom 
+				if(feature.tmtFeature && feature.href.contains(domainWithoutHttp)) {
+					String cta_feature_name = element.getText();
+					WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
+					String textInInputElement = inputElement.getAttribute("value").trim();
+					if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase()) && 
+		        		!cta_feature_name.toLowerCase().equals("order link 1") ) {	
+							if(!textInInputElement.equals(domain+feature.endOfCtaLink) && !textInInputElement.contains("tmt.spotapps.co")) {
+								// da li je pogrešan nastavak, greška u kucanju
+								inputElement.clear();
+								inputElement.sendKeys(domain + feature.endOfCtaLink);
+								System.out.println(textInInputElement+" replaced with: "+ domain + feature.endOfCtaLink);
+							}
+					}
+				}
+			}
+		}
+	}
+	
+	public void enterFDSECtaLinks(WebDriver driver, 
+			List<FeaturePage> featurePageListFDSE,
+			String spotId,
+			String timeStamp,
+			String domain,
+			WebsiteFeaturesPage websiteFeaturesPage) throws IOException, InterruptedException {
+		List <WebElement> displayElements = waitForVisibilityOfElements(driver,shCtaLinkNameLocator, 15);
+		//ReadWriteFilePage readWriteFilePage = new ReadWriteFilePage(driver);
+		System.out.println("Entering CTA links in SH:");
+		int k=0;
+		for(WebElement element:displayElements) {	
+			for(FeaturePage feature:featurePageListFDSE) {
+				boolean enterLink = true;
+				String cta_feature_name = element.getText();
+				WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
+				String textInInputElement = inputElement.getAttribute("value");
+		        if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase())) {
+		        	String navBarLink = feature.href;	        	
+		        	if(!navBarLink.equals("")) {
+	        			k++;
+	        			System.out.println((k)+". "+feature.shCtaName+" entered!");
+	        			String shorterLink; 
+	        			if(feature.shCtaName.equals("food menu") && (websiteFeaturesPage.numberOfFoodMenuLinks>1)) {
+	        				shorterLink = feature.href;
+	        			}else {
+	        				if(feature.shCtaName.equals("gift cards")
+	        					&&!(feature.href.contains(clearUrlFromHttp(driver,domain)))
+	        					&&!(feature.href.contains("spotapps"))){
+	        					shorterLink = feature.href;
+	        				}else {
+	        					shorterLink = domain+feature.endOfCtaLink;
+	        				}
+	        			}
+	        			clearAndSendKeys(driver,inputElement,feature.shCtaName+" inputElement",15,shorterLink);
+		        		Thread.sleep(1000);
+		        	}
+		        }
+			}
+		}
+	}
+	
 	public boolean placeOredrsSideBySide(WebDriver driver,long numberOfOrderLinks) throws InterruptedException {
 		boolean result=false;
 		int numInt = (int) numberOfOrderLinks;
 		System.out.println(">>>>>>>> Number of order elements in footer: "+numInt);
 		if(numInt>1) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
 			for(int i=2;i<=numInt;i++) {
 				String locator = "//span[contains(text(),'order"+i+"')]/../span[contains(@ng-click,'moveLink') and contains(@ng-click,'up')]";
 				System.out.println(">>>>>>>>  i in loop: "+i);
 				for(int j=0;j<7;j++) {
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 					List<WebElement> moveUpElement = driver.findElements(By.xpath(locator));
 					if(moveUpElement.isEmpty()) {
 						System.out.println("moveUpElement not exist");
 						result = true;
 					}else {
 						System.out.println(">>>>>>>> j in loop: "+j);
-						JavascriptExecutor js = (JavascriptExecutor) driver;
-						if(j>3) {
-							js.executeScript("window.scrollTo(0, 0);");
-						}else {
-							js.executeScript("window.scrollBy(0, -113);");
-						}
+						//if(j>5) {
+						//	js.executeScript("window.scrollTo(0, 0);");
+						//}else {
+						//	js.executeScript("window.scrollBy(0, -113);");
+						//}
 						Thread.sleep(2000);
-						scrollPageUncoverElement(driver, moveUpElement.get(0));
-						moveUpElement.get(0).click();
-						Thread.sleep(1000);
+						clickJavascriptExecutor(driver,moveUpElement.get(0));
 					}
 				}
 			}
 		}
+		Thread.sleep(1000);
 		clickElement(driver,footerLinkSaveButtonLocator,"footerLinkSaveButtonLocator",15);
 		return result;
 	}
@@ -155,8 +248,11 @@ public class CtaLinksPage extends AbstractComponent {
 		    int index = indices[i];
 		    List<WebElement> elements = waitForVisibilityOfElements(driver, footerLinkNameLocator, 15);
 		    String orderName = elements.get(index).getAttribute("value").trim().toLowerCase();
+		    String navbarText = onlineOrderDropDownFaetures.get(i).navBarText.trim().toLowerCase();
 		    if(orderName.equals("order")) {
-		    	clearAndSendKeys(driver, elements.get(index), "onlineOrderDropDown "+i, 15, onlineOrderDropDownFaetures.get(i).navBarText);
+		    	if(!navbarText.equals("directly from us") ){
+		    		clearAndSendKeys(driver, elements.get(index), "onlineOrderDropDown "+i, 15, onlineOrderDropDownFaetures.get(i).navBarText);
+		    	}		    	
 		    	System.out.println(onlineOrderDropDownFaetures.get(i).navBarText+" entered!");
 		    }
 		}
@@ -186,7 +282,14 @@ public class CtaLinksPage extends AbstractComponent {
 		return result;
 	}
 	
-	public String clearUrlFromHttpWww(WebDriver driver,String url) {
+	public String putHttpsOnUrlAndSlash(WebDriver driver,String url) {
+		String result = clearUrlFromHttp(driver,url);
+		String httpsResult = "https://"+result;
+		result = putDashOnEndOfUrl(driver,httpsResult);
+		return result;
+	}
+	
+	public String clearUrlFromHttp(WebDriver driver,String url) {
 		String result = url;
 		if(result.startsWith("https")) {
 			result = result.substring(8);
@@ -194,9 +297,7 @@ public class CtaLinksPage extends AbstractComponent {
 		if(result.startsWith("http")) {
 			result = result.substring(7);
 		}
-		if(result.startsWith("www")) {
-			result = result.substring(4);
-		}
+		
 		return result;
 	}
 	
@@ -212,9 +313,9 @@ public class CtaLinksPage extends AbstractComponent {
 				String textInInputElement = inputElement.getAttribute("value");
 				if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase())) {
 					feature.ctaShUrl = textInInputElement;
-					String clearedInputElement = clearUrlFromHttpWww(driver,textInInputElement);
-					String expectedCtaLinkWithDomain = clearUrlFromHttpWww(driver,websiteUrl+feature.endOfCtaLink.trim());
-					String expectedCtaLinkWithSpotapps = clearUrlFromHttpWww(driver,"https://tmt.spotapps.co/"+feature.aHrefLink+"?spot_id="+spotIdFromPopupOrJson);
+					String clearedInputElement = clearUrlFromHttp(driver,textInInputElement);
+					String expectedCtaLinkWithDomain = clearUrlFromHttp(driver,websiteUrl+feature.endOfCtaLink.trim());
+					String expectedCtaLinkWithSpotapps = clearUrlFromHttp(driver,"https://tmt.spotapps.co/"+feature.aHrefLink+"?spot_id="+spotIdFromPopupOrJson);
 		        	boolean equalToExpectedLinkWithDomain = clearedInputElement.equals(expectedCtaLinkWithDomain);
 		        	boolean equalToCtaLinkWithSpotapps = clearedInputElement.equals(expectedCtaLinkWithSpotapps);
 		        	if(feature.tmtFeature && feature.activeInSh) {
@@ -254,42 +355,7 @@ public class CtaLinksPage extends AbstractComponent {
 		}
 	}
 	
-	public void enterFDSECtaLinks(WebDriver driver, List<FeaturePage> featurePageListFDSE,String spotId,String timeStamp,String domain,
-			WebsiteFeaturesPage websiteFeaturesPage) throws IOException, InterruptedException {
-		List <WebElement> displayElements = waitForVisibilityOfElements(driver,shCtaLinkNameLocator, 15);
-		//ReadWriteFilePage readWriteFilePage = new ReadWriteFilePage(driver);
-		System.out.println("Entering CTA links in SH:");
-		int k=0;
-		for(WebElement element:displayElements) {	
-			for(FeaturePage feature:featurePageListFDSE) {
-				boolean enterLink = true;
-				String cta_feature_name = element.getText();
-				WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
-				String textInInputElement = inputElement.getAttribute("value");
-		        if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase())) {
-		        	String navBarLink = feature.href;	        	
-		        	if(!navBarLink.equals("")) {
-		        		if(textInInputElement.trim().equals("")) {
-		        			k++;
-		        			System.out.println((k)+". "+feature.shCtaName+" entered!");
-		        			String shorterLink; 
-		        			if(feature.shCtaName.equals("food menu") && (websiteFeaturesPage.numberOfFoodMenuLinks>1)) {
-		        				shorterLink = feature.href;
-		        			}else {
-		        				if(feature.shCtaName.equals("gift cards")) {
-		        					// proveriti da li je ksterni link
-		        				}
-		        				shorterLink = domain+feature.endOfCtaLink;
-		        			}
-		        			clearAndSendKeys(driver,inputElement,feature.shCtaName+" inputElement",15,shorterLink);
-			        		Thread.sleep(1000);
-			        		//readWriteFilePage.createMenuFile(driver, spotId+"_cta_"+feature.featureElementId,timeStamp);
-		        		}	
-		        	}
-		        }
-			}
-		}
-	}
+	
 	
 	public void enterCtaLinks(WebDriver driver,FeaturePage feature,String spotId,String timeStamp,String domain) 
 			throws IOException, InterruptedException {

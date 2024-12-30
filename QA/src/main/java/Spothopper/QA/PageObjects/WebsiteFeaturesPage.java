@@ -112,6 +112,13 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	
 	
 	// Methods
+	public String removeLastCharacterIfMatch(WebDriver driver,String link, String text) {
+	    if (link != null && link.endsWith(text)) {
+	        return link.substring(0, link.length() - text.length());
+	    }
+	    return link;
+	}
+	
 	public boolean cantBeReachedPage(WebDriver driver) {
 		boolean result=false;
 		WebElement element = cantBeReachedMessageLocator;
@@ -175,7 +182,6 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 			List<FeaturePage> featureListEntered) {
 		List<FeaturePage> resultFeatureList = new ArrayList<FeaturePage>();
 		int k=0;
-		System.out.println("SH features from nav bar:");
 		for (int i = 0; i < featureListEntered.size(); i++) {
 		    FeaturePage feature = featureListEntered.get(i); 
 		    for (int j = navBarElements.size()-1; j >= 0; j--) {
@@ -197,7 +203,43 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	            	}
 	            }
 	            if (ifCondition){
+	            	element.href = removeLastCharacterIfMatch(driver,element.href,"#");
 	            	feature.href = element.href;
+	            	if(feature.shCtaName.toLowerCase().trim().equals("private parties")) {
+	            		if(element.href.contains("-party")) {
+		            		feature.endOfCtaLink = "-party";
+		            	}
+	            		if(element.href.contains("-parties")) {
+		            		feature.endOfCtaLink = "-parties";
+		            	}
+		            	if(element.href.contains("-private-parties")) {
+		            		feature.endOfCtaLink = "-private-parties";
+		            	}
+		            }
+	            	if(feature.shCtaName.toLowerCase().trim().equals("reservations")) {
+	            		if(element.href.contains("-reserve")) {
+		            		feature.endOfCtaLink = "-reserve";
+		            	}
+	            		if(element.href.contains("-reservations")) {
+		            		feature.endOfCtaLink = "-reservations";
+		            	}	
+		            }
+	            	if(feature.shCtaName.toLowerCase().trim().equals("catering")) {
+	            		if(element.href.contains("-cater")) {
+		            		feature.endOfCtaLink = "-cater";
+		            	}
+	            		if(element.href.contains("-catering")) {
+		            		feature.endOfCtaLink = "-catering";
+		            	}
+		            }
+	            	if(feature.shCtaName.toLowerCase().trim().equals("job listing")) {
+	            		if(element.href.contains("jobs")) {
+		            		feature.endOfCtaLink = "jobs";
+		            	}
+	            		if(element.href.contains("job-listings")) {
+		            		feature.endOfCtaLink = "job-listings";
+		            	}
+		            }
 					resultFeatureList.add(feature);
 					k++;
 					System.out.println((k)+". "+feature.shCtaName+" href: "+feature.href+", tmt: "+feature.tmtFeature);
@@ -381,11 +423,12 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	}
 	
 	
-	public boolean checkTarget(WebDriver driver,String domain) {
-		boolean result = false;
+	public String checkTarget(WebDriver driver,String domain) {
+		String result = "";
 		int i=0;
 		System.out.println("Feature target:");
 		List<WebElement> footerElements = smartFooterLinkLocator;
+		List<String> externalPlatforms =  Arrays.asList("chownow.com", "resy.com");
 		for(WebElement element:footerElements) {
 			String href = element.getAttribute("href");
 			String target = element.getAttribute("target");
@@ -393,9 +436,14 @@ public class WebsiteFeaturesPage extends AbstractComponent {
             String text = (String) js.executeScript("return arguments[0].textContent;", element).toString().trim().toLowerCase();
 			i++;
             System.out.println((i)+". "+text+" target: "+target);
-			if(href.contains(domain)||href.contains("spotapps")) {
+			if(href.contains(domain) && externalPlatforms.stream().noneMatch(href::contains)) {
 				if(!target.equals("_self")) {
-					result = true;
+					result = "self";
+				}
+			}
+			if(href.contains("spotapps")) {
+				if(!target.equals("_self")) {
+					result = "spotapps";
 				}
 			}
 		}
