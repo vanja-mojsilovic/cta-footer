@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-30T09:50:28 CET" name="Suite" finished-at="2024-12-30T09:53:21 CET" duration-ms="173087">
+  <suite started-at="2025-01-08T15:03:20 CET" name="Suite" finished-at="2025-01-08T15:31:22 CET" duration-ms="1682421">
     <groups>
     </groups>
-    <test started-at="2024-12-30T09:50:28 CET" name="Website features" finished-at="2024-12-30T09:53:21 CET" duration-ms="173087">
+    <test started-at="2025-01-08T15:03:20 CET" name="Website features" finished-at="2025-01-08T15:31:22 CET" duration-ms="1682421">
       <class name="Spothopper.QA.TestCases.CTALinksTest">
-        <test-method is-config="true" signature="bSuite()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2024-12-30T09:50:28 CET" name="bSuite" finished-at="2024-12-30T09:50:28 CET" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="bSuite()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2025-01-08T15:03:20 CET" name="bSuite" finished-at="2025-01-08T15:03:20 CET" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bSuite -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2024-12-30T09:50:28 CET" name="launchApplication" finished-at="2024-12-30T09:50:31 CET" duration-ms="2813" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2025-01-08T15:03:20 CET" name="launchApplication" finished-at="2025-01-08T15:03:22 CET" duration-ms="2135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="getWebsiteFeatures()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2024-12-30T09:50:31 CET" name="getWebsiteFeatures" finished-at="2024-12-30T09:53:21 CET" duration-ms="170253" status="PASS">
+        <test-method signature="getWebsiteFeatures()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2025-01-08T15:03:22 CET" name="getWebsiteFeatures" finished-at="2025-01-08T15:31:22 CET" duration-ms="1680255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebsiteFeatures -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2024-12-30T09:53:21 CET" name="closeWindow" finished-at="2024-12-30T09:53:21 CET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Spothopper.QA.TestCases.CTALinksTest@1f3f02ee]" started-at="2025-01-08T15:31:22 CET" name="closeWindow" finished-at="2025-01-08T15:31:22 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->

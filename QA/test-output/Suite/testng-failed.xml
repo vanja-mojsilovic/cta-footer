@@ -7,14 +7,14 @@
   <test thread-count="5" parallel="tests" name="Website features(failed)">
     <parameter name="dataProviderCounter" value="0"/>
     <classes>
-      <class name="Spothopper.QA.TestCases.ChatGptIntegrationTest">
+      <class name="Spothopper.QA.TestCases.CTALinksTest">
         <methods>
           <include name="closeWindow"/>
-          <include name="sinchronizeChanges"/>
           <include name="launchApplication"/>
           <include name="bSuite"/>
+          <include name="getWebsiteFeatures"/>
         </methods>
-      </class> <!-- Spothopper.QA.TestCases.ChatGptIntegrationTest -->
+      </class> <!-- Spothopper.QA.TestCases.CTALinksTest -->
     </classes>
   </test> <!-- Website features(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,8 +1,7 @@
 [
-       {
-            "spot_id": "321387",
-            "website_url": "http://spot-sample-664.spotapps.co",
-            "personal_name": "AUTOMATION_TEST",
-			"github_issue": "20696"
-        }
+   {
+		"spot_id": "96089",
+		"issue_key":"WEB-147264",
+		"website_url": "https://spot-sample-96089-website-v1.spotapps.co/"
+	}
   ]
