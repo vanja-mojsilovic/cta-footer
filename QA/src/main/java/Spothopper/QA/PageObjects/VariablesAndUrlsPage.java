@@ -45,7 +45,7 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 						
 		}
 	//variables
-	
+	public String myEmail = "vanja.mojsilovic@spothopperapp.com";
 	public String domainURL = "https://www.spothopperapp.com/admin/spots/";
 	public String tmtDomainURL = "https://tmt-front-staging.spotapps.co/";
 	public String production_staging = "production";

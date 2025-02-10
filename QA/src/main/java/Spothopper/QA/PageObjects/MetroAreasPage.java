@@ -59,7 +59,7 @@ public class MetroAreasPage extends AbstractComponent{
 	
 	public void saveChanges(WebDriver driver) {
 		List<WebElement> elements = saveButtonLocator;
-		elements.get(1).click();
+		elements.get(0).click();
 	}
 	
 	public void loginWithGoogleChatGpt(WebDriver driver) {

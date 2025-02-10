@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.IFactoryAnnotation;
 
 import com.google.common.collect.MoreCollectors;
+import com.mysql.cj.xdevapi.Result;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
@@ -110,6 +111,10 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	@FindBy(xpath ="//input[contains(@ng-model,'order_config.shopping_cart')]")
  	List<WebElement> activateOnlineOrdersCheckboxLocator;
 	
+	@FindBy(xpath ="//a[@class='custom-temp-btn hvr-fade']")
+	WebElement okButtonLocator;
+	
+	
 	
 	// Methods
 	public String removeLastCharacterIfMatch(WebDriver driver,String link, String text) {
@@ -182,18 +187,70 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 			List<FeaturePage> featureListEntered) {
 		List<FeaturePage> resultFeatureList = new ArrayList<FeaturePage>();
 		int k=0;
+		int numberOfParties=1;
+		int numberOfCatering=1;
+		int numberOfReservations=1;
+		int numberOfJobs=1;
+		int numberOfSpecials=1;
 		for (int i = 0; i < featureListEntered.size(); i++) {
-		    FeaturePage feature = featureListEntered.get(i); 
-		    for (int j = navBarElements.size()-1; j >= 0; j--) {
-		        WebElementPage element = navBarElements.get(j);
+		    FeaturePage feature = featureListEntered.get(i);
+		    for (int j = 0; j <= navBarElements.size()-1; j++) {
+		    	WebElementPage element = navBarElements.get(j);
+		    	if(feature.name.equals("parties") && element.className.contains("party-drop-option")) {
+		    		//System.out.println("party-drop-option numberOfParties "+numberOfParties);
+		    		//System.out.println(element.href);
+		        	if(numberOfParties>1) {
+		        		continue;
+		        	}
+		        	numberOfParties++;
+			    }
+			    if(feature.name.equals("reserv") && element.className.contains("reservation-drop-option")) {
+			    	//System.out.println("reservation-drop-option numberOfReservations "+numberOfReservations);
+			    	//System.out.println(element.href);
+			    	if(numberOfReservations>1) {
+	        			continue;
+	        		}
+	        		numberOfReservations++;
+			    }
+			    if(feature.name.equals("cater") && element.className.contains("catering-drop-option")) {
+			    	//System.out.println("catering-drop-option numberOfCatering "+numberOfCatering);
+			    	//System.out.println(element.href);
+			    	if(numberOfCatering>1) {
+	        			continue;
+	        		}
+			    	numberOfCatering++;
+			    }
+			    if(feature.name.equals("job") && element.className.contains("job-drop-option")) {
+			    	//System.out.println("job-drop-option numberOfJobs "+numberOfJobs);
+			    	//System.out.println(element.href);
+			    	if(numberOfJobs>1) {
+	        			continue;
+	        		}
+			    	numberOfJobs++;
+				}
+			    if(feature.name.equals("specials") && element.className.contains("custom-drop-option")&&feature.name.equals("specials")) {
+			    	//System.out.println("custom-drop-option numberOfSpecials "+numberOfSpecials);
+			    	//System.out.println(element.href);
+			    	if(numberOfSpecials>1) {
+	        			continue;
+	        		}
+			    	numberOfSpecials++;
+				}
 				boolean isHrefMatch = (element.href != null && feature.aHrefLink != null && 
-						(element.href.contains(feature.aHrefLink)));
+						(element.href.contains(feature.aHrefLink)||element.href.contains(feature.smartFooterName)
+						||element.href.contains(feature.endOfCtaLink)));
 				boolean isIdMatch = (element.id != null && feature.featureElementId != null && 
 						(element.href.contains(feature.featureElementId)));
 	            boolean isClassMatch = (element.className != null && feature.className != null && element.className.equals(feature.className));
 	            boolean ifCondition;
 	            if(feature.tmtFeature) {
-	            	ifCondition = isHrefMatch || isClassMatch || isIdMatch;
+	            	ifCondition = isClassMatch;
+	            	if(!ifCondition) {
+	            		ifCondition = isIdMatch;
+	            	}
+	            	if(!ifCondition) {
+	            		ifCondition = isHrefMatch;
+	            	}
 	            }else {
 	            	if(feature.shCtaName.contains("food menu")) {
 	            		boolean isIdCustomMatch = (element.href != null && element.href.contains("menus-custom"));
@@ -208,13 +265,16 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	            	if(feature.shCtaName.toLowerCase().trim().equals("private parties")) {
 	            		if(element.href.contains("-party")) {
 		            		feature.endOfCtaLink = "-party";
+		            		System.out.println("endOfCtaLink changed to -party, "+element.href);
 		            	}
 	            		if(element.href.contains("-parties")) {
 		            		feature.endOfCtaLink = "-parties";
+		            		System.out.println("endOfCtaLink changed to -parties, "+element.href);
 		            	}
-		            	if(element.href.contains("-private-parties")) {
+		            	if(element.href.contains("private-parties")) {
 		            		feature.endOfCtaLink = "-private-parties";
-		            	}
+		            		System.out.println("endOfCtaLink changed to -private-parties, "+element.href);
+		            	}		        
 		            }
 	            	if(feature.shCtaName.toLowerCase().trim().equals("reservations")) {
 	            		if(element.href.contains("-reserve")) {
@@ -222,7 +282,8 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		            	}
 	            		if(element.href.contains("-reservations")) {
 		            		feature.endOfCtaLink = "-reservations";
-		            	}	
+		            	}
+	            		
 		            }
 	            	if(feature.shCtaName.toLowerCase().trim().equals("catering")) {
 	            		if(element.href.contains("-cater")) {
@@ -231,6 +292,7 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	            		if(element.href.contains("-catering")) {
 		            		feature.endOfCtaLink = "-catering";
 		            	}
+	            		
 		            }
 	            	if(feature.shCtaName.toLowerCase().trim().equals("job listing")) {
 	            		if(element.href.contains("jobs")) {
@@ -270,7 +332,6 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	}
 	
 	public void fillFoodMenuDropDownList(WebDriver driver,List<FeaturePage> foodMenuDropDownFaetures,List<WebElementPage> navBarElements) {
-		System.out.println("Drop down food menu links:");
 		int foodMenuNumber = 1;
 		String navBarText = "";
 		for(WebElementPage element:navBarElements) {
@@ -279,17 +340,14 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 				foodMenuDropDownFaetures.add(new FeaturePage(driver, "menu",foodMenuName, "food-menu_link",false,"-food-menu","food-menu","-food-menu","food-menu","no_name"));
 				foodMenuDropDownFaetures.get(foodMenuDropDownFaetures.size()-1).navBarText = element.text;
 				int num = foodMenuDropDownFaetures.size() - 1;
-				System.out.println("food menu navBarText:"+navBarText);
 				foodMenuDropDownFaetures.get(num).navBarText = navBarText;
 				foodMenuDropDownFaetures.get(num).href = element.href;
-				System.out.println(foodMenuNumber+". "+foodMenuName+" "+element.href);
 				foodMenuNumber++;
 			}
 		}
 	}
 	
 	public void fillDrinkMenuDropDownList(WebDriver driver,List<FeaturePage> drinkMenuDropDownFaetures,List<WebElementPage> navBarElements) {
-		System.out.println("Drop down drink menu links:");
 		int drinkMenuNumber = 1;
 		String navBarText = "";
 		for(WebElementPage element:navBarElements) {
@@ -298,11 +356,25 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 				drinkMenuDropDownFaetures.add(new FeaturePage(driver, "drinks",drinkMenuName, "drink-menu_link",false,"-drink-menu","drink-menu","-drink-menu","drink-menu","no_name"));
 				drinkMenuDropDownFaetures.get(drinkMenuDropDownFaetures.size()-1).navBarText = element.text;
 				int num = drinkMenuDropDownFaetures.size() - 1;
-				System.out.println("drink menu navBarText:"+navBarText);
 				drinkMenuDropDownFaetures.get(num).navBarText = navBarText;
 				drinkMenuDropDownFaetures.get(num).href = element.href;
-				System.out.println(drinkMenuNumber+". "+drinkMenuName+" "+element.href);
 				drinkMenuNumber++;
+			}
+		}
+	}
+	
+	public void fillPrivatePartiesDropDownList(WebDriver driver,List<FeaturePage> privatePartiesDropDownFaetures,List<WebElementPage> navBarElements) {
+		int privatePartiesNumber = 1;
+		String navBarText = "";
+		for(WebElementPage element:navBarElements) {
+			if(element.className.contains("party-drop-option")){
+				privatePartiesDropDownFaetures.add(new FeaturePage(driver, "parties","private parties", "private-parties",true,"-party","private-parties","-party","parties","link-parties-sh"));
+				privatePartiesDropDownFaetures.get(privatePartiesDropDownFaetures.size()-1).navBarText = element.text;
+				int num = privatePartiesDropDownFaetures.size() - 1;
+				privatePartiesDropDownFaetures.get(num).navBarText = navBarText;
+				privatePartiesDropDownFaetures.get(num).href = element.href;
+				System.out.println(privatePartiesNumber+". "+privatePartiesNumber+" "+element.href);
+				privatePartiesNumber++;
 			}
 		}
 	}
@@ -364,31 +436,53 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	}
 	
 	public void getActiveStatusTmtFeatures(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,VariablesAndUrlsPage variablesAndUrlsPage) throws InterruptedException, IOException{
+		int numberOfPrivateParties=1;
+		int numberOfReservations=1;
+		int numberOfCatering=1;
+		int numberOfJobs=1;
+		int numberOfOrders=1; 
 		for(FeaturePage feature:featurePageListOnWebsite) {
 			if(feature.tmtFeature) {
 				if(feature.shCtaName.equals("private parties")) {
+					if(numberOfPrivateParties>1) {
+						//continue;
+					}
 					goTo(variablesAndUrlsPage.privatePartiesSettingsURL);
         			Thread.sleep(3000);
         			feature.setIsActiveInFeature(driver);
+        			numberOfPrivateParties++;
         		}
         		if(feature.shCtaName.equals("catering")) {
+        			if(numberOfCatering>1) {
+						//continue;
+					}
         			feature.goTo(variablesAndUrlsPage.cateringSettingsURL);
         			Thread.sleep(3000);
         			feature.setIsActiveInFeature(driver);
-        			
+        			numberOfCatering++;
         		}
         		if(feature.shCtaName.equals("reservations")) {
+        			if(numberOfReservations>1) {
+						//continue;
+					}
         			feature.goTo(variablesAndUrlsPage.reservationsSettingsURL);
         			Thread.sleep(3000);
         			feature.setIsActiveInFeature(driver);
-        			
+        			numberOfReservations++;
         		}
         		if(feature.shCtaName.equals("job listing")) {
+        			if(numberOfJobs>1) {
+						//continue;
+					}
         			feature.goTo(variablesAndUrlsPage.jobApplicationsSettingsURL);
         			Thread.sleep(3000);
         			feature.setIsActiveInFeature(driver);
+        			numberOfJobs++;
         		}
         		if(feature.shCtaName.equals("order link 1")) {
+        			if(numberOfOrders>1) {
+						//continue;
+					}
         			int responseCode = goToWithResponseCode(variablesAndUrlsPage.ordersSettingsURL);
         			List<WebElement> elements = activateOnlineOrdersCheckboxLocator;
         			if(responseCode==-1 || elements.isEmpty()) {
@@ -396,27 +490,33 @@ public class WebsiteFeaturesPage extends AbstractComponent {
         			}else {
         				Thread.sleep(3000);
             			feature.setIsActiveInFeature(driver); 
-        			}	
+        			}
+        			numberOfOrders++;
         		}
 			}
 		}
 	}
 	
 	public String cutUsualExternalLinks(WebDriver driver,String href) {
-	    int questionMarkIndex = href.indexOf('?');
-	    if (questionMarkIndex > 0) {
-	        href = href.substring(0, questionMarkIndex);
-	    }
+		if(href.length()>250){
+			int questionMarkIndex = href.indexOf('?');
+		    if (questionMarkIndex > 0) {
+		        href = href.substring(0, questionMarkIndex);
+		    }
+		}
 		return href;
 	}
 	
-	public String checkIfDeactivateTmtHasLink(WebDriver driver,List<FeaturePage> featurePageListOnWebsite) {
+	public String checkIfDeactivateTmtHasLink(WebDriver driver,List<FeaturePage> featurePageListOnWebsite) throws IOException {
 		String result = "";
 		for(FeaturePage feature:featurePageListOnWebsite) {
-			String featureHref = feature.href;
-			//feature.href = cutUsualExternalLinks(driver,featureHref);
 			if(!feature.activeInSh && !feature.href.equals("") && feature.tmtFeature && feature.href.length()>250) {
-				result = feature.shCtaName.toUpperCase();
+				String tempFeatureHref = cutUsualExternalLinks(driver,feature.href);
+				int responseCode = goToWithResponseCode(tempFeatureHref);
+				if(responseCode == -1) {
+					result = feature.shCtaName.toUpperCase();
+				}
+				
 			}
 		}
 		return result;
@@ -428,7 +528,7 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		int i=0;
 		System.out.println("Feature target:");
 		List<WebElement> footerElements = smartFooterLinkLocator;
-		List<String> externalPlatforms =  Arrays.asList("chownow.com", "resy.com");
+		List<String> externalPlatforms =  Arrays.asList("chownow.com", "resy.com","toasttab.com");
 		for(WebElement element:footerElements) {
 			String href = element.getAttribute("href");
 			String target = element.getAttribute("target");
@@ -444,6 +544,11 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 			if(href.contains("spotapps")) {
 				if(!target.equals("_self")) {
 					result = "spotapps";
+				}
+			}
+			if(href.contains("/gift-cards")) {
+				if(!target.equals("_self")) {
+					result = "gift-cards";
 				}
 			}
 		}
@@ -620,6 +725,18 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		return resultList;
 	}
 	
+	public String clickOkButton(WebDriver driver) {
+		String result = "";
+		try {
+			WebElement element = okButtonLocator;
+			result = element.getAttribute("href").trim();
+			
+		}catch(Exception e){
+			
+		}
+		return result;
+	}
+	
 	public List<WebElementPage> getAllementsFromNavBar(WebDriver driver) {
 		List<WebElementPage> webElementObjectList = new ArrayList<WebElementPage>();
 		List <WebElement> displayElements = aElementsInNavBarLocator;
@@ -627,9 +744,11 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 			System.out.println("All features from nav bar:");
 			for (int i = 0; i < displayElements.size(); i++) {
 			    WebElement element = displayElements.get(i); 
-			    String href = element.getAttribute("href").trim();
-			    String id = element.getAttribute("id");
-			    String className = element.getAttribute("class"); 
+			    String className = element.getAttribute("class");
+			    String href = element.getAttribute("href");
+			    
+			    href = href != null ? href.trim() : "";
+			    String id = element.getAttribute("id"); 
 			    JavascriptExecutor js = (JavascriptExecutor) driver;
 				//String text = (String) js.executeScript("return arguments[0].textContent;", element).toString().trim().toLowerCase(); 
 			    Object scriptResult = js.executeScript(

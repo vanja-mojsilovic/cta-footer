@@ -1,0 +1,2 @@
+1. WEB-160838, 159557, https://homeofchickenandwaffles.com/, ORDER FOOTER LINKS!, Previous Hash: 01ff21cfbd9fb826afe013243813bec5d97807ce8bf39c3987a68d5a1130bfae, Hash: dceaf683dd9f912229719943648b2efb82c9c26e3998334766de8d5c52757948
+2. WEB-160802, 358017, https://www.cocolocomexicangrillandbar.com/, WEB PAGE CAN NOT BE OPENED!, Previous Hash: dceaf683dd9f912229719943648b2efb82c9c26e3998334766de8d5c52757948, Hash: 41655894f4df992ec39c5fdbc0e2a2a6415d1137a12953e5197dd62705c5b848

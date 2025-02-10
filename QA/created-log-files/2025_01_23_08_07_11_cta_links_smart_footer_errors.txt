@@ -1,0 +1,3 @@
+1. WEB-154832, 283986, https://casaorozco.com/, DIFFERENT LINKS WITH DOMAIN IN SH AND ON WEBSITE!, Previous Hash: 45872c7e5cebd2d4d4b7ccf266d3542f5e44593dc5bc02c42842580280578528, Hash: 8de315abfee0f8ac5ad164c9f5ac2b0f6fcfeb2f95be22898a5fadfe1c9a5a69
+2. WEB-157364, 147352, https://www.barnesrestaurant.com/, ORDER FOOTER LINKS!, Previous Hash: 8de315abfee0f8ac5ad164c9f5ac2b0f6fcfeb2f95be22898a5fadfe1c9a5a69, Hash: 85bae9a6c178134d51859a5ecd0330559865ccd3a681fd81602f6ab2d11766c2
+3. WEB-156953, 354255, https://ykitchenandbar.com/, ORDER FOOTER LINKS!, Previous Hash: 85bae9a6c178134d51859a5ecd0330559865ccd3a681fd81602f6ab2d11766c2, Hash: df36633590b49d46e84bc7c13c64ca7d04bf17c4d2bcdbb5809be62bd3b984bb

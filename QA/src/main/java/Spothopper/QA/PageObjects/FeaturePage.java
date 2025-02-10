@@ -103,7 +103,7 @@ public class FeaturePage extends AbstractComponent {
     		String className) {
 		super(driver);
         this.driver = driver;
-        this.name=name;
+        this.name = name;
         this.shCtaName = shCtaName;
         this.featureElementId = featureElementId;
         this.tmtFeature = tmtFeature;
@@ -112,13 +112,9 @@ public class FeaturePage extends AbstractComponent {
         this.buttonOnPageHref = buttonOnPageHref;
         this.smartFooterName = smartFooterName;
         this.className = className;
-        
-        
+  
         this.activeInSh = false;
-        //this.presentOnWebsite = false;
         this.shouldDeactivate = false;
-        //this.navBarFeatureLink = "";
-        this.smartFooterName = "";
         this.navBarText = "";
         this.href="";
         this.ctaShUrl="";

@@ -1,0 +1,2 @@
+1. WEB-153520, 329471, https://heroesamericancafe.com/, PROBLEM WITH LINK ON HOME PAGE!, Previous Hash: e977f0b1d7eb71980d2b0424ef994ef45e586afb65067667e7891ccfb7b01696, Hash: bfc241dccdc2affaa788baff81c4d66cfa661f233c8317e1dd9a03b4892514bf
+2. WEB-154471, 409129, https://mikeduffys.com/, NO WEB ELEMENTS ON WEBSITE!, Previous Hash: bfc241dccdc2affaa788baff81c4d66cfa661f233c8317e1dd9a03b4892514bf, Hash: 8bc85fa9b97da4796bd08353d88f2e83572bacc97a233aa572ee84cdfa9bcb44

@@ -150,13 +150,7 @@ public class GithubIssuePage extends AbstractComponent {
         		"Verification code input",JOptionPane.PLAIN_MESSAGE);
 		clearAndSendKeys(driver,githubIssueAuthenticationCodeLocator,"githubIssueAuthenticationCodeLocator",15,verificationCodeFromPopupOrJson);
 	}
-	
-	
-	
-	
-	
-	
-	
+
 	public void enterGithubUserName(WebDriver driver,String userName) {
 		clearAndSendKeys(driver,githubIssueUserNameLocator,"githubIssueUserNameLocator",15,userName);
 	}

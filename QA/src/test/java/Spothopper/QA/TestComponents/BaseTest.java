@@ -86,9 +86,11 @@ public class BaseTest {
 			//WebDriverManager.chromedriver().browserVersion("129.0.6668.100").setup();
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
+			 
 			//options.addArguments("--headless");
 			options.addArguments("--ignore-certificate-errors");
 			driver = new ChromeDriver(options);
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			// Firefox
 		}

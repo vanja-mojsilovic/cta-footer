@@ -146,6 +146,7 @@ public class CTALinksTest extends BaseTest {
         	List<FeaturePage> onlineOrderDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> foodMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> drinkMenuDropDownFaetures = new ArrayList<FeaturePage>();
+        	List<FeaturePage> privatePartiesDropDownFaetures = new ArrayList<FeaturePage>();
         	WebsiteFeaturesPage websiteFeaturesPageDesktop = new WebsiteFeaturesPage(driver);
         	spotIdFromPopupOrJson = websites.get(j).get("spot_id");
         	variablesAndUrlsPage.setUrls(driver,spotIdFromPopupOrJson); 
@@ -171,7 +172,7 @@ public class CTALinksTest extends BaseTest {
  	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	    		continue;
  	        }        
- 	        
+ 	        websiteFeaturesPageDesktop.closeNewsLetter(driver);
         	List<WebElementPage> navBarElements = websiteFeaturesPageDesktop.getAllementsFromNavBar(driver);
  	        if(navBarElements.isEmpty()) {
  	        	errorOrderNumber++;
@@ -184,22 +185,25 @@ public class CTALinksTest extends BaseTest {
         		websiteFeaturesPageDesktop.fillOrderDropDownList(driver,onlineOrderDropDownFaetures,navBarElements);
         		websiteFeaturesPageDesktop.fillFoodMenuDropDownList(driver,foodMenuDropDownFaetures,navBarElements);
         		websiteFeaturesPageDesktop.fillDrinkMenuDropDownList(driver, drinkMenuDropDownFaetures, navBarElements);
+        		websiteFeaturesPageDesktop.fillPrivatePartiesDropDownList(driver, privatePartiesDropDownFaetures, navBarElements);
         		
             	System.out.println("onlineOrderDropDownFaetures: "+onlineOrderDropDownFaetures);
+            	
             	if(onlineOrderDropDownFaetures.isEmpty()){ 
             		if(foodMenuDropDownFaetures.size()>1) {
             			errorOrderNumber++;
-                		errorMessage = errorMessage+", FOOD MENU IN NAV BAR!";
+                		errorMessage = errorMessage+", FOOD DROP DOWN MENU IN NAV BAR!";
             			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
             			continue;
         			}
-            		if(!(foodMenuDropDownFaetures.size()==1 && drinkMenuDropDownFaetures.size()==1)) {
+            		if(drinkMenuDropDownFaetures.size()>1) {
             			errorOrderNumber++;
-            			errorMessage = errorMessage+", DROP DOWN IN NAV BAR!";
+            			errorMessage = errorMessage+", DRINK DROP DOWN MENU IN NAV BAR!";
             			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
             			continue;
             		}
-     	    	}
+            		
+     	    	}            	
         	}
         
         	//check all links from home page
@@ -210,14 +214,14 @@ public class CTALinksTest extends BaseTest {
     			errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
     			continue;
     		}
-        	System.out.println("SH features from nav bar:");
+        	System.out.println("SH features from Home Page:");
     		List<FeaturePage> featurePageListOnWebsite = websiteFeaturesPageDesktop.updateFeatures(
     				driver,
     				navBarElements,
     				featurePageList);
    			List<FeaturePage> featuresNotOnNavBar = websiteFeaturesPageDesktop.getFeaturesNotOnNavBar(driver,featurePageListOnWebsite,featurePageList); 
    			System.out.println("Features which are not on the Nav bar:");
-   			websiteFeaturesPageDesktop.closeNewsLetter(driver);
+   			
    			websiteFeaturesPageDesktop.getFeaturesOnButtons(driver,featuresNotOnNavBar,featurePageListOnWebsite);
  	   		boolean giftCardsLinkTooLong = websiteFeaturesPageDesktop.checkGiftCardsFeature(driver,navBarElements);
 	 	   	if(giftCardsLinkTooLong) {
@@ -279,7 +283,13 @@ public class CTALinksTest extends BaseTest {
  	    	}
  	    	if(targetError.equals("spotapps")) {
  	    		errorOrderNumber++;
- 	 	    	errorMessage = errorMessage+", SPOTAPPS LINK IN FOOTER!";
+ 	 	    	errorMessage = errorMessage+", SPOTAPPS TARGET LINK IN FOOTER!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	 	    	continue;
+ 	    	}
+ 	    	if(targetError.equals("gift-cards")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", GIFT CARDS TARGET LINK IN FOOTER!";
  	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
  	    	}
@@ -311,7 +321,7 @@ public class CTALinksTest extends BaseTest {
 	        ctaLinksPage.enterFDSECtaLinks(driver, featurePageListFDSE,spotIdFromPopupOrJson,currentTimeString,websiteURL,websiteFeaturesPageDesktop);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
 	        Thread.sleep(1000);
-	        ctaLinksPage.enterTmtServices(driver,featurePageListOnWebsite,websiteURL);
+	        ctaLinksPage.enterTmtServices(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson);
 	        Thread.sleep(1000);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
 	        Thread.sleep(1000);

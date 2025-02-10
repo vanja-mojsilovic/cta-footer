@@ -21,6 +21,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 
 public class CtaLinksPage extends AbstractComponent {
@@ -137,25 +138,60 @@ public class CtaLinksPage extends AbstractComponent {
 	    }
 	}
 	
-	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain) {
+	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain,String spotIdFromPopupOrJson) {		System.out.println("entering Tmt Services in CTA links");
 		List <WebElement> displayElements = shCtaLinkNameLocator;
-		for(WebElement element:displayElements) {	
-			for(FeaturePage feature:featurePageListOnWebsite) {
+		// enter only first private parties drop down link
+		int numberOfParties = 1;
+		int numberOfReservations = 1;
+		int numberOfCatering = 1;
+		int numberOfJobs = 1;
+		for(FeaturePage feature:featurePageListOnWebsite)
+		{
+			if(feature.name.equals("parties") && feature.className.contains("party-drop-option")) {
+				if(numberOfParties>1) {
+					continue;
+				}
+				numberOfParties++;
+			}
+			if(feature.name.equals("reserv") && feature.className.contains("reservation-drop-option")) {
+				if(numberOfReservations>1) {
+					continue;
+				}
+				numberOfReservations++;
+			}
+			if(feature.name.equals("cater") && feature.className.contains("catering-drop-option")) {
+				if(numberOfCatering>1) {
+					continue;
+				}
+				numberOfCatering++;
+			}
+			if(feature.name.equals("job") && feature.className.contains("job-drop-option")) {
+				if(numberOfJobs>1) {
+					continue;
+				}
+				numberOfJobs++;
+			}
+			for(WebElement element:displayElements) {	
 				domain = putDashOnEndOfUrl(driver,domain);
 				String domainWithoutHttp = clearUrlFromHttp(driver,domain);
-				String endOfHref = getEndOfHref(driver,feature.href);
-				//  da li je custom 
-				if(feature.tmtFeature && feature.href.contains(domainWithoutHttp)) {
+				if(feature.tmtFeature && (Stream.of(domainWithoutHttp, "tmt.spotapps.co").anyMatch(feature.href::contains))) {
 					String cta_feature_name = element.getText();
 					WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
 					String textInInputElement = inputElement.getAttribute("value").trim();
 					if(cta_feature_name.toLowerCase().equals(feature.shCtaName.toLowerCase()) && 
 		        		!cta_feature_name.toLowerCase().equals("order link 1") ) {	
-							if(!textInInputElement.equals(domain+feature.endOfCtaLink) && !textInInputElement.contains("tmt.spotapps.co")) {
-								// da li je pogrešan nastavak, greška u kucanju
-								inputElement.clear();
-								inputElement.sendKeys(domain + feature.endOfCtaLink);
-								System.out.println(textInInputElement+" replaced with: "+ domain + feature.endOfCtaLink);
+							if(feature.href.contains("tmt.spotapps.co")) {
+								if(!(textInInputElement.equals("https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson))) {
+									inputElement.clear();
+									inputElement.sendKeys("https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson);
+									System.out.println(textInInputElement+" replaced with: "+"https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson);
+								}
+							}else {
+								if(!textInInputElement.equals(domain+feature.endOfCtaLink)) {					
+									inputElement.clear();
+									inputElement.sendKeys(domain + feature.endOfCtaLink);
+									System.out.println(textInInputElement+" replaced with: "+domain+feature.endOfCtaLink);
+								}
 							}
 					}
 				}
@@ -170,11 +206,38 @@ public class CtaLinksPage extends AbstractComponent {
 			String domain,
 			WebsiteFeaturesPage websiteFeaturesPage) throws IOException, InterruptedException {
 		List <WebElement> displayElements = waitForVisibilityOfElements(driver,shCtaLinkNameLocator, 15);
-		//ReadWriteFilePage readWriteFilePage = new ReadWriteFilePage(driver);
 		System.out.println("Entering CTA links in SH:");
 		int k=0;
-		for(WebElement element:displayElements) {	
-			for(FeaturePage feature:featurePageListFDSE) {
+		int numberOfFoodMenus=1;
+		int numberOfDrinkMenus=1;
+		int numberOfEvents=1;
+		int numberOfSpecials=1;
+		for(FeaturePage feature:featurePageListFDSE) {
+			if(feature.name.equals("menu") && feature.className.contains("food-drop-option")) {
+				if(numberOfFoodMenus>1) {
+					continue;
+				}
+				numberOfFoodMenus++;
+			}
+			if(feature.name.equals("drinks") && feature.className.contains("drink-drop-option")) {
+				if(numberOfDrinkMenus>1) {
+					continue;
+				}
+				numberOfDrinkMenus++;
+			}
+			if(feature.name.equals("events") && feature.className.contains("custom-drop-option")) {
+				if(numberOfEvents>1) {
+					continue;
+				}
+				numberOfEvents++;
+			}
+			if(feature.name.equals("specials") && feature.className.contains("custom-drop-option")) {
+				if(numberOfSpecials>1) {
+					continue;
+				}
+				numberOfSpecials++;
+			}
+			for(WebElement element:displayElements) {	
 				boolean enterLink = true;
 				String cta_feature_name = element.getText();
 				WebElement inputElement = element.findElement(By.xpath("./../../div[@class='input-group link']/input[@type='text']"));
@@ -315,18 +378,18 @@ public class CtaLinksPage extends AbstractComponent {
 					feature.ctaShUrl = textInInputElement;
 					String clearedInputElement = clearUrlFromHttp(driver,textInInputElement);
 					String expectedCtaLinkWithDomain = clearUrlFromHttp(driver,websiteUrl+feature.endOfCtaLink.trim());
-					String expectedCtaLinkWithSpotapps = clearUrlFromHttp(driver,"https://tmt.spotapps.co/"+feature.aHrefLink+"?spot_id="+spotIdFromPopupOrJson);
+					String expectedCtaLinkWithSpotapps = clearUrlFromHttp(driver,"https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson);
 		        	boolean equalToExpectedLinkWithDomain = clearedInputElement.equals(expectedCtaLinkWithDomain);
 		        	boolean equalToCtaLinkWithSpotapps = clearedInputElement.equals(expectedCtaLinkWithSpotapps);
 		        	if(feature.tmtFeature && feature.activeInSh) {
 		        		if(!(equalToExpectedLinkWithDomain || equalToCtaLinkWithSpotapps)){
 		        			System.out.println("CTA link in SH: "+clearedInputElement);
-		        			if(!feature.ctaShUrl.startsWith("https://tmt.spotapps")) {
-			        			System.out.println("expected link with domain: "+expectedCtaLinkWithDomain);
-			        			result = "domain";
-			        		}else {
+		        			if(feature.href.contains("tmt.spotapps")) {
 			        			System.out.println("expected link with spotapps: "+expectedCtaLinkWithSpotapps);
 			        			result = "spotapps";
+			        		}else {
+			        			System.out.println("expected link with domain: "+expectedCtaLinkWithDomain);
+			        			result = "domain";
 			        		}
 		        		}
 		        	}
