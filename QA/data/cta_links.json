@@ -1,162 +1,67 @@
 [
   {
-    "spot_id": 32497,
-    "issue_key": "WEB-162524",
-    "website_url": "https://tacos-ensenada.com"
+    "spot_id": 64105,
+    "issue_key": "WEB-162979",
+    "website_url": "https://monarchdelmar.com"
   },
   {
-    "spot_id": 83970,
-    "issue_key": "WEB-162496",
-    "website_url": "https://cajjuneats.com/"
+    "spot_id": 391248,
+    "issue_key": "WEB-162943",
+    "website_url": "https://mymiraclebakery.com"
   },
   {
-    "spot_id": 402172,
-    "issue_key": "WEB-162120",
-    "website_url": "https://www.jvspizzachester.com/"
+    "spot_id": 369171,
+    "issue_key": "WEB-162942",
+    "website_url": "https://marigoldbistro7b.com"
   },
   {
-    "spot_id": 78713,
-    "issue_key": "WEB-162532",
-    "website_url": "https://jmango.com"
+    "spot_id": 46503,
+    "issue_key": "WEB-162940",
+    "website_url": "https://cassidysnyc.com"
   },
   {
-    "spot_id": 355872,
-    "issue_key": "WEB-162110",
-    "website_url": "https://www.northsidepie.com/"
+    "spot_id": 239291,
+    "issue_key": "WEB-162938",
+    "website_url": "https://brinery412.com"
   },
   {
-    "spot_id": 370801,
-    "issue_key": "WEB-162134",
-    "website_url": "https://fluid510.com/"
+    "spot_id": 347169,
+    "issue_key": "WEB-162924",
+    "website_url": "https://mariscoscostaalegredalton.com"
   },
   {
-    "spot_id": 396693,
-    "issue_key": "WEB-162480",
-    "website_url": "http://shirazinc.com/"
+    "spot_id": 392008,
+    "issue_key": "WEB-162922",
+    "website_url": "https://nickysfirehouse.com"
   },
   {
-    "spot_id": 386595,
-    "issue_key": "WEB-162519",
-    "website_url": "https://thecornbreadcafesc.com"
+    "spot_id": 358545,
+    "issue_key": "WEB-162914",
+    "website_url": "https://fanaticowhitewater.com"
   },
   {
-    "spot_id": 190846,
-    "issue_key": "WEB-162497",
-    "website_url": "https://marshallstreetbarandgrill.com"
+    "spot_id": 306303,
+    "issue_key": "WEB-162894",
+    "website_url": "https://cheerstikibar.com"
   },
   {
-    "spot_id": 266080,
-    "issue_key": "WEB-162498",
-    "website_url": "https://mesondeltaco.com"
+    "spot_id": 263109,
+    "issue_key": "WEB-162882",
+    "website_url": "https://cognacstpete.com/"
   },
   {
-    "spot_id": 228823,
-    "issue_key": "WEB-162492",
-    "website_url": "https://uniontavernseabreeze.com/"
+    "spot_id": 140896,
+    "issue_key": "WEB-162539",
+    "website_url": "https://compassrosebrewery.com"
   },
   {
-    "spot_id": 100513,
-    "issue_key": "WEB-152960",
-    "website_url": "https://everestongrand.com"
+    "spot_id": 49008,
+    "issue_key": "WEB-162505",
+    "website_url": "https://homesweetharlem.nyc"
   },
   {
-    "spot_id": 95797,
-    "issue_key": "WEB-162516",
-    "website_url": "https://angelosofburien.com/"
-  },
-  {
-    "spot_id": 326969,
-    "issue_key": "WEB-162494",
-    "website_url": "https://aracelylounge.com/"
-  },
-  {
-    "spot_id": 329743,
-    "issue_key": "WEB-161291",
-    "website_url": "https://lousfullserv.com"
-  },
-  {
-    "spot_id": 121320,
-    "issue_key": "WEB-161260",
-    "website_url": "https://districtoviedo.com"
-  },
-  {
-    "spot_id": 216424,
-    "issue_key": "WEB-162506",
-    "website_url": "https://habanerosfreshmexcantina.com"
-  },
-  {
-    "spot_id": 411345,
-    "issue_key": "WEB-162518",
-    "website_url": "https://hotdoghutkingsport.com/"
-  },
-  {
-    "spot_id": 125154,
-    "issue_key": "WEB-162499",
-    "website_url": "http://chatterboxpleasantville.com/"
-  },
-  {
-    "spot_id": 102069,
-    "issue_key": "WEB-162393",
-    "website_url": "http://losolivosabq.com"
-  },
-  {
-    "spot_id": 156212,
-    "issue_key": "WEB-162813",
-    "website_url": "https://astirseattle.com"
-  },
-  {
-    "spot_id": 135552,
-    "issue_key": "WEB-161706",
-    "website_url": "https://mamimonchitas.com"
-  },
-  {
-    "spot_id": 414480,
-    "issue_key": "WEB-162481",
-    "website_url": "https://taleadc.com/"
-  },
-  {
-    "spot_id": 385440,
-    "issue_key": "WEB-162538",
-    "website_url": "https://savoy1902.com"
-  },
-  {
-    "spot_id": 391809,
-    "issue_key": "WEB-161236",
-    "website_url": "https://littlebsbbq.com"
-  },
-  {
-    "spot_id": 190889,
-    "issue_key": "WEB-155734",
-    "website_url": "https://margaritasmexcantina.com"
-  },
-  {
-    "spot_id": 205715,
-    "issue_key": "WEB-137659",
-    "website_url": "https://turfcateringkitchen.com/"
-  },
-  {
-    "spot_id": 256773,
-    "issue_key": "WEB-138264",
-    "website_url": "https://hellothaibeavercreek.com"
-  },
-  {
-    "spot_id": 389697,
-    "issue_key": "WEB-162149",
-    "website_url": "https://www.10empanadas.com/"
-  },
-  {
-    "spot_id": 390159,
-    "issue_key": "WEB-162903",
-    "website_url": "https://nanaseats.com"
-  },
-  {
-    "spot_id": 106695,
-    "issue_key": "WEB-162814",
-    "website_url": "https://sangamamseattle.com/"
-  },
-  {
-    "spot_id": 188022,
-    "issue_key": "WEB-162517",
-    "website_url": "https://micavaandcocina.com"
+    "spot_id": 348150,
+    "issue_key": "WEB-161732",
+    "website_url": "https://queenscomfortrva.com"
   }
 ]

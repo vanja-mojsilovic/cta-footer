@@ -78,8 +78,15 @@ public class AbstractComponent {
 	@FindBy(xpath ="//button[@class='close']")
 	List <WebElement> closeNewsLetterLocator;
 	
+	@FindBy(xpath ="//div[@class='modal-header']/button[@class='close']/span[@aria-hidden='true' and text()='×']")
+	List <WebElement> closePopupButtonLocator;
+	
 	@FindBy(xpath ="//button[@class='close-button']")
 	List <WebElement> closePopupLocator;
+	
+	@FindBy(xpath = "//pre")
+	protected
+	WebElement apiPreLocator;
 	
 	//Methods
 	public int goToWithResponseCode(String url) throws IOException { 
@@ -144,6 +151,18 @@ public class AbstractComponent {
 				//System.out.println("skip closeNewsLetterLocator");
 			}
 		}	
+	}
+	
+	public String clearUrlFromHttp(WebDriver driver,String url) {
+		String result = url;
+		if(result.startsWith("https")) {
+			result = result.substring(8);
+		}
+		if(result.startsWith("http")) {
+			result = result.substring(7);
+		}
+		
+		return result;
 	}
 	
 	public void closemodularPromotionPopUp(WebDriver driver){

@@ -1,0 +1,3 @@
+1. WEB-168594, 196185, https://publicoatbullstreet.com/, ORDER FOOTER LINKS!, Previous Hash: 630123f3588c9db6f857427ae44d3ef4afedeb5fe29fd322c60da6cf7fa49c65, Hash: a86c16d71ebda5694f887ee4fc2ab9baaf4df7ee857c4ab06a3d36cd6da983ac
+2. WEB-168275, 231612, https://notyourmamas.net/, NO WEB ELEMENTS ON WEBSITE!, Previous Hash: a86c16d71ebda5694f887ee4fc2ab9baaf4df7ee857c4ab06a3d36cd6da983ac, Hash: b2b1323a358e101bb5739afe913bbd4a6f33869224b04afe470a76c0e4bc9e6e
+3. WEB-168242, 268521, https://www.sabaiaz.com/, ORDER FOOTER LINKS!, Previous Hash: b2b1323a358e101bb5739afe913bbd4a6f33869224b04afe470a76c0e4bc9e6e, Hash: 328990ca8d8ac3a4a3465b2a04fc64a443daa6c1de2184537c33404553c52560

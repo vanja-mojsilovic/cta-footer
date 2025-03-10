@@ -435,7 +435,8 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		return result;
 	}
 	
-	public void getActiveStatusTmtFeatures(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,VariablesAndUrlsPage variablesAndUrlsPage) throws InterruptedException, IOException{
+	public void getActiveStatusTmtFeatures(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,VariablesAndUrlsPage variablesAndUrlsPage,
+			String spotIdFromPopupOrJson) throws InterruptedException, IOException{
 		int numberOfPrivateParties=1;
 		int numberOfReservations=1;
 		int numberOfCatering=1;
@@ -444,53 +445,84 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		for(FeaturePage feature:featurePageListOnWebsite) {
 			if(feature.tmtFeature) {
 				if(feature.shCtaName.equals("private parties")) {
+					
 					if(numberOfPrivateParties>1) {
 						//continue;
 					}
-					goTo(variablesAndUrlsPage.privatePartiesSettingsURL);
-        			Thread.sleep(3000);
-        			feature.setIsActiveInFeature(driver);
+					//goTo(variablesAndUrlsPage.privatePartiesSettingsURL);
+					goToWithResponseCode("https://www.spothopperapp.com/api/spots/"+spotIdFromPopupOrJson+"/private_parties_settings");
+        			Thread.sleep(1000);
+        			WebElement apiPElement = waitForVisibilityOfElement(driver, apiPreLocator, 3);
+        			String apiCode = apiPElement.getText();
+        			boolean active = false;
+        			if(apiCode.contains("\"tmt_private_parties_active\":true")) {
+        				active = true;
+        			}
+        			feature.setIsActiveInFeature(driver,active);
         			numberOfPrivateParties++;
         		}
         		if(feature.shCtaName.equals("catering")) {
         			if(numberOfCatering>1) {
 						//continue;
 					}
-        			feature.goTo(variablesAndUrlsPage.cateringSettingsURL);
-        			Thread.sleep(3000);
-        			feature.setIsActiveInFeature(driver);
+        			//feature.goTo(variablesAndUrlsPage.cateringSettingsURL);
+        			goToWithResponseCode("https://www.spothopperapp.com/api/spots/"+spotIdFromPopupOrJson+"/catering_settings");
+        			Thread.sleep(1000);
+        			WebElement apiPElement = waitForVisibilityOfElement(driver, apiPreLocator, 3);
+        			String apiCode = apiPElement.getText();
+        			boolean active = false;
+        			if(apiCode.contains("\"tmt_catering_active\":true")) {
+        				active = true;
+        			}
+        			feature.setIsActiveInFeature(driver,active);
         			numberOfCatering++;
         		}
         		if(feature.shCtaName.equals("reservations")) {
         			if(numberOfReservations>1) {
 						//continue;
 					}
-        			feature.goTo(variablesAndUrlsPage.reservationsSettingsURL);
-        			Thread.sleep(3000);
-        			feature.setIsActiveInFeature(driver);
+        			//feature.goTo(variablesAndUrlsPage.reservationsSettingsURL);
+        			goToWithResponseCode("https://www.spothopperapp.com/api/spots/"+spotIdFromPopupOrJson+"/reservation_settings");
+        			Thread.sleep(1000);
+        			WebElement apiPElement = waitForVisibilityOfElement(driver, apiPreLocator, 3);
+        			String apiCode = apiPElement.getText();
+        			boolean active = false;
+        			if(apiCode.contains("\"tmt_reservations_active\":true")) {
+        				active = true;
+        			}
+        			feature.setIsActiveInFeature(driver,active);
         			numberOfReservations++;
         		}
         		if(feature.shCtaName.equals("job listing")) {
         			if(numberOfJobs>1) {
 						//continue;
 					}
-        			feature.goTo(variablesAndUrlsPage.jobApplicationsSettingsURL);
-        			Thread.sleep(3000);
-        			feature.setIsActiveInFeature(driver);
+        			//feature.goTo(variablesAndUrlsPage.jobApplicationsSettingsURL);
+        			goToWithResponseCode("https://www.spothopperapp.com/api/spots/"+spotIdFromPopupOrJson+"/job_listing_settings");
+        			Thread.sleep(1000);
+        			WebElement apiPElement = waitForVisibilityOfElement(driver, apiPreLocator, 3);
+        			String apiCode = apiPElement.getText();
+        			boolean active = false;
+        			if(apiCode.contains("\"tmt_job_listing_active\":true")) {
+        				active = true;
+        			}
+        			feature.setIsActiveInFeature(driver,active);
         			numberOfJobs++;
         		}
         		if(feature.shCtaName.equals("order link 1")) {
         			if(numberOfOrders>1) {
 						//continue;
 					}
-        			int responseCode = goToWithResponseCode(variablesAndUrlsPage.ordersSettingsURL);
-        			List<WebElement> elements = activateOnlineOrdersCheckboxLocator;
-        			if(responseCode==-1 || elements.isEmpty()) {
-        				feature.activeInSh = false;
-        			}else {
-        				Thread.sleep(3000);
-            			feature.setIsActiveInFeature(driver); 
+        			//int responseCode = goToWithResponseCode(variablesAndUrlsPage.ordersSettingsURL);
+        			goToWithResponseCode("https://www.spothopperapp.com/api/spots/"+spotIdFromPopupOrJson+"/order_configs");
+        			Thread.sleep(1000);
+        			WebElement apiPElement = waitForVisibilityOfElement(driver, apiPreLocator, 3);
+        			String apiCode = apiPElement.getText();
+        			boolean active = false;
+        			if(apiCode.contains("\"shopping_cart\":true")) {
+        				active = true;
         			}
+            		feature.setIsActiveInFeature(driver,active); 
         			numberOfOrders++;
         		}
 			}
@@ -531,6 +563,7 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		List<String> externalPlatforms =  Arrays.asList("chownow.com", "resy.com","toasttab.com");
 		for(WebElement element:footerElements) {
 			String href = element.getAttribute("href");
+			
 			String target = element.getAttribute("target");
 			JavascriptExecutor js = (JavascriptExecutor) driver;
             String text = (String) js.executeScript("return arguments[0].textContent;", element).toString().trim().toLowerCase();
@@ -538,6 +571,7 @@ public class WebsiteFeaturesPage extends AbstractComponent {
             System.out.println((i)+". "+text+" target: "+target);
 			if(href.contains(domain) && externalPlatforms.stream().noneMatch(href::contains)) {
 				if(!target.equals("_self")) {
+					System.out.println("href: "+href);
 					result = "self";
 				}
 			}

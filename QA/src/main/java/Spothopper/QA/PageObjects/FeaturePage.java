@@ -145,42 +145,21 @@ public class FeaturePage extends AbstractComponent {
 		return isActive;
 	}
 	
-	public void setIsActiveInFeature(WebDriver driver) {
+	public void setIsActiveInFeature(WebDriver driver,boolean active) {
 		if(this.shCtaName.equals("private parties") ) {
-			this.activeInSh=false;
-			boolean isChecked = activatePrivatePartiesSwitchLocator.isSelected();
-			if(isChecked) {
-				this.activeInSh=true;
-			}
+			this.activeInSh = active;
 		}
 		if(this.shCtaName.equals("catering")) {
-			this.activeInSh=false;
-			boolean isChecked = activateCateringSwitchLocator.isSelected();
-			if(isChecked) {
-				this.activeInSh=true;
-			}
+			this.activeInSh = active;
 		}
 		if(this.shCtaName.equals("reservations")) {
-			this.activeInSh=false;
-			boolean isChecked = activateReservationsSwitchLocator.isSelected();
-			if(isChecked){
-				this.activeInSh=true;
-			}
+			this.activeInSh = active;
 		}
 		if(this.shCtaName.equals("job listing")) {
-			this.activeInSh=false;
-			boolean isChecked = activateJobsApplicatonsCheckboxLocator.isSelected();
-			if(isChecked){
-				this.activeInSh=true;
-			}
+			this.activeInSh = active;
 		}
 		if(this.shCtaName.equals("order link 1")) {
-			this.activeInSh = false;
-			WebElement element =  activateOnlineOrdersCheckboxLocator.get(0);
-			boolean isChecked = element.isSelected();
-			if(isChecked){
-				this.activeInSh=true;
-			}
+			this.activeInSh = active;
 		}
 		System.out.println(" * "+this.shCtaName+" active: "+activeInSh);
 	}

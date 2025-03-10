@@ -1,0 +1,4 @@
+1. WEB-167062, 390984, https://www.wahizza.com/, NO WEB ELEMENTS ON WEBSITE!, Previous Hash: 9de21e33891030be0770a5be454543908b7aa5f20b23e8c288834e5b5dadc79b, Hash: 1701adb984174680e15cf3a37adf82aa3f8ca5790658d8d8d865e49c45f5f08c
+2. WEB-166986, 379830, https://bonitomichoacán.com/, WEB PAGE CAN NOT BE OPENED!, Previous Hash: 1701adb984174680e15cf3a37adf82aa3f8ca5790658d8d8d865e49c45f5f08c, Hash: cab92f1c60167d5f4a73827aab63c65f0a19f0dff23157a159b0601daa29caff
+3. WEB-166965, 227009, https://omarcitos.com/, GIFT CARDS TARGET LINK IN FOOTER!, Previous Hash: cab92f1c60167d5f4a73827aab63c65f0a19f0dff23157a159b0601daa29caff, Hash: c1c14126d4ae17b32feddf71d5675560cb78f9f87faa52e0de4e762f4e29d7b3
+4. WEB-166957, 162190, https://pappyspizzanystyle.com/, ORDER FOOTER LINKS!, Previous Hash: c1c14126d4ae17b32feddf71d5675560cb78f9f87faa52e0de4e762f4e29d7b3, Hash: 9d8e00c9ff7c191c5e1e8f3f47adbf8c73a74fdf2e29ebd86e6df3c100ef906e

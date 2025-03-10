@@ -1,0 +1,3 @@
+WEB-167396,428012,http://spot-sample-428012-website-v1.spotapps.co/,428012-website-v1
+WEB-167307,30379,https://spot-sample-30379-website-v1.spotapps.co/,30379-website-v1
+WEB-167303,339893,http://spot-sample-339893-website-v1.spotapps.co/,339893-website-v1

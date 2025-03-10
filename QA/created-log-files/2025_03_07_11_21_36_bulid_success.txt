@@ -1,0 +1,9 @@
+WEB-169566,106644,http://spot-sample-106644-website-v1.spotapps.co/,106644-website-v1
+WEB-169565,254562,https://spot-sample-254562-website-v1.spotapps.co/,254562-website-v1
+WEB-169564,16683,https://spot-sample-16683-website-v1.spotapps.co/,16683-website-v1
+WEB-169095,446919,http://spot-sample-446919-website-v1.spotapps.co/,446919-website-v1
+WEB-169091,136457,http://spot-sample-136457-website-v1.spotapps.co/,136457-website-v1
+WEB-169033,348660,http://spot-sample-348660-website-v1.spotapps.co/,348660-website-v1
+WEB-168663,430287,http://spot-sample-430287-website-v1.spotapps.co/,430287-website-v1
+WEB-168655,421189,http://spot-sample-421189-website-v1.spotapps.co/,421189-website-v1
+WEB-168204,420816,http://spot-sample-420816-website-v1.spotapps.co/,420816-website-v1

@@ -45,6 +45,7 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 						
 		}
 	//variables
+	public String publishInfoUrl = "https://publish-info.spotapps.co/dashboard/credentials/";
 	public String myEmail = "vanja.mojsilovic@spothopperapp.com";
 	public String domainURL = "https://www.spothopperapp.com/admin/spots/";
 	public String tmtDomainURL = "https://tmt-front-staging.spotapps.co/";
@@ -93,6 +94,8 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 	public String businessInfoUrl;// = domainURL + spotID + "/business_info?login_token=" + loginToken;
 	public String websiteAdminPanelURL;
 	public String footerLinksURL;
+	public String githubIssueUrl = "https://github.com/SpotHopperLLC/content/issues/";
+	
 	
 	
 	//page factory locators
@@ -147,8 +150,23 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 	@FindBy(xpath ="//button//span[contains(text(),'Continue')]")
 	WebElement googleAccountContinueLocator;
 	
+	@FindBy(xpath ="//button[contains(@class,'google-login-button')]")
+	WebElement publisInfoLoginLocator;
+	
+	
 
 	//methods
+	
+	
+	
+	public void publishInfoLoginGoogle(WebDriver driver) throws InterruptedException, IOException {
+		goToWithResponseCode(publishInfoUrl);
+		WebElement element = waitForVisibilityOfElement(driver, publisInfoLoginLocator, 15);
+		element.click();
+		Thread.sleep(1000);
+	}
+	
+	
 	public void clickContinueWithGoogleButton(WebDriver driver){
 		clickElement(driver, googleContinueWithGoogleLocator.get(1), "googleContinueWithGoogleLocator", 15);
 		List<WebElement> elements = waitForVisibilityOfElements(driver, googleAccountLocator, 15);
@@ -170,11 +188,11 @@ public class VariablesAndUrlsPage extends AbstractComponent {
         //int option = JOptionPane.showConfirmDialog(null, passwordField, "Enter Google password:", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
         //if (option == JOptionPane.OK_OPTION) {
             //String googlePasswordFromPopupOrJson = new String(passwordField.getPassword());
-        	String googlePasswordFromPopupOrJson = System.getenv("GOOGLE_PASSWORD");
+        	String googlePasswordFromPopupOrJson = System.getenv("GOOGLE_PASSWORD_VANJA");
 	        enterGooglePassword(driver, googlePasswordFromPopupOrJson);
 	        clickGooglePasswordNextButton(driver);
 	        JPasswordField passwordField = new JPasswordField();
-			String googleSecretKey = System.getenv("GOOGLE_SECRET_KEY");
+			String googleSecretKey = System.getenv("GOOGLE_SECRET_KEY_VANJA");
 		    Totp totp = new Totp(googleSecretKey);
 		    String verificationCodeFromPopupOrJson = totp.now();
 		    
@@ -211,9 +229,15 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 		businessInfoUrl = domainURL + spotID + "/business_info";
 		websiteAdminPanelURL = domainURL + spotID + "/website";
 		footerLinksURL = domainURL + spotID + "/website_footer_links";
+		githubIssueUrl = "https://github.com/SpotHopperLLC/content/issues/";
 	}
 	
-	
+	public void spothopperAppSignIn(WebDriver driver) throws InterruptedException, IOException {
+		goToWithResponseCode("https://www.spothopperapp.com/admin/");
+		Thread.sleep(1000);
+    	clickContinueWithGoogleButton(driver);
+ 	    Thread.sleep(2000);
+	}
 	
 	public void setTwitterUserName(WebDriver driver,
 		String insertedTwitterUserNameFile) {

@@ -40,6 +40,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.rmi.AccessException;
 import java.text.ParseException;
 import java.util.HashMap;
@@ -63,16 +64,9 @@ public class CTALinksTest extends BaseTest {
 	
 	public int dataProviderCounter;
 	public int currentCounter = 0;
-	public String menuName = "Dinner";
-	public String menuItemName_1 = "Chicken Soup";
-	public String menuItemPrice_1 = "35.00";
-	public String menuItemName_2 = "Beef Soup";
-	public String menuItemPrice_2 = "38.00";
+	
 	public String menuNumber = "0";
-	public String creditCardNumber = "4242424242424242";
-	public String expiryDate = "04/24";
-	public String cvcNumber = "242";
-	public String postalCode = "42424";
+	
 	public String orderNumber = "0";
 	public List<String> parent_child_add_menus = new ArrayList<>();
 
@@ -112,12 +106,14 @@ public class CTALinksTest extends BaseTest {
     @Test()
     //public void getWebsiteFeatures(HashMap<String, String> input) throws IOException, InterruptedException {
     public void getWebsiteFeatures() throws IOException, InterruptedException {
-    	
+     try {	
 		System.out.println("*******Cta links started!********");
 				
 		//Initial settings
 		VariablesAndUrlsPage variablesAndUrlsPage = new VariablesAndUrlsPage(driver);
-    	String emailFromPopupOrJson = variablesAndUrlsPage.email;
+		JiraCommentsPage jiraCommentsPage = new JiraCommentsPage(driver);
+    	String emailFromPopupOrJson = variablesAndUrlsPage.myEmail;
+    	//String emailFromPopupOrJson = variablesAndUrlsPage.email;
     	Blockchain blockchain = new Blockchain();
     	FeaturePage featurePage = new FeaturePage(driver);
     	List<FeaturePage> featurePageList = new ArrayList<>();
@@ -139,27 +135,68 @@ public class CTALinksTest extends BaseTest {
         variablesAndUrlsPage.googleVerification(driver, emailFromPopupOrJson);
         Thread.sleep(2000);
         currentTimeString = getStringLocalDateTime();
-        int firstGoogleAccess=0;
+        variablesAndUrlsPage.spothopperAppSignIn(driver);
         int firtsEntering=1;
         int errorOrderNumber=0;
-        for (int j = 0; j<websites.size(); j++) {
+        jiraCommentsPage.jiraSignIn(driver);
+       
+        
+        String changeDate = "2025-03-07";
+        String jql = "type = Publish AND summary ~ \"Go Live\" AND status = Done  AND statusCategoryChangedDate >= \""+changeDate+" 00:00\"AND statusCategoryChangedDate <= \""+changeDate+" 23:59\"";
+        
+        // api
+        //String encodedJql = URLEncoder.encode(jql, "UTF-8");
+        //String apiQueryUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=" + encodedJql;
+        //jiraCommentsPage.goToWithResponseCode(apiQueryUrl);
+        
+        String allKeyIssues = jiraCommentsPage.getKeyIssuesByApi(driver,jql,"");
+        Thread.sleep(1000);
+        //String tasksInJson = jiraCommentsPage.getTasksInJson(driver);
+        //System.out.println("tasksInJson: "+tasksInJson);
+        allKeyIssues = "issue in ("+allKeyIssues+")";
+        
+        
+        // comment out
+        jql = "issue in(WEB-160069)";
+        
+        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/");
+        Thread.sleep(1000);
+        //jiraCommentsPage.enterJql(driver, allKeyIssues);
+        //Thread.sleep(2000);
+        //int numberOfTasks = websites.size();
+        //int numberOfTasks = jiraCommentsPage.getNumberOfTasks(driver);
+        //System.out.println("numberOfTasks: "+numberOfTasks);
+        // if number of tasks equals to zero report an error
+        List<String> spotIdCollection = new ArrayList<>();
+        List<String> issueKeyCollection = new ArrayList<>();
+        List<String> websiteUrlCollection = new ArrayList<>();
+        int numberOfTasks = jiraCommentsPage.loadCollectionsCtaFromApi(driver,jql, spotIdCollection, issueKeyCollection, websiteUrlCollection);
+        
+        // domain      
+        variablesAndUrlsPage.publishInfoLoginGoogle(driver);
+        
+        for (int j = 0; j<numberOfTasks; j++) {
+        	
         	List<FeaturePage> onlineOrderDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> foodMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> drinkMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> privatePartiesDropDownFaetures = new ArrayList<FeaturePage>();
         	WebsiteFeaturesPage websiteFeaturesPageDesktop = new WebsiteFeaturesPage(driver);
-        	spotIdFromPopupOrJson = websites.get(j).get("spot_id");
+        	//spotIdFromPopupOrJson = websites.get(j).get("spot_id");
+        	spotIdFromPopupOrJson = spotIdCollection.get(j);
         	variablesAndUrlsPage.setUrls(driver,spotIdFromPopupOrJson); 
-        	websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websites.get(j).get("website_url"));
-        	System.out.println(websiteURL+", website number "+(j)+".");
-        	issueKey = websites.get(j).get("issue_key");
+        	//websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websites.get(j).get("website_url"));
+        	websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websiteUrlCollection.get(j));
+        	websiteURL = ctaLinksPage.getDomainFromPublisInfo(driver,spotIdFromPopupOrJson,variablesAndUrlsPage.publishInfoUrl,websiteURL);
+        	websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websiteURL);
+        	//issueKey = websites.get(j).get("issue_key");
+        	issueKey = issueKeyCollection.get(j);
         	String errorMessage = issueKey+", "+spotIdFromPopupOrJson+", "+websiteURL;
+        	System.out.println(j+". issue key: "+issueKey+", spot id: "+spotIdFromPopupOrJson+", websiteURL: "+websiteURL);
+        	
         	//Website desktop
- 	        
- 	        Thread.sleep(1000);
  	        int responseCode = websiteFeaturesPageDesktop.goToWithResponseCode(websiteURL);
  	        Thread.sleep(2000);
- 	        
  	        String currentUrl = driver.getCurrentUrl();
  	        if(!websiteURL.equals(currentUrl)) {
  	        	websiteURL = currentUrl;
@@ -231,6 +268,11 @@ public class CTALinksTest extends BaseTest {
 	    		continue; 
 		    }
 	        
+	 	   	
+	 	   	
+	 	   	
+	 	   	
+	 	   	
 	        // Website smart footer
 		    setIphoneView(driver);
         	WebsiteFeaturesPage websiteFeaturesPageIphone = new WebsiteFeaturesPage(driver);   
@@ -250,11 +292,11 @@ public class CTALinksTest extends BaseTest {
  	    	System.out.println(listOfAllFeaturesInSmartFooterAfter);
  	    	long numberOfOrderLinks = listOfAllFeaturesInSmartFooterAfter.stream().filter("order"::equals).count();
  	    	boolean moreThanOneOrderLink = numberOfOrderLinks>1;
- 	    	boolean equalListsBeforeAndAfter=listOfAllFeaturesInSmartFooterBefore.equals(listOfAllFeaturesInSmartFooterAfter);
+ 	    	boolean equalListsBeforeAndAfter = listOfAllFeaturesInSmartFooterBefore.equals(listOfAllFeaturesInSmartFooterAfter);
  	    	boolean conditionDrpoUp = websiteFeaturesPageIphone.hasDropUp(driver);
- 	    	if(moreThanOneOrderLink && (onlineOrderDropDownFaetures.size()<numberOfOrderLinks)) {
+ 	    	if(moreThanOneOrderLink && (onlineOrderDropDownFaetures.size() < numberOfOrderLinks)) {
  	    		errorOrderNumber++;
- 	    		errorMessage = errorMessage+", ORDER FOOTER LINKS!";
+ 	    		errorMessage = errorMessage+", INCOMPLETE NUMBER OF ORDER FOOTER LINKS!";
  	    		errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
  	    	}
@@ -274,28 +316,11 @@ public class CTALinksTest extends BaseTest {
  	 	 	    	continue;
  	    		}
  	    	}
- 	    	String targetError = websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
- 	    	if(targetError.equals("self")) {
- 	    		errorOrderNumber++;
- 	 	    	errorMessage = errorMessage+", CHANGE TARGET TO SELF!";
- 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
- 	 	    	continue;
- 	    	}
- 	    	if(targetError.equals("spotapps")) {
- 	    		errorOrderNumber++;
- 	 	    	errorMessage = errorMessage+", SPOTAPPS TARGET LINK IN FOOTER!";
- 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
- 	 	    	continue;
- 	    	}
- 	    	if(targetError.equals("gift-cards")) {
- 	    		errorOrderNumber++;
- 	 	    	errorMessage = errorMessage+", GIFT CARDS TARGET LINK IN FOOTER!";
- 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
- 	 	    	continue;
- 	    	}
+ 	
     		setDesktopView(driver);
     		
 	    	// CTA links
+    		System.out.println("TMT features activation status:");
     		try{
     			ctaLinksPage.goTo(variablesAndUrlsPage.privatePartiesSettingsURL);
     		}catch (TimeoutException e) {
@@ -304,19 +329,8 @@ public class CTALinksTest extends BaseTest {
  	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	 	    	continue;
 			}
-    		// First Google Access
-	        if(firstGoogleAccess==0) {
-	        	Thread.sleep(4000);
-	        	variablesAndUrlsPage.clickContinueWithGoogleButton(driver);
-		 	    Thread.sleep(2000);
-		 	    firstGoogleAccess++;
-	        } 
-	        System.out.println("TMT features activation status:");
-	        websiteFeaturesPageDesktop.getActiveStatusTmtFeatures(driver,featurePageListOnWebsite,variablesAndUrlsPage);
+	        websiteFeaturesPageDesktop.getActiveStatusTmtFeatures(driver,featurePageListOnWebsite,variablesAndUrlsPage,spotIdFromPopupOrJson);
 		    ctaLinksPage.goTo(variablesAndUrlsPage.ctaLinksUrl);
-		    
-		    
-		    
 	    	List<FeaturePage> featurePageListFDSE = websiteFeaturesPageDesktop.getFDSEFeatures(driver, featurePageListOnWebsite);
 	        ctaLinksPage.enterFDSECtaLinks(driver, featurePageListFDSE,spotIdFromPopupOrJson,currentTimeString,websiteURL,websiteFeaturesPageDesktop);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
@@ -341,6 +355,7 @@ public class CTALinksTest extends BaseTest {
 		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
  	    		continue;
 		    }
+	        
 	        // website footer links in SH
 		    boolean orderSideBySide = false;
 		    if(!equalListsBeforeAndAfter && numberOfOrderLinks>1) {
@@ -348,6 +363,8 @@ public class CTALinksTest extends BaseTest {
 		    	Thread.sleep(1000);
 		    	ctaLinksPage.renameOrderLinks(driver,onlineOrderDropDownFaetures);
 		    	orderSideBySide = ctaLinksPage.placeOredrsSideBySide(driver,numberOfOrderLinks);
+		    	errorMessage = errorMessage + " ORDER FOOTER LINKS!";
+		    	readWriteFilePage.createOrderDropDownFile(driver, currentTimeString, errorMessage);
 		    }
 		    if(orderSideBySide) {
 		    	errorOrderNumber++;
@@ -364,7 +381,7 @@ public class CTALinksTest extends BaseTest {
 		    	continue;
 		    }
 		    
-		 // Activate Smart footer in SH
+		    // Activate Smart footer in SH
 		    ctaLinksPage.goTo(variablesAndUrlsPage.websiteAdminPanelURL);
 		    ctaLinksPage.activeWcache(driver);
 		    boolean stillNotActiveSmartFooter = ctaLinksPage.clickIfNotActiveSmartFooter(driver);
@@ -393,17 +410,63 @@ public class CTALinksTest extends BaseTest {
 		    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
 		    	continue;
 		    }
-	    	
-	    	
 	    	ctaLinksPage.saveAdminPanel(driver);
+	    	Thread.sleep(1000);
 	    	
-	    	// error message
-        	System.out.println("<><><><><><> "+errorMessage+", SUCCESS! <><><><><><>");
+	    	// Website smart footer
+	    	websiteFeaturesPageDesktop.goToWithResponseCode(websiteURL);
+	    	websiteFeaturesPageIphone.hardRefresh(websiteURL);
+ 	    	Thread.sleep(3000);
+	    	setIphoneView(driver);
+	    	String targetError = websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
+ 	    	if(targetError.equals("self")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", CHANGE TARGET TO SELF!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	 	    	continue;
+ 	    	}
+ 	    	if(targetError.equals("spotapps")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", SPOTAPPS TARGET LINK IN FOOTER!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	 	    	continue;
+ 	    	}
+ 	    	if(targetError.equals("gift-cards")) {
+ 	    		errorOrderNumber++;
+ 	 	    	errorMessage = errorMessage+", GIFT CARDS TARGET LINK IN FOOTER!";
+ 	 	    	errorHandlingPage.addErrorWithBlockchain(driver, issueKey, errorMessage, readWriteFilePage, currentTimeString,blockchain,errorOrderNumber);
+ 	 	    	continue;
+ 	    	}
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
+	    	Thread.sleep(2000);
+	    	jiraCommentsPage.clickAssignToMe(driver);
+	    	Thread.sleep(1000);
+	    	String ctaDoneComment = "CTA - Done\nSmart Footer - Done\nCTA done by Automation";
+	    	jiraCommentsPage.enterComment(driver,ctaDoneComment);
+	    	jiraCommentsPage.saveComment(driver);
+	    	Thread.sleep(1000);
+	    	System.out.println("<><><><><><> "+errorMessage+", SUCCESS! <><><><><><>");
         	readWriteFilePage.createCtaLinksFooterFile(driver, issueKey,currentTimeString,firtsEntering);
+	    	jiraCommentsPage.clickTaskStatus(driver);
+	    	Thread.sleep(1000);
+	    	jiraCommentsPage.clickCloseStatus(driver);
+	    
         	firtsEntering++;
 	       
-         }// end of for loop 
-	     driver.close();
+         }// end of for loop
+     }catch (Exception e) {
+         e.printStackTrace();
+     } finally {
+         if (driver != null) {
+             driver.quit(); // Ensure the driver is closed gracefully
+         }
+     }
+	     //driver.close();
 	     System.out.println("CTA links closing ***********");
      }// @Test
 

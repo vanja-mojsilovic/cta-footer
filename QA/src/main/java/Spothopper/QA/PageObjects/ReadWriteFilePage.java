@@ -43,6 +43,51 @@ public class ReadWriteFilePage extends AbstractComponent {
 	
 	
 	//Methods
+	public void createNonPlaceholderFile(WebDriver driver, String entered_text,String timeStamp,int firtsEntering) throws IOException{
+		String file_name = timeStamp+"_non_placeholder.txt";
+        String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;
+        String text_to_append = entered_text;
+        try (FileWriter writer = new FileWriter(filePath, true)) {
+        	writer.write(text_to_append + "\n");    	
+        }
+	}
+	
+	public void createPlaceholderSucessFile(WebDriver driver, String entered_text,String timeStamp,int firtsEntering) throws IOException{
+		String file_name = timeStamp+"_placeholder_success.txt";
+        String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;
+        String text_to_append = entered_text;
+        try (FileWriter writer = new FileWriter(filePath, true)) {
+        	writer.write(text_to_append + "\n");    	
+        }
+	}
+	
+	public void createOrderDropDownFile(WebDriver driver,String timeStamp,String errorMessage) throws IOException{
+		String file_name = timeStamp+"_order_drop_down.txt";
+        String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;
+        String text_to_append = errorMessage;
+        try (FileWriter writer = new FileWriter(filePath, true)) {
+            writer.write(text_to_append + "\n");      	
+        }
+	}
+	
+	public void createBuildsErrorFile(WebDriver driver,String timeStamp,String errorMessage) throws IOException{
+		String file_name = timeStamp+"_cta_links_smart_footer_errors.txt";
+        String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;
+        String text_to_append = errorMessage;
+        try (FileWriter writer = new FileWriter(filePath, true)) {
+            writer.write(text_to_append + "\n");      	
+        }
+	}
+	
+	public void createBuildSucessFile(WebDriver driver, String entered_text,String timeStamp,int firtsEntering) throws IOException{
+		String file_name = timeStamp+"_bulid_success.txt";
+        String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;
+        String text_to_append = entered_text;
+        try (FileWriter writer = new FileWriter(filePath, true)) {
+        	writer.write(text_to_append + "\n");    	
+        }
+	}
+	
 	public void createCtaLinksFooterErrorsFile(WebDriver driver,String timeStamp,String errorMessage) throws IOException{
 		String file_name = timeStamp+"_cta_links_smart_footer_errors.txt";
         String filePath = System.getProperty("user.dir") + "/created-log-files/" + file_name;

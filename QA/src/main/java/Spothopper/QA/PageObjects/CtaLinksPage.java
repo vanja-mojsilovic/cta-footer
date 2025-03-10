@@ -108,9 +108,49 @@ public class CtaLinksPage extends AbstractComponent {
 	
 	@FindBy(xpath = "//span[contains(text(),'order2')]/../span[contains(@ng-click,'moveLink') and contains(@ng-click,'up')]")
 	WebElement order2ParentElementLocator;
+	
+	@FindBy(xpath ="//input[contains(@id,'search_param')]")
+	WebElement spotIdInputLocator;
+	
+	@FindBy(xpath ="//button[contains(@class,'button-style') and text()='Search']")
+	WebElement submitSpotIdButtonLocator;
+	
+	@FindBy(xpath ="//button[contains(@onclick,'window.location.href') and text()='View credentials']")
+	WebElement viewCredentialsButtonLocator;
+	
+	@FindBy(xpath ="//table[contains(@class,'clients-table')]//td")
+	List<WebElement> domainTdLocator;
+	
+	@FindBy(xpath ="//div[contains(@class,'message-container')]/p")
+	List<WebElement> notFoundMessageLocator;
+	
+	@FindBy(xpath = "//p[contains(text(),'No credentials available for this client.')]")
+	List<WebElement> noCredentialsMessageLocator;
 
 	
 	// Methods
+	public String getDomainFromPublisInfo(WebDriver driver,String spotIdFromPopupOrJson,String publishInfo,String websiteUrl) throws IOException, InterruptedException{
+		String result = websiteUrl;
+		goToWithResponseCode(publishInfo + spotIdFromPopupOrJson+"/");
+		Thread.sleep(1000);
+		//WebElement inputElement = waitForVisibilityOfElement(driver, spotIdInputLocator, 15);
+		//inputElement.clear();
+		//inputElement.sendKeys(spotIdFromPopupOrJson);
+		//Thread.sleep(1000);
+		//WebElement submitElement = waitForVisibilityOfElement(driver, submitSpotIdButtonLocator, 15);
+		//submitElement.click();
+		//Thread.sleep(1000);
+		List<WebElement> notFoundElement = waitForVisibilityOfElements(driver, noCredentialsMessageLocator, 3);
+		if(notFoundElement.isEmpty()){
+			//WebElement viewElement = waitForVisibilityOfElement(driver, viewCredentialsButtonLocator, 15);
+			//viewElement.click();
+			//Thread.sleep(1000);
+			List<WebElement> domainElements = waitForVisibilityOfElements(driver, domainTdLocator,15);
+			result = domainElements.get(1).getText();
+		}
+		return result;
+	}
+	
 	public void removeCtaLinksFeaturesNotOnHomePage(WebDriver driver,List<FeaturePage> featuresNotOnNavBar) {
 		List <WebElement> displayElements = shCtaLinkNameLocator;
 		for(WebElement element:displayElements) {	
@@ -140,6 +180,7 @@ public class CtaLinksPage extends AbstractComponent {
 	
 	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain,String spotIdFromPopupOrJson) {		System.out.println("entering Tmt Services in CTA links");
 		List <WebElement> displayElements = shCtaLinkNameLocator;
+		int counter = 0;
 		// enter only first private parties drop down link
 		int numberOfParties = 1;
 		int numberOfReservations = 1;
@@ -171,7 +212,9 @@ public class CtaLinksPage extends AbstractComponent {
 				}
 				numberOfJobs++;
 			}
-			for(WebElement element:displayElements) {	
+			for(WebElement element:displayElements) {
+				//System.out.println("entering Tmt Services in CTA links " + counter);
+				counter++;
 				domain = putDashOnEndOfUrl(driver,domain);
 				String domainWithoutHttp = clearUrlFromHttp(driver,domain);
 				if(feature.tmtFeature && (Stream.of(domainWithoutHttp, "tmt.spotapps.co").anyMatch(feature.href::contains))) {
@@ -268,29 +311,28 @@ public class CtaLinksPage extends AbstractComponent {
 	}
 	
 	public boolean placeOredrsSideBySide(WebDriver driver,long numberOfOrderLinks) throws InterruptedException {
-		boolean result=false;
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		boolean result = false;
 		int numInt = (int) numberOfOrderLinks;
 		System.out.println(">>>>>>>> Number of order elements in footer: "+numInt);
 		if(numInt>1) {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
 			for(int i=2;i<=numInt;i++) {
 				String locator = "//span[contains(text(),'order"+i+"')]/../span[contains(@ng-click,'moveLink') and contains(@ng-click,'up')]";
 				System.out.println(">>>>>>>>  i in loop: "+i);
 				for(int j=0;j<7;j++) {
-					Thread.sleep(3000);
-					List<WebElement> moveUpElement = driver.findElements(By.xpath(locator));
+					Thread.sleep(1000);
+					List<WebElement> moveUpElementLocator = driver.findElements(By.xpath(locator));
+					List<WebElement> moveUpElement = waitForVisibilityOfElements(driver, moveUpElementLocator, 3);
 					if(moveUpElement.isEmpty()) {
 						System.out.println("moveUpElement not exist");
 						result = true;
 					}else {
 						System.out.println(">>>>>>>> j in loop: "+j);
-						//if(j>5) {
-						//	js.executeScript("window.scrollTo(0, 0);");
-						//}else {
-						//	js.executeScript("window.scrollBy(0, -113);");
-						//}
 						Thread.sleep(2000);
-						clickJavascriptExecutor(driver,moveUpElement.get(0));
+						WebElement element = moveUpElement.get(0);
+						js.executeScript("arguments[0].scrollIntoView(true);", element);
+						clickJavascriptExecutor(driver,element);
+						Thread.sleep(1000);
 					}
 				}
 			}
@@ -352,17 +394,7 @@ public class CtaLinksPage extends AbstractComponent {
 		return result;
 	}
 	
-	public String clearUrlFromHttp(WebDriver driver,String url) {
-		String result = url;
-		if(result.startsWith("https")) {
-			result = result.substring(8);
-		}
-		if(result.startsWith("http")) {
-			result = result.substring(7);
-		}
-		
-		return result;
-	}
+	
 	
 	public String compareShAndWebsiteTmtLinks(WebDriver driver,List<FeaturePage> featurePageList,String websiteUrl,String spotIdFromPopupOrJson) throws InterruptedException{
 		String result = "";

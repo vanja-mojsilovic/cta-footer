@@ -103,10 +103,11 @@ public class JiraReadCommentsTest extends BaseTest {
 		System.out.println("*******Jira comments test started!********");
 				
 		//Initial settings
-		//BuildPage buildPage = new BuildPage(driver);
+		BuildPage buildPage = new BuildPage(driver);
 		JiraCommentsPage jiraCommentsPage = new JiraCommentsPage(driver);
 		VariablesAndUrlsPage variablesAndUrlsPage = new VariablesAndUrlsPage(driver);
     	String emailFromPopupOrJson = variablesAndUrlsPage.myEmail;
+    	//String emailFromPopupOrJson = variablesAndUrlsPage.email;
     	Blockchain blockchain = new Blockchain();
     	FeaturePage featurePage = new FeaturePage(driver);
     	List<FeaturePage> featurePageList = new ArrayList<>();
@@ -127,30 +128,69 @@ public class JiraReadCommentsTest extends BaseTest {
         variablesAndUrlsPage.googleVerification(driver, emailFromPopupOrJson);
         Thread.sleep(2000);
         currentTimeString = getStringLocalDateTime();
-        int firstGoogleAccess=0;
+        
         int firtsEntering=1;
         int errorOrderNumber=0;
         List<String> testSiteUrls = new ArrayList<String>();
-        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/");
-    	Thread.sleep(3000);
-    	jiraCommentsPage.clickSignInGoogle(driver);
-    	jiraCommentsPage.clickGoogleAccunt(driver);
-    	Thread.sleep(13000);
-        for (int j = 0; j<websites.size(); j++) {
-        	spotId = websites.get(j).get("spot_id");
-        	issueKey = websites.get(j).get("issue_key");
-        	//websiteURL = websites.get(j).get("website_url");
-        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
-        	Thread.sleep(3000);
+        variablesAndUrlsPage.spothopperAppSignIn(driver);
+        jiraCommentsPage.jiraSignIn(driver);
+        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/?jql=ORDER%20BY%20created%20DESC");
+        Thread.sleep(1000);
+        String jql = " issuetype in (Epic, LandingAG, Redesign) "
+        		+ "AND status = QA AND assignee not in (6201161deaf9e20070737924, 624ab599fd5e45007046851a, 63bbd7b824db796721235e13, "
+        		+ "63106e0e55b0a9e29f1ae60d, 6405a88c2847866310ffdcb1, 642ac9ce551f476a04685954, "
+        		+ "638478162acfad92d7b2a41c, 712020:2ec53619-4525-4e3f-bbea-f57f209074ef, "
+        		+ "712020:94bcabc8-7a59-4228-b064-20fff37454d0, 712020:6cffa8dc-7b35-4c76-a7af-1b9816fd9dbc, "
+        		+ "712020:f77ed01f-96d6-492b-a3a8-8bc5af83ea77, 6201161cf5d29a0068fa75b3, 712020:cd832742-7b26-410d-8e24-63fb09a948e4, "
+        		+ "642ac9ce9f314a0a30144195, 633aac93748d1bfcb85b0f7a, 633ff94e8b75455be459503a, 6368fdd911c69c741844dccb, "
+        		+ "712020:43b4ceca-2c92-4efa-b804-87c11ad183dc, 712020:cd92f95f-f13e-4334-a6e6-99e1385bbae7, 712020:024ca126-b2f8-4878-a896-c83c4aeeeb39, "
+        		+ "712020:ff3bf219-07e4-48f2-bce7-90c84915e2fc, 712020:d5d4d64f-73ab-4947-9664-3face76684af, 712020:8ee9b3a3-39c6-4c00-bc98-ba7a481838a1, "
+        		+ "712020:28f2889d-6895-472a-a1eb-cf5a61c975eb, 712020:6a18abe4-4aaa-4125-9a51-768090e8796e, 712020:f8d0a823-a2b3-468e-bb8d-f3008a564be7) "
+        		+ "AND status = QA AND status CHANGED TO QA ON \"2025-02-11\"";
+        jiraCommentsPage.enterJql(driver, jql);
+        Thread.sleep(2000);
+        //int numberOfTasks = websites.size();
+        int numberOfTasks = jiraCommentsPage.getNumberOfTasks(driver);
+        System.out.println("numberOfTasks: "+numberOfTasks);
+        // if number of tasks equals to zero report an error
+        List<String> spotIdCollection = new ArrayList<>();
+        List<String> issueKeyCollection = new ArrayList<>();       
+        jiraCommentsPage.loadCollectionsBuild(driver, spotIdCollection, issueKeyCollection, numberOfTasks);
+        
+        
+        
+        for (int j = 0; j<numberOfTasks; j++) {
+        	//spotId = websites.get(j).get("spot_id");
+        	spotId = spotIdCollection.get(j);
+        	//issueKey = websites.get(j).get("issue_key");
+        	issueKey = issueKeyCollection.get(j);
         	
+        	
+        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
+        	Thread.sleep(4000);
         	String testSiteUrl = jiraCommentsPage.getTestSiteUrl(driver);
-        	testSiteUrls.add(testSiteUrl);
+        	String branchName = jiraCommentsPage.getBranchName(driver,testSiteUrl);
+        	//testSiteUrls.add(testSiteUrl);
         	System.out.println("issueKey "+issueKey);
         	System.out.println("spotId "+spotId);
         	System.out.println("testSiteUrl "+testSiteUrl);
-	       
+        	System.out.println("branchName "+branchName);
+        	jiraCommentsPage.goToWithResponseCode("https://www.spothopperapp.com/admin/spots/"+spotId+"/website");
+        	Thread.sleep(2000);
+        	buildPage.activateWcashe(driver);
+        	buildPage.activateWcasheTestLocation(driver);
+        	buildPage.enterTestSiteNumber(driver, branchName);
+        	buildPage.saveWebsiteSection(driver);
+        	buildPage.goToWithResponseCode("https://www.spothopperapp.com/admin/spots/"+spotId+"/business_info");
+        	//Thread.sleep(2000);
+        	buildPage.clickInvalidateCash(driver);
+        	Thread.sleep(1000);
+        	buildPage.clickInvalidateCashOkButton(driver);
+        	
+        	String resultString = issueKey+","+spotId+","+testSiteUrl+","+branchName;
+        	readWriteFilePage.createBuildSucessFile(driver,resultString,currentTimeString,firtsEntering);
          }// end of for loop 
-	     //driver.close();
+	     driver.close();
 	     System.out.println("Jira comments test closing ***********");
      }// @Test
 

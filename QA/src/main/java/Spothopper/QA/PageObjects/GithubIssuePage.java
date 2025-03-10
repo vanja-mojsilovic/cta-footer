@@ -3,6 +3,7 @@ package Spothopper.QA.PageObjects;
 import Spothopper.QA.AbstractComponents.AbstractComponent;
 import Spothopper.QA.PageObjects.*;
 import org.bouncycastle.crypto.engines.ISAACEngine;
+import org.jboss.aerogear.security.otp.Totp;
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
@@ -87,30 +88,56 @@ public class GithubIssuePage extends AbstractComponent {
 	@FindBy(xpath ="//input[@id = 'sms_totp' and @name='sms_otp']")
 	WebElement githubIssueAuthenticationCodeLocator;
 	
-	@FindBy(xpath ="//tr[@class='d-block']")
-	List <WebElement> gitCommentsLocator;
+	@FindBy(xpath ="//input[@id = 'app_totp' and @name='app_otp']")
+	WebElement githubIssueAuthenticatiorSixDigitsCodeLocator;
+	
+	@FindBy(xpath ="//button[@type = 'submit']")
+	WebElement githubIssueVerifyButonLocator;
+	
+	@FindBy(xpath ="//div[@data-testid='markdown-body']//a")
+	List <WebElement> gitCommentLocator;
 	
 	
 	// Methods
-	public String getWebsiteLiveUrl(WebDriver driver) {
-		List<WebElement> elements = waitForVisibilityOfElements(driver, gitCommentsLocator, 15);
-		String resultWebsiteUrl="";
+	public boolean checkPlaceHolder(WebDriver driver) {
+		boolean result = false;
+		List <WebElement> elements = waitForVisibilityOfElements(driver, gitCommentLocator, 15);
 		if(!elements.isEmpty()) {
 			for(WebElement element:elements) {
-				String textInTheComment = element.getText();	
-				if (textInTheComment != null){
-				    List<String> resultLinks = extractFeatureLinks(textInTheComment, "The website is published");
-				    if (resultLinks != null && !resultLinks.isEmpty()) {
-				    	resultWebsiteUrl=resultLinks.get(0);	
-				    	System.out.println("resultLink "+resultWebsiteUrl);
-				    }
-				 }else{
-				      System.out.println("No links found.");
-				 }
+				if(element.getAttribute("href").contains("-website-v0")) {
+					
+					result = true;
+				}
 			}
 		}
-		return resultWebsiteUrl;
+		return result;
 	}
+	
+	
+	public void githubVerificationWithAuth(WebDriver driver,String email) throws InterruptedException {
+		WebElement emailElement = waitForVisibilityOfElement(driver, githubIssueUserNameLocator, 3);
+		emailElement.clear();
+		emailElement.sendKeys(email);
+		
+		String githubPassword = System.getenv("GITHUB_PASSWORD_VANJA");
+		WebElement passwordElement = waitForVisibilityOfElement(driver, githubIssuePasswordLocator, 3);
+		passwordElement.clear();
+		passwordElement.sendKeys(githubPassword);
+		WebElement signInElement = waitForVisibilityOfElement(driver, githubIssueSignInLocator, 3);
+		signInElement.click();
+		String githubSecretKey = System.getenv("GITHUB_SECRET_KEY_VANJA");
+	    Totp githubTotp = new Totp(githubSecretKey);
+	    String githubVerificationCode = githubTotp.now();
+		WebElement authenticatorCodeElement = waitForVisibilityOfElement(driver, githubIssueAuthenticatiorSixDigitsCodeLocator, 3);
+		authenticatorCodeElement.clear();
+		//System.out.println(githubVerificationCode);
+		authenticatorCodeElement.sendKeys(githubVerificationCode);
+		//Thread.sleep(7000);
+		//WebElement verifyElement = waitForVisibilityOfElement(driver, githubIssueVerifyButonLocator, 3);
+		//verifyElement.click();
+	}
+	
+	
 
 	public List<String> extractFeatureLinks(String elementText, String featureName) {
 	    String featurePrefix = featureName;
