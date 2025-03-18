@@ -2,6 +2,9 @@ package Spothopper.QA.PageObjects;
 
 import Spothopper.QA.AbstractComponents.AbstractComponent;
 import Spothopper.QA.PageObjects.*;
+import net.bytebuddy.description.ModifierReviewable.OfAbstraction;
+import software.amazon.awssdk.regions.servicemetadata.S3OutpostsServiceMetadata;
+
 import org.bouncycastle.crypto.engines.ISAACEngine;
 import org.jboss.aerogear.security.otp.Totp;
 import org.openqa.selenium.By;
@@ -95,17 +98,37 @@ public class GithubIssuePage extends AbstractComponent {
 	WebElement githubIssueVerifyButonLocator;
 	
 	@FindBy(xpath ="//div[@data-testid='markdown-body']//a")
-	List <WebElement> gitCommentLocator;
+	List <WebElement> gitCommentAElementLocator;
+	
+	@FindBy(xpath ="//div[@data-testid='markdown-body']//p")
+	List <WebElement> gitCommentPElementLocator;
 	
 	
 	// Methods
+	public boolean checkLanding(WebDriver driver) {
+		boolean result = false;
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		//String html = "";
+		//html = (String) jsExecutor.executeScript("return document.documentElement.outerHTML;");
+		//System.out.println(html.substring(0,100)+" . . . ");
+		List <WebElement> elements = waitForVisibilityOfElements(driver, gitCommentPElementLocator, 5);
+		String[] names = {"temporary landing","placeholder","place holder","coming soon","splach","-v0"};
+		boolean containsKeyWords = false;
+		for(WebElement element:elements) {
+			result = Arrays.stream(names).map(String::toLowerCase).anyMatch(element.getText().toLowerCase()::contains);
+			if(result) {
+				return result;
+			}
+		}
+		return result;
+	}
+	
 	public boolean checkPlaceHolder(WebDriver driver) {
 		boolean result = false;
-		List <WebElement> elements = waitForVisibilityOfElements(driver, gitCommentLocator, 15);
+		List <WebElement> elements = waitForVisibilityOfElements(driver, gitCommentAElementLocator, 15);
 		if(!elements.isEmpty()) {
 			for(WebElement element:elements) {
 				if(element.getAttribute("href").contains("-website-v0")) {
-					
 					result = true;
 				}
 			}

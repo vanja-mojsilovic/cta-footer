@@ -1,0 +1,77 @@
+
+0. issue key: WEB-172222, spot id: 361096, websiteURL: https://cabanaloungechicago.com/
+link: https://cabanaloungechicago.com/chicago-o-hare-norwood-park-cabana-lounge-happy-hours-specials
+link: https://cabanaloungechicago.com/chicago-o-hare-norwood-park-cabana-lounge-events
+link: https://cabanaloungechicago.com/chicago-o-hare-norwood-park-cabana-lounge-reservations
+link: https://cabanaloungechicago.com/chicago-o-hare-norwood-park-cabana-lounge-party#
+entered: https://cabanaloungechicago.com/-specials
+entered: https://cabanaloungechicago.com/-events
+
+2. issue key: WEB-172137, spot id: 281400, websiteURL: https://pho-ba.com/
+link: https://pho-ba.com/omaha-phoba-about
+link: https://pho-ba.com/omaha-phoba-food-menu
+link: https://pho-ba.com/omaha-phoba-drink-menu
+link: https://pho-ba.com/#
+link: https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=c9dc834b-e427-43ec-a51c-7a894bff7b8a#
+link: https://www.doordash.com/store/ph%C3%B4ba-omaha-28124357/?utm_campaign=gpa
+link: https://order.online/store/-28124357/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AJKvS9XQeFZfBSSXZ8-5HxvLv7FTNqphe-QULh2534t-J2EFZf4gF5GB9n7RBh0sTg9ESZgRY9dSMaFC3c6QgcaIGvvSf-LEUz_BWEaKr1btPgbjbEE8E4Y%3D
+link: https://www.seamless.com/menu/phoba-17676-welch-plaza-omaha/8299144?utm_source=google&utm_medium=organic&utm_campaign=place-action-link&pickup=true&rwg_token=AJKvS9X8a-pMMheF8n-EOxT3Cdb8TljUdMdD4xud_nRnlQ6pUvUbpDtgDoKQFYSXpQil2MooHf_aeaJPmWowkyKliIPueprk0qjgeLJXwixndfQHckf4NAI%3D
+link: https://pho-ba.com/omaha-phoba-catering#
+entered: https://pho-ba.com/-drink-menu
+entered: https://pho-ba.com/-food-menu
+
+3. issue key: WEB-171792, spot id: 79842, websiteURL: https://www.mapletavern.com/
+link: https://mapletavern.com/maple-grove-maple-tavern-food-menu
+link: https://mapletavern.com/maple-grove-maple-tavern-drink-menu
+link: https://mapletavern.com/maple-grove-maple-tavern-happy-hours-specials
+link: https://mapletavern.com/maple-grove-maple-tavern-events
+link: https://mapletavern.hrpos.heartland.us/menu#
+link: https://mapletavern.com/maple-grove-maple-tavern-reservations#
+link: https://mapletavern.com/maple-grove-maple-tavern-party#
+link: https://mapletavern.com/maple-grove-maple-tavern-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=79842&callback_url=http://mapletavern.com/#
+link: https://mapletavern.com/maple-grove-maple-tavern-volleyball
+link: https://mapletavern.com/maple-grove-maple-tavern-darts
+link: https://mapletavern.com/maple-grove-maple-tavern-beer
+entered: https://mapletavern.com/-specials
+entered: https://mapletavern.com/-events
+entered: https://mapletavern.com/-drink-menu
+entered: https://mapletavern.com/-food-menu
+
+6. issue key: WEB-171773, spot id: 115947, websiteURL: https://ecrmooresville.com/
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-food-menu
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-drink-menu
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-happy-hours-specials
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-events
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-reservations#
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-party#
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=115947&callback_url=http://ecrmooresville.com/#
+link: https://ecrmooresville.com/mooresville-el-cerro-reyes-about
+entered: https://ecrmooresville.com/-specials
+entered: https://ecrmooresville.com/-events
+entered: https://ecrmooresville.com/-drink-menu
+entered: https://ecrmooresville.com/-food-menu
+
+8. issue key: WEB-170916, spot id: 338910, websiteURL: https://chicagoschickenandwafflesnashville.com/
+link: https://chicagoschickenandwafflesnashville.com/#
+link: https://chicagoschickenandwafflesnashville.com/nashville-chicago-s-home-of-chicken-and-waffles-food-menu-885262
+link: https://chicagoschickenandwafflesnashville.com/nashville-chicago-s-home-of-chicken-and-waffles-food-menu-889028
+link: https://chicagoschickenandwafflesnashville.com/nashville-chicago-s-home-of-chicken-and-waffles-food-menu-889233
+link: https://tables.toasttab.com/chicagos-home-of-chicken-waffles-nashville-3947-south-king-drive/findTime#
+link: https://tmt.spotapps.co/job-listings?spot_id=338910&callback_url=http://chicagoschickenandwafflesnashville.com/#
+entered: https://chicagoschickenandwafflesnashville.com/-food-menu
+entered: https://chicagoschickenandwafflesnashville.com/-food-menu
+entered: https://chicagoschickenandwafflesnashville.com/-food-menu
+
+9. issue key: WEB-137004, spot id: 218851, websiteURL: https://sidelinesbarandgrill.net/
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-about
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-food-menu
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-drink-menu
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-party#
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-catering#
+link: https://sidelinesbarandgrill.net/metairie-sidelines-bar-and-grill-happy-hours-specials
+link: https://tmt.spotapps.co/job-listings?spot_id=218851&callback_url=http://sidelinesbarandgrill.net/#
+entered: https://sidelinesbarandgrill.net/-specials
+entered: https://sidelinesbarandgrill.net/-drink-menu
+entered: https://sidelinesbarandgrill.net/-food-menu

@@ -102,8 +102,8 @@ public class BuildTest extends BaseTest {
 			JiraCommentsPage jiraCommentsPage = new JiraCommentsPage(driver);
 			VariablesAndUrlsPage variablesAndUrlsPage = new VariablesAndUrlsPage(driver);
 			GithubIssuePage githubIssuePage = new GithubIssuePage(driver);
+			WebsiteFeaturesPage websiteFeaturesPage = new WebsiteFeaturesPage(driver);
 	    	String emailFromPopupOrJson = variablesAndUrlsPage.myEmail;
-	    	//String emailFromPopupOrJson = variablesAndUrlsPage.email;
 	    	Blockchain blockchain = new Blockchain();
 	    	FeaturePage featurePage = new FeaturePage(driver);
 	    	List<FeaturePage> featurePageList = new ArrayList<>();
@@ -117,13 +117,15 @@ public class BuildTest extends BaseTest {
 		    CtaLinksPage ctaLinksPage = new CtaLinksPage(driver);
 		    ErrorHandlingPage errorHandlingPage = new ErrorHandlingPage(driver);
 		    String spotId; 
-		    //String gitId;
 		    String websiteURL;
 		    String issueKey;
 		
 		    // Google verification
 	        variablesAndUrlsPage.googleVerification(driver, emailFromPopupOrJson);
 	        Thread.sleep(2000);
+	        variablesAndUrlsPage.spothopperAppSignIn(driver);
+	        Thread.sleep(2000);
+	      
 	        jiraCommentsPage.goToWithResponseCode(variablesAndUrlsPage.githubIssueUrl);
 	        Thread.sleep(2000);
 	        githubIssuePage.githubVerificationWithAuth(driver,emailFromPopupOrJson);
@@ -133,82 +135,98 @@ public class BuildTest extends BaseTest {
 	        int firtsEntering=1;
 	        int errorOrderNumber=0;
 	        List<String> testSiteUrls = new ArrayList<String>();
-	        variablesAndUrlsPage.spothopperAppSignIn(driver);
-	        Thread.sleep(2000);
+	        List<String> issueKeyCollection = new ArrayList<>();
+	        List<String> spotIdCollection = new ArrayList<>();
+	        List<String> websiteUrlCollection = new ArrayList<>();
 	        jiraCommentsPage.jiraSignIn(driver);
-	        
-	        
-	        String changeDate = "2025-03-04";
-	        String jqlBuildsFilter = " labels NOT IN (WordPress,LocationLanding,LocationPicker,LandingBuild) AND issuetype in (Epic, LandingAG, Redesign) AND status = QA AND assignee not in (6201161deaf9e20070737924, 624ab599fd5e45007046851a, 63bbd7b824db796721235e13,63106e0e55b0a9e29f1ae60d, 6405a88c2847866310ffdcb1, 642ac9ce551f476a04685954, 638478162acfad92d7b2a41c, 712020:2ec53619-4525-4e3f-bbea-f57f209074ef,712020:94bcabc8-7a59-4228-b064-20fff37454d0, 712020:6cffa8dc-7b35-4c76-a7af-1b9816fd9dbc, 712020:f77ed01f-96d6-492b-a3a8-8bc5af83ea77, 6201161cf5d29a0068fa75b3,712020:cd832742-7b26-410d-8e24-63fb09a948e4, 642ac9ce9f314a0a30144195, 633aac93748d1bfcb85b0f7a, 633ff94e8b75455be459503a, 6368fdd911c69c741844dccb,712020:43b4ceca-2c92-4efa-b804-87c11ad183dc, 712020:cd92f95f-f13e-4334-a6e6-99e1385bbae7, 712020:024ca126-b2f8-4878-a896-c83c4aeeeb39, 712020:ff3bf219-07e4-48f2-bce7-90c84915e2fc,712020:d5d4d64f-73ab-4947-9664-3face76684af, 712020:8ee9b3a3-39c6-4c00-bc98-ba7a481838a1,712020:28f2889d-6895-472a-a1eb-cf5a61c975eb, 712020:6a18abe4-4aaa-4125-9a51-768090e8796e,712020:f8d0a823-a2b3-468e-bb8d-f3008a564be7)";
-	        //String jqlBuildsFilter = "labels NOT IN (WordPress) AND issue in (WEB-168203, WEB-168197, WEB-168196, WEB-168195, WEB-168194, WEB-168193, WEB-168191, WEB-168190, WEB-168189, WEB-168187, WEB-168184, WEB-167817, WEB-167814, WEB-167806, WEB-167803, WEB-167797, WEB-167787, WEB-167299, WEB-166939, WEB-166581, WEB-166543, WEB-166538, WEB-166149, WEB-164938)";
-	        System.out.println("jqlBuildsFilter: "+jqlBuildsFilter);
+	       
+	        String jqlBuildsFilter = " labels NOT IN (WordPress,LocationLanding,LocationPicker,LandingBuild)"
+	        		+ " AND issuetype in (Epic, LandingAG, Redesign) AND status = QA AND assignee not in (membersOF(\"QA\"))";
+	        System.out.println("jqlBuildsFilter: " + jqlBuildsFilter);
 	        
 	        // all tasks	        
-	        String allKeyIssues = "";
-	        allKeyIssues = jiraCommentsPage.getKeyIssuesByApi(driver,jqlBuildsFilter,allKeyIssues);
-	        // jira jql
-	        //jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/?jql=ORDER%20BY%20created%20DESC");
-	        //Thread.sleep(1000);
-	        //jiraCommentsPage.enterJql(driver, jqlBuildsFilter);
-	        //Thread.sleep(2000);
-	        //allKeyIssues = "issue in ("+jiraCommentsPage.getAllKeyIssues(driver)+")";
+	        String allKeyIssues = jiraCommentsPage.getKeyIssuesByApi(driver,jqlBuildsFilter,"");
 	        allKeyIssues = "issue in ("+allKeyIssues+")";
-	        System.out.println("allKeyIssues: " + allKeyIssues);
-	        
+	        System.out.println("allKeyIssues: " + allKeyIssues);	        
 	        // done tasks
-	        String doneTasks = "comment ~ \"Done by automation.\" AND " + jqlBuildsFilter;
-	        System.out.println("doneTasks: " + doneTasks);
-	        //jiraCommentsPage.enterJql(driver, doneTasks);
-	        //Thread.sleep(2000);
-	        String doneIssuesSeparatedWithCommas = "";
-	        doneIssuesSeparatedWithCommas = jiraCommentsPage.getKeyIssuesByApi(driver,doneTasks,doneIssuesSeparatedWithCommas);
-	        //String listOfDoneIsuueKeys = "";
-	        ///if(!doneIssuesSeparatedWithCommas.equals("")) {
-	        //	 listOfDoneIsuueKeys = " AND issue not in (" + jiraCommentsPage.getDoneIssueKeys(driver)+")";
-	        //}
+	        String doneTasks = "comment ~ \"Done by automation.\" AND " + jqlBuildsFilter;	        
+	        String doneIssuesSeparatedWithCommas = jiraCommentsPage.getKeyIssuesByApi(driver,doneTasks,"");
 	        System.out.println("doneIssuesSeparatedWithCommas: " + doneIssuesSeparatedWithCommas);
-	        String resultTasks = allKeyIssues + " AND issue not in (" + doneIssuesSeparatedWithCommas + ")";
-	      
-	        // comment out
-	        //resultTasks = "labels NOT IN (WordPress) AND issue in (WEB-168203, WEB-168197, WEB-168196, WEB-168195, WEB-168194, WEB-168193, WEB-168191, WEB-168190, WEB-168189, WEB-168187, WEB-168184, WEB-167817, WEB-167814, WEB-167806, WEB-167803, WEB-167797, WEB-167787, WEB-167299, WEB-166939, WEB-166581, WEB-166543, WEB-166538, WEB-166149, WEB-164938)";
+	        if(!doneIssuesSeparatedWithCommas.equals("")) {
+	        	doneIssuesSeparatedWithCommas = " AND issue not in (" + doneIssuesSeparatedWithCommas + ")";
+	        }
+	        String resultTasks = allKeyIssues + doneIssuesSeparatedWithCommas;
+	       	String apiUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=issue%20in%20%28WEB-171414%2CWEB-171412%2CWEB-171411%2CWEB-171366%2CWEB-171353%29&maxResults=1000";
 	        
-	        System.out.println("resultTasks: "+resultTasks);
-	        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/?jql=ORDER%20BY%20created%20DESC");
-	        Thread.sleep(1000);
-	        jiraCommentsPage.enterJql(driver, resultTasks);
-	        Thread.sleep(2000);
-	        int numberOfTasks = jiraCommentsPage.getNumberOfTasks(driver);
-	        System.out.println("numberOfTasks: "+numberOfTasks);
+	        // comment out
+	        //resultTasks = "labels NOT IN (WordPress) AND issue in (WEB-168203)";
+	        
+	       	String encodedJql = URLEncoder.encode(resultTasks, "UTF-8");
+	        String apiQueryUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=" + encodedJql+"&maxResults=1000";
+	        //int numberOfTasks = jiraCommentsPage.getIssueKeySpotIdWebsiteUrlFromApi(driver,apiQueryUrl,issueKeyCollection,spotIdCollection,websiteUrlCollection);
+	        int numberOfTasks = jiraCommentsPage.getIssueKeySpotIdFromApi(driver,apiQueryUrl,issueKeyCollection,spotIdCollection);
+	        System.out.println("numberOfTasks: "+numberOfTasks+", resultTasks: "+resultTasks);
 	        if(numberOfTasks==0){
 	        	driver.close();
 	        }	        
-	        List<String> spotIdCollection = new ArrayList<>();
-	        List<String> issueKeyCollection = new ArrayList<>();       
-	        jiraCommentsPage.loadCollectionsBuild(driver, spotIdCollection, issueKeyCollection, numberOfTasks);
+	              
+	        //jiraCommentsPage.loadCollectionsBuild(driver, spotIdCollection, issueKeyCollection, numberOfTasks);
 	        int k = 0;
 	        int nonPlaceholder=0;
 	        String placeholderResultString ="";
+	        
 	        for (int j = 0; j<numberOfTasks; j++) {
 	        	String successLog = "";
-	        	//spotId = websites.get(j).get("spot_id");
+	        	String buildLogComment = "";
 	        	spotId = spotIdCollection.get(j);
-	        	//issueKey = websites.get(j).get("issue_key");
 	        	issueKey = issueKeyCollection.get(j);
 	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
 	        	Thread.sleep(4000);
 	        	String testSiteUrl = jiraCommentsPage.getTestSiteUrl(driver);
 	        	if(testSiteUrl.equals("")) {
-	        		 continue;
+	        		String errorMessage = issueKey+" "+spotId+" test site url not found";
+	        		buildLogComment = "\n"+j+". "+errorMessage;
+	        		readWriteFilePage.createBuildsErrorFile(driver,currentTimeString,errorMessage);
+	        		continue;
 	        	}
+	        	//websiteFeaturesPage.goToWithResponseCode(testSiteUrl);
+	        	//String pageHtml = websiteFeaturesPage.getWebsitePageHtml(driver,testSiteUrl);
 	        	String branchName = jiraCommentsPage.getBranchName(driver,testSiteUrl);
-	        	//testSiteUrls.add(testSiteUrl);
 	        	System.out.println("\n"+j+". issueKey "+issueKey+", spotId "+spotId+", testSiteUrl "+testSiteUrl+", branchName "+branchName);
+	        	
+	        	// github issue
+	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
+	        	Thread.sleep(4000);
+	        	String githubIssueLink = jiraCommentsPage.getGithubIssueLink(driver);
+	        	jiraCommentsPage.goToWithResponseCode(githubIssueLink);
+	        	Thread.sleep(3000);
+	        	boolean hasLanding = githubIssuePage.checkLanding(driver);
+	        	boolean hasPlaceHolder = githubIssuePage.checkPlaceHolder(driver);      	
+	        	if(hasPlaceHolder) {
+	        		k++;
+	        		placeholderResultString = k+". "+ issueKey + ", " + spotId;
+	        		System.out.println(k+". This spot has a placeholder!");
+		        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
+		        	Thread.sleep(4000);
+		        	String buildComment = "Note for QA: \nThis spot has a PLACEHOLDER.";
+		        	jiraCommentsPage.enterComment(driver,buildComment);
+		        	jiraCommentsPage.saveComment(driver);
+		        	readWriteFilePage.createPlaceholderSucessFile(driver,placeholderResultString,currentTimeString,firtsEntering);
+	        	}else {
+	        		nonPlaceholder++;
+	        		placeholderResultString = nonPlaceholder+". "+ issueKey + ", " + spotId;
+	        		readWriteFilePage.createNonPlaceholderFile(driver,placeholderResultString,currentTimeString,firtsEntering);
+	        	}
+	        	
+	        	// spothopper app
 	        	jiraCommentsPage.goToWithResponseCode("https://www.spothopperapp.com/admin/spots/"+spotId+"/website");
 	        	Thread.sleep(2000);
 	        	successLog += buildPage.activateWcashe(driver);
 	        	successLog += buildPage.activateWcasheTestLocation(driver);
 	        	successLog += buildPage.enterTestSiteNumber(driver,branchName);
-	        	successLog += buildPage.clickRealWebsiteOrTemporaryLandingPage(driver, branchName);
+	        	if(!hasLanding) {
+	        		successLog += buildPage.clickRealWebsiteOrTemporaryLandingPage(driver, branchName);
+	        	}
 	        	Thread.sleep(1000);
 	        	successLog += buildPage.clickStartBuildButton(driver);
 	        	Thread.sleep(1000);
@@ -226,30 +244,8 @@ public class BuildTest extends BaseTest {
 	        	//buildPage.closeNewsLetter(driver);
 	        	//successLog += buildPage.getAllHrefLinks(driver,oldDomain);
 	        	//buildPage.aHrefOnButtons(driver);
+	        	buildLogComment += successLog;
 	        	
-	        	// github issue
-	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
-	        	Thread.sleep(4000);
-	        	String githubIssueLink = jiraCommentsPage.getGithubIssueLink(driver);
-	        	jiraCommentsPage.goToWithResponseCode(githubIssueLink);
-	        	Thread.sleep(3000);
-	        	boolean hasPlaceHolder = githubIssuePage.checkPlaceHolder(driver);
-	        	 
-	        	if(hasPlaceHolder) {
-	        		k++;
-	        		placeholderResultString = k+". "+ issueKey + ", " + spotId;
-	        		System.out.println(k+". This spot has a placeholder!");
-		        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
-		        	Thread.sleep(4000);
-		        	String buildComment = "Note for QA: \nThis spot has a PLACEHOLDER.";
-		        	jiraCommentsPage.enterComment(driver,buildComment);
-		        	jiraCommentsPage.saveComment(driver);
-		        	readWriteFilePage.createPlaceholderSucessFile(driver,placeholderResultString,currentTimeString,firtsEntering);
-	        	}else {
-	        		nonPlaceholder++;
-	        		placeholderResultString = nonPlaceholder+". "+ issueKey + ", " + spotId;
-	        		readWriteFilePage.createNonPlaceholderFile(driver,placeholderResultString,currentTimeString,firtsEntering);
-	        	}
 	       
 	        	//save comment in jira
 	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
@@ -260,6 +256,8 @@ public class BuildTest extends BaseTest {
 	        	jiraCommentsPage.saveComment(driver);
 	        	
 	        	String resultString = issueKey+","+spotId+","+testSiteUrl+","+branchName;
+	        	
+	        	readWriteFilePage.createBuildsLogFile(driver,currentTimeString,buildLogComment);
 	        	readWriteFilePage.createBuildSucessFile(driver,resultString,currentTimeString,firtsEntering);
 	         }// end of for loop 
 		     driver.close();

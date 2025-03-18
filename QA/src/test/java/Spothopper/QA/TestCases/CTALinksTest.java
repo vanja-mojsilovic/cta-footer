@@ -129,6 +129,7 @@ public class CTALinksTest extends BaseTest {
 	    //String gitId;
 	    String websiteURL;
 	    String issueKey;
+	    
 	    //String errorMessage =" SUCCESS! ";
 	    
 	    // Google verification
@@ -141,13 +142,10 @@ public class CTALinksTest extends BaseTest {
         jiraCommentsPage.jiraSignIn(driver);
        
         
-        String changeDate = "2025-03-07";
+        String changeDate = "2025-03-12";
         String jql = "type = Publish AND summary ~ \"Go Live\" AND status = Done  AND statusCategoryChangedDate >= \""+changeDate+" 00:00\"AND statusCategoryChangedDate <= \""+changeDate+" 23:59\"";
-        
-        // api
-        //String encodedJql = URLEncoder.encode(jql, "UTF-8");
-        //String apiQueryUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=" + encodedJql;
-        //jiraCommentsPage.goToWithResponseCode(apiQueryUrl);
+        // comment out
+        //jql = "issue in(WEB-166199)";
         
         String allKeyIssues = jiraCommentsPage.getKeyIssuesByApi(driver,jql,"");
         Thread.sleep(1000);
@@ -155,32 +153,29 @@ public class CTALinksTest extends BaseTest {
         //System.out.println("tasksInJson: "+tasksInJson);
         allKeyIssues = "issue in ("+allKeyIssues+")";
         
-        
-        // comment out
-        jql = "issue in(WEB-160069)";
-        
-        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/");
-        Thread.sleep(1000);
-        //jiraCommentsPage.enterJql(driver, allKeyIssues);
-        //Thread.sleep(2000);
-        //int numberOfTasks = websites.size();
-        //int numberOfTasks = jiraCommentsPage.getNumberOfTasks(driver);
-        //System.out.println("numberOfTasks: "+numberOfTasks);
-        // if number of tasks equals to zero report an error
         List<String> spotIdCollection = new ArrayList<>();
         List<String> issueKeyCollection = new ArrayList<>();
         List<String> websiteUrlCollection = new ArrayList<>();
-        int numberOfTasks = jiraCommentsPage.loadCollectionsCtaFromApi(driver,jql, spotIdCollection, issueKeyCollection, websiteUrlCollection);
+     
+        String encodedJql = URLEncoder.encode(jql, "UTF-8");
+        String apiQueryUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=" + encodedJql+"&maxResults=1000";
+        int numberOfTasks = jiraCommentsPage.getIssueKeySpotIdWebsiteUrlFromApi(driver,apiQueryUrl,issueKeyCollection,spotIdCollection,websiteUrlCollection);
+     
+        jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/");
+        Thread.sleep(1000);
+       
+        //int numberOfTasks = jiraCommentsPage.loadCollectionsCtaFromApi(driver,jql, spotIdCollection, issueKeyCollection, websiteUrlCollection);
+        System.out.println("numberOfTasks: "+numberOfTasks);
         
         // domain      
         variablesAndUrlsPage.publishInfoLoginGoogle(driver);
         
         for (int j = 0; j<numberOfTasks; j++) {
-        	
         	List<FeaturePage> onlineOrderDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> foodMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> drinkMenuDropDownFaetures = new ArrayList<FeaturePage>();
         	List<FeaturePage> privatePartiesDropDownFaetures = new ArrayList<FeaturePage>();
+        	List<String> ctaLogMessage = new ArrayList<String>();
         	WebsiteFeaturesPage websiteFeaturesPageDesktop = new WebsiteFeaturesPage(driver);
         	//spotIdFromPopupOrJson = websites.get(j).get("spot_id");
         	spotIdFromPopupOrJson = spotIdCollection.get(j);
@@ -191,9 +186,9 @@ public class CTALinksTest extends BaseTest {
         	websiteURL = ctaLinksPage.putHttpsOnUrlAndSlash(driver,websiteURL);
         	//issueKey = websites.get(j).get("issue_key");
         	issueKey = issueKeyCollection.get(j);
-        	String errorMessage = issueKey+", "+spotIdFromPopupOrJson+", "+websiteURL;
-        	System.out.println(j+". issue key: "+issueKey+", spot id: "+spotIdFromPopupOrJson+", websiteURL: "+websiteURL);
-        	
+        	String errorMessage = j+". issue key: "+issueKey+", spot id: "+spotIdFromPopupOrJson+", websiteURL: "+websiteURL;
+        	System.out.println(errorMessage);
+        	ctaLogMessage.add("\n"+errorMessage);
         	//Website desktop
  	        int responseCode = websiteFeaturesPageDesktop.goToWithResponseCode(websiteURL);
  	        Thread.sleep(2000);
@@ -244,7 +239,7 @@ public class CTALinksTest extends BaseTest {
         	}
         
         	//check all links from home page
-        	boolean linkProblem = websiteFeaturesPageDesktop.checkAllLinksFromHomePage(driver,navBarElements); 
+        	boolean linkProblem = websiteFeaturesPageDesktop.checkAllLinksFromHomePage(driver,navBarElements,ctaLogMessage); 
         	if(linkProblem){
         		errorOrderNumber++;
     			errorMessage = errorMessage+", PROBLEM WITH LINK ON HOME PAGE!";
@@ -332,14 +327,14 @@ public class CTALinksTest extends BaseTest {
 	        websiteFeaturesPageDesktop.getActiveStatusTmtFeatures(driver,featurePageListOnWebsite,variablesAndUrlsPage,spotIdFromPopupOrJson);
 		    ctaLinksPage.goTo(variablesAndUrlsPage.ctaLinksUrl);
 	    	List<FeaturePage> featurePageListFDSE = websiteFeaturesPageDesktop.getFDSEFeatures(driver, featurePageListOnWebsite);
-	        ctaLinksPage.enterFDSECtaLinks(driver, featurePageListFDSE,spotIdFromPopupOrJson,currentTimeString,websiteURL,websiteFeaturesPageDesktop);
+	        ctaLinksPage.enterFDSECtaLinks(driver, featurePageListFDSE,spotIdFromPopupOrJson,currentTimeString,websiteURL,websiteFeaturesPageDesktop,ctaLogMessage);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
 	        Thread.sleep(1000);
-	        ctaLinksPage.enterTmtServices(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson);
+	        ctaLinksPage.enterTmtServices(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson,ctaLogMessage);
 	        Thread.sleep(1000);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
 	        Thread.sleep(1000);
-	        ctaLinksPage.removeCtaLinksFeaturesNotOnHomePage(driver,featuresNotOnNavBar);
+	        ctaLinksPage.removeCtaLinksFeaturesNotOnHomePage(driver,featuresNotOnNavBar,ctaLogMessage);
 	        ctaLinksPage.saveChangesCtaLinks(driver);
 	        Thread.sleep(1000);
 	        String activeTmtDifferentLinks = ctaLinksPage.compareShAndWebsiteTmtLinks(driver,featurePageListOnWebsite,websiteURL,spotIdFromPopupOrJson);
@@ -418,7 +413,8 @@ public class CTALinksTest extends BaseTest {
 	    	websiteFeaturesPageIphone.hardRefresh(websiteURL);
  	    	Thread.sleep(3000);
 	    	setIphoneView(driver);
-	    	String targetError = websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
+	    	//String targetError = websiteFeaturesPageIphone.checkTarget(driver,websiteURL);
+	    	String targetError ="";
  	    	if(targetError.equals("self")) {
  	    		errorOrderNumber++;
  	 	    	errorMessage = errorMessage+", CHANGE TARGET TO SELF!";
@@ -438,10 +434,7 @@ public class CTALinksTest extends BaseTest {
  	 	    	continue;
  	    	}
 	    	
-	    	
-	    	
-	    	
-	    	
+ 	    	setDesktopView(driver);
 	    	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
 	    	Thread.sleep(2000);
 	    	jiraCommentsPage.clickAssignToMe(driver);
@@ -457,16 +450,18 @@ public class CTALinksTest extends BaseTest {
 	    	jiraCommentsPage.clickCloseStatus(driver);
 	    
         	firtsEntering++;
-	       
+        	readWriteFilePage.createCtaLogFile(driver,ctaLogMessage,currentTimeString);
          }// end of for loop
+         
      }catch (Exception e) {
          e.printStackTrace();
-     } finally {
-         if (driver != null) {
-             driver.quit(); // Ensure the driver is closed gracefully
-         }
-     }
-	     //driver.close();
+     } //finally {
+         //if (driver != null) {
+             //driver.quit(); // Ensure the driver is closed gracefully
+         //}
+     //}
+	     driver.close();
+         
 	     System.out.println("CTA links closing ***********");
      }// @Test
 

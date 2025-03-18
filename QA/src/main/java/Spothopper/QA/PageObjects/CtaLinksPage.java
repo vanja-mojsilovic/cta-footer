@@ -17,10 +17,16 @@ import org.testng.annotations.IFactoryAnnotation;
 import org.openqa.selenium.JavascriptExecutor;
 import java.util.AbstractMap.SimpleEntry;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.stream.Stream;
 
 
@@ -129,6 +135,30 @@ public class CtaLinksPage extends AbstractComponent {
 
 	
 	// Methods
+	
+	
+	
+	public void enterValueInShField(WebDriver driver,String textValue) {
+		  String jsCode = "fetch(\"https://www.spothopperapp.com/api/spots/321387/\", {" +
+				    "method: \"PUT\"," +
+				    "headers: {" +
+				    "    \"Content-Type\": \"application/json\"" +
+				    "}," +
+				    "body: JSON.stringify({" +
+				    "    \"city\": \"test 6\"" +
+				    "})" +
+				    "})" +
+				    ".then(response => response.json())" +
+				    ".then(data => console.log(\"Success:\", data))" +
+				    ".catch(error => console.error(\"Error:\", error));";
+
+				// Execute the JavaScript code
+				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+				jsExecutor.executeScript(jsCode);  
+	}
+
+	
+	
 	public String getDomainFromPublisInfo(WebDriver driver,String spotIdFromPopupOrJson,String publishInfo,String websiteUrl) throws IOException, InterruptedException{
 		String result = websiteUrl;
 		goToWithResponseCode(publishInfo + spotIdFromPopupOrJson+"/");
@@ -151,7 +181,7 @@ public class CtaLinksPage extends AbstractComponent {
 		return result;
 	}
 	
-	public void removeCtaLinksFeaturesNotOnHomePage(WebDriver driver,List<FeaturePage> featuresNotOnNavBar) {
+	public void removeCtaLinksFeaturesNotOnHomePage(WebDriver driver,List<FeaturePage> featuresNotOnNavBar,List<String>ctaLogMessage) {
 		List <WebElement> displayElements = shCtaLinkNameLocator;
 		for(WebElement element:displayElements) {	
 			for(FeaturePage feature:featuresNotOnNavBar) {
@@ -162,6 +192,7 @@ public class CtaLinksPage extends AbstractComponent {
 	        		!cta_feature_name.toLowerCase().equals("order link 1")) {
 		        		if(!textInInputElement.equals("")) {
 		        			inputElement.clear();
+		        			ctaLogMessage.add("\nremoved cta link: "+cta_feature_name.toLowerCase());
 		        			System.out.println(textInInputElement+" removed!");
 		        	}
 		        }
@@ -178,7 +209,7 @@ public class CtaLinksPage extends AbstractComponent {
 	    }
 	}
 	
-	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain,String spotIdFromPopupOrJson) {		System.out.println("entering Tmt Services in CTA links");
+	public void enterTmtServices(WebDriver driver,List<FeaturePage> featurePageListOnWebsite,String domain,String spotIdFromPopupOrJson,List<String>ctaLogMessage) {		System.out.println("entering Tmt Services in CTA links");
 		List <WebElement> displayElements = shCtaLinkNameLocator;
 		int counter = 0;
 		// enter only first private parties drop down link
@@ -233,6 +264,7 @@ public class CtaLinksPage extends AbstractComponent {
 								if(!textInInputElement.equals(domain+feature.endOfCtaLink)) {					
 									inputElement.clear();
 									inputElement.sendKeys(domain + feature.endOfCtaLink);
+									ctaLogMessage.add("\nentered: "+domain + feature.endOfCtaLink);
 									System.out.println(textInInputElement+" replaced with: "+domain+feature.endOfCtaLink);
 								}
 							}
@@ -247,7 +279,8 @@ public class CtaLinksPage extends AbstractComponent {
 			String spotId,
 			String timeStamp,
 			String domain,
-			WebsiteFeaturesPage websiteFeaturesPage) throws IOException, InterruptedException {
+			WebsiteFeaturesPage websiteFeaturesPage,
+			List <String> ctaLogMessage) throws IOException, InterruptedException {
 		List <WebElement> displayElements = waitForVisibilityOfElements(driver,shCtaLinkNameLocator, 15);
 		System.out.println("Entering CTA links in SH:");
 		int k=0;
@@ -303,6 +336,7 @@ public class CtaLinksPage extends AbstractComponent {
 	        				}
 	        			}
 	        			clearAndSendKeys(driver,inputElement,feature.shCtaName+" inputElement",15,shorterLink);
+	        			ctaLogMessage.add("\nentered: "+shorterLink);
 		        		Thread.sleep(1000);
 		        	}
 		        }

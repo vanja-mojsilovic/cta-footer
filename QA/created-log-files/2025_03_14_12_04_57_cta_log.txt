@@ -1,0 +1,55 @@
+
+1. issue key: WEB-172728, spot id: 405142, websiteURL: https://northforktavern.com/
+link: https://northforktavern.com/eugene-north-fork-tavern-food-menu
+link: https://northforktavern.com/eugene-north-fork-tavern-drink-menu
+link: https://northforktavern.com/eugene-north-fork-tavern-happy-hours-specials
+link: https://northforktavern.com/eugene-north-fork-tavern-events
+link: https://www.opentable.com/r/north-fork-tavern-eugene?corrid=1f1de2bc-cff1-41f6-bf09-fa502de11d89&p=2&sd=2024-05-01T22%3A30%3A00#
+link: https://northforktavern.com/eugene-north-fork-tavern-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=405142&callback_url=http://northforktavern.com/#
+link: https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://northforktavern.com/-specials
+entered: https://northforktavern.com/-events
+entered: https://northforktavern.com/-drink-menu
+entered: https://northforktavern.com/-food-menu
+entered: https://urban-restaurants.com/gift-cards-universal-universal
+
+2. issue key: WEB-172727, spot id: 427383, websiteURL: https://mettavern.com/
+link: https://mettavern.com/portland-metropolitan-tavern-food-menu
+link: https://mettavern.com/portland-metropolitan-tavern-drink-menu
+link: https://mettavern.com/portland-metropolitan-tavern-happy-hours-specials
+link: https://mettavern.com/portland-metropolitan-tavern-events
+link: https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=0fa20593-5517-4f30-b3c4-a7277b5375e8&restRef=1204252&otSource#
+link: https://tmt.spotapps.co/job-listings?spot_id=427383&callback_url=http://mettavern.com/#
+link: https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://mettavern.com/-specials
+entered: https://mettavern.com/-events
+entered: https://mettavern.com/-drink-menu
+entered: https://mettavern.com/-food-menu
+entered: https://urban-restaurants.com/gift-cards-universal-universal
+
+3. issue key: WEB-172724, spot id: 397750, websiteURL: https://cityviewrestaurant.com/
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-food-menu
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-drink-menu
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-happy-hours-specials
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-events
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-reservations#
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-party#
+link: https://cityviewrestaurant.com/whitehall-new-city-view-diner-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=397750&callback_url=http://cityviewrestaurant.com/#
+entered: https://cityviewrestaurant.com/-specials
+entered: https://cityviewrestaurant.com/-events
+entered: https://cityviewrestaurant.com/-drink-menu
+entered: https://cityviewrestaurant.com/-food-menu
+
+4. issue key: WEB-172699, spot id: 80807, websiteURL: https://magazinepizzanola.com/
+link: https://magazinepizzanola.com/#
+link: https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-food-menu
+link: https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-drink-menu
+link: https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-happy-hours-specials
+link: https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-party#
+link: https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=80807&callback_url=http://magazinepizzanola.com/#
+entered: https://magazinepizzanola.com/-specials
+entered: https://magazinepizzanola.com/-drink-menu
+entered: https://magazinepizzanola.com/-food-menu

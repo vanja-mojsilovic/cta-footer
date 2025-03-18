@@ -117,6 +117,14 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 	
 	
 	// Methods
+	public String getWebsitePageHtml(WebDriver driver,String testSiteUrl) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		String result = "";
+		result = (String) jsExecutor.executeScript("return document.documentElement.outerHTML;");
+		System.out.println(result.substring(0,100)+" . . . ");
+		return result;
+	}
+	
 	public String removeLastCharacterIfMatch(WebDriver driver,String link, String text) {
 	    if (link != null && link.endsWith(text)) {
 	        return link.substring(0, link.length() - text.length());
@@ -134,18 +142,19 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		return result;
 	}
 	
-	public boolean checkAllLinksFromHomePage(WebDriver driver,List<WebElementPage> navBarElements) throws IOException {
+	public boolean checkAllLinksFromHomePage(WebDriver driver,List<WebElementPage> navBarElements,List<String> ctaLogMessage) throws IOException {
 		System.out.println("Checking all the links on home page:");
 		boolean result=false;
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
 		for(WebElementPage element:navBarElements) {
-			List<String> substrings = Arrays.asList("chownow", "grubhub","tel:+");
+			List<String> substrings = Arrays.asList("chownow", "grubhub","tel:+","securebrygid");
 	        boolean containsSubstring = substrings.stream().anyMatch(element.href::contains);
 			if(containsSubstring) {
 				 continue;
 			}
 			boolean openPageSuccess;
 			try{
+				ctaLogMessage.add("\nlink: "+element.href);
 				 int responseCode = goToWithResponseCode(element.href);
 				 if(responseCode==-1) {
 					 System.out.println(element.href+" Can\'t opet the page, response code: "+responseCode);

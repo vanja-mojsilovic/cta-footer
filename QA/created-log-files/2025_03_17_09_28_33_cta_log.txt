@@ -1,0 +1,271 @@
+
+1. issue key: WEB-173203, spot id: 276144, websiteURL: https://johnnytsbrooklynpizzeria.com/
+link: https://johnnytsbrooklynpizzeria.com/scottsdale-johnny-t-s-brooklyn-pizzeria-food-menu
+link: https://johnnytsbrooklynpizzeria.com/scottsdale-johnny-t-s-brooklyn-pizzeria-drink-menu
+link: https://johnnytsbrooklynpizzeria.com/scottsdale-johnny-t-s-brooklyn-pizzeria-happy-hours-specials
+link: https://johnnytsbrooklynpizzeria.com/scottsdale-johnny-t-s-brooklyn-pizzeria-events
+link: https://order.toasttab.com/online/johnnyts-1732-e-becker-ln#
+link: https://johnnytsbrooklynpizzeria.com/scottsdale-johnny-t-s-brooklyn-pizzeria-catering#
+entered: https://johnnytsbrooklynpizzeria.com/-specials
+entered: https://johnnytsbrooklynpizzeria.com/-events
+entered: https://johnnytsbrooklynpizzeria.com/-drink-menu
+entered: https://johnnytsbrooklynpizzeria.com/-food-menu
+
+2. issue key: WEB-173196, spot id: 206189, websiteURL: https://thepublichouseclt.com/
+link: https://thepublichouseclt.com/charlotte-the-public-house-food-menu
+link: https://thepublichouseclt.com/charlotte-the-public-house-drink-menu
+link: https://thepublichouseclt.com/charlotte-the-public-house-happy-hours-specials
+link: https://www.toasttab.com/local/the-public-house-tixjn/r-45e2163e-bac6-4258-a85a-7a4e3929ca0a#
+link: https://thepublichouseclt.com/charlotte-the-public-house-events
+link: https://thepublichouseclt.com/charlotte-the-public-house-party#
+link: https://thepublichouseclt.com/charlotte-the-public-house-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=206189&callback_url=http://thepublichouseclt.com/#
+entered: https://thepublichouseclt.com/-specials
+entered: https://thepublichouseclt.com/-events
+entered: https://thepublichouseclt.com/-drink-menu
+entered: https://thepublichouseclt.com/-food-menu
+
+3. issue key: WEB-173195, spot id: 268584, websiteURL: https://ballersokc.com/
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-food-menu
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-drink-menu
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-happy-hours-specials
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-events
+link: https://www.toasttab.com/local/order/ballers-bar-grill-2037-s-meridian-ave/r-610076f6-3174-4eda-ba29-85f2fda95dda#
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-reservations#
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-party#
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=268584&callback_url=http://ballersokc.com/#
+link: https://ballersokc.com/oklahoma-city-south-meridian-ballers-bar-and-grill-about
+link: https://www.toasttab.com/ballers-bar-grill-2037-s-meridian-ave/giftcards?utm_source=undefined&utm_content=home&utm_medium=toast_sites&utm_term=nav&utm_campaign=giftcards
+entered: https://ballersokc.com/-specials
+entered: https://ballersokc.com/-events
+entered: https://ballersokc.com/-drink-menu
+entered: https://ballersokc.com/-food-menu
+entered: https://www.toasttab.com/ballers-bar-grill-2037-s-meridian-ave/giftcards?utm_source=undefined&utm_content=home&utm_medium=toast_sites&utm_term=nav&utm_campaign=giftcards
+
+4. issue key: WEB-173194, spot id: 23705, websiteURL: https://amalfiglencove.com/
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-food-menu
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-drink-menu
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-happy-hours-specials
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-events
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-reservations#
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-party#
+link: https://amalfiglencove.com/glen-cove-glen-cove-amalfi-of-glen-cove-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=23705&callback_url=http://amalfiglencove.com/#
+entered: https://amalfiglencove.com/-specials
+entered: https://amalfiglencove.com/-events
+entered: https://amalfiglencove.com/-drink-menu
+entered: https://amalfiglencove.com/-food-menu
+
+5. issue key: WEB-173134, spot id: 135373, websiteURL: https://newportgrill.com/
+link: https://newportgrill.com/wichita-newport-grill-food-menu
+link: https://newportgrill.com/wichita-newport-grill-drink-menu
+link: https://newportgrill.com/wichita-newport-grill-happy-hours-specials
+link: https://newportgrill.com/wichita-newport-grill-events
+link: https://newportgrill.com/wichita-newport-grill-party#
+link: https://newportgrill.com/wichita-newport-grill-catering#
+entered: https://newportgrill.com/-specials
+entered: https://newportgrill.com/-events
+entered: https://newportgrill.com/-drink-menu
+entered: https://newportgrill.com/-food-menu
+
+6. issue key: WEB-173133, spot id: 275123, websiteURL: https://cheeseroomseattle.com/
+link: https://cheeseroomseattle.com/seattle-capitol-hill-cheese-room-seattle-food-menu
+link: https://cheeseroomseattle.com/seattle-capitol-hill-cheese-room-seattle-drink-menu
+link: https://cheeseroomseattle.com/seattle-capitol-hill-cheese-room-seattle-events
+link: https://cheeseroomseattle.com/seattle-capitol-hill-cheese-room-seattle-about
+entered: https://cheeseroomseattle.com/-events
+entered: https://cheeseroomseattle.com/-drink-menu
+entered: https://cheeseroomseattle.com/-food-menu
+
+7. issue key: WEB-173129, spot id: 400719, websiteURL: https://thebagelbaker.com/
+link: https://thebagelbaker.com/virginia-beach-the-bagel-baker-food-menu
+link: https://thebagelbaker.com/virginia-beach-the-bagel-baker-drink-menu
+link: https://thebagelbaker.hrpos.heartland.us/menu#
+link: https://thebagelbaker.com/virginia-beach-the-bagel-baker-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=400719&callback_url=http://thebagelbaker.com/#
+link: https://thebagelbaker.com/virginia-beach-the-bagel-baker-locations
+entered: https://thebagelbaker.com/-drink-menu
+entered: https://thebagelbaker.com/-food-menu
+
+8. issue key: WEB-173128, spot id: 394670, websiteURL: https://agavemexicangrillcantina.com/
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-food-menu
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-drink-menu
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-happy-hours-specials
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-events
+link: https://www.orderagavemexicangrillcantina.com/#
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-reservations#
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-party#
+link: https://agavemexicangrillcantina.com/marlborough-agave-mexican-grill-and-cantina-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=394670&callback_url=http://agavemexicangrillcantina.com/#
+entered: https://agavemexicangrillcantina.com/-specials
+entered: https://agavemexicangrillcantina.com/-events
+entered: https://agavemexicangrillcantina.com/-drink-menu
+entered: https://agavemexicangrillcantina.com/-food-menu
+
+11. issue key: WEB-173120, spot id: 297264, websiteURL: https://ellagobarandgrill.com/
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-food-menu
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-drink-menu
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-happy-hours-specials
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-events
+link: https://order.toasttab.com/online/el-lago-mexican-restaurant-100-tanglewood-drive#
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-party#
+link: https://ellagobarandgrill.com/taylorsville-el-lago-bar-and-grill-catering#
+entered: https://ellagobarandgrill.com/-specials
+entered: https://ellagobarandgrill.com/-events
+entered: https://ellagobarandgrill.com/-drink-menu
+entered: https://ellagobarandgrill.com/-food-menu
+
+12. issue key: WEB-173114, spot id: 364231, websiteURL: https://taphausoncleveland.com/
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-food-menu
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-drink-menu
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-happy-hours-specials
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-events
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-reservations#
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-party#
+link: https://taphausoncleveland.com/clearwater-tap-haus-on-cleveland-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=364231&callback_url=http://taphausoncleveland.com/#
+entered: https://taphausoncleveland.com/-specials
+entered: https://taphausoncleveland.com/-events
+entered: https://taphausoncleveland.com/-drink-menu
+entered: https://taphausoncleveland.com/-food-menu
+entered: https://taphausoncleveland.com/-party
+entered: https://taphausoncleveland.com/-reservations
+entered: https://taphausoncleveland.com/-catering
+
+13. issue key: WEB-173109, spot id: 385011, websiteURL: https://mountaincafefc.com/
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-food-menu
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-drink-menu
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-happy-hours-specials
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=385011&accordion=true&images=yes&callback_url=http://mountaincafefc.com/#
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-reservations#
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-party#
+link: https://mountaincafefc.com/fort-collins-the-mountain-cafe-catering#
+entered: https://mountaincafefc.com/-specials
+entered: https://mountaincafefc.com/-events
+entered: https://mountaincafefc.com/-drink-menu
+entered: https://mountaincafefc.com/-food-menu
+
+14. issue key: WEB-173108, spot id: 101879, websiteURL: https://cantinatacoloco.com/
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-about
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-food-menu
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-drink-menu
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-happy-hours-specials
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=101879&accordion=true&images=yes&callback_url=http://cantinatacoloco.com/#
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-reservations#
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-party#
+link: https://cantinatacoloco.com/asheboro-cantina-taco-loco-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=101879&callback_url=http://cantinatacoloco.com/#
+entered: https://cantinatacoloco.com/-specials
+entered: https://cantinatacoloco.com/-events
+entered: https://cantinatacoloco.com/-drink-menu
+entered: https://cantinatacoloco.com/-food-menu
+
+15. issue key: WEB-173107, spot id: 423225, websiteURL: https://panzyspizza.com/
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-food-menu
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-drink-menu
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-happy-hours-specials
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-events
+link: https://panzanellasnewmarket.foodtecsolutions.com/ordering/home#
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-party#
+link: https://panzyspizza.com/newmarket-downtown-panzanella-s-italian-pizzeria-and-bar-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=423225&callback_url=http://panzyspizza.com/#
+entered: https://panzyspizza.com/-specials
+entered: https://panzyspizza.com/-events
+entered: https://panzyspizza.com/-drink-menu
+entered: https://panzyspizza.com/-food-menu
+entered: https://panzyspizza.com/-party
+entered: https://panzyspizza.com/-catering
+
+16. issue key: WEB-172722, spot id: 78037, websiteURL: https://www.lapizzeriametro.com/
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-food-menu
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-drink-menu
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-happy-hours-specials
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-events
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-party#
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=78037&callback_url=http://lapizzeriametro.com/#
+link: https://lapizzeriametro.hrpos.heartland.us/gift
+link: https://lapizzeriametro.com/wilmington-la-pizzeria-metro-locations
+entered: https://lapizzeriametro.com/-specials
+entered: https://lapizzeriametro.com/-events
+entered: https://lapizzeriametro.com/-drink-menu
+entered: https://lapizzeriametro.com/-food-menu
+entered: https://lapizzeriametro.hrpos.heartland.us/gift
+
+17. issue key: WEB-172694, spot id: 111039, websiteURL: https://615district.com/
+link: https://615district.com/murfreesboro-615-district-food-menu
+link: https://615district.com/murfreesboro-615-district-drink-menu
+link: https://615district.com/murfreesboro-615-district-happy-hours-specials
+link: https://615district.com/murfreesboro-615-district-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=111039&accordion=true&images=yes&callback_url=http://615district.com/#
+link: https://615district.com/murfreesboro-615-district-reservations#
+link: https://615district.com/murfreesboro-615-district-party#
+link: https://615district.com/murfreesboro-615-district-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=111039&callback_url=http://615district.com/#
+entered: https://615district.com/-specials
+entered: https://615district.com/-events
+entered: https://615district.com/-drink-menu
+entered: https://615district.com/-food-menu
+entered: https://615district.com/-party
+entered: https://615district.com/-reservations
+entered: https://615district.com/-catering
+
+18. issue key: WEB-172682, spot id: 399202, websiteURL: https://thebreakfastclubdmv.com/
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-food-menu
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-drink-menu
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-happy-hours-specials
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-events
+link: https://www.toasttab.com/thebreakfastclubdmv#
+link: https://www.opentable.com/restref/client/?restref=1256638&lang=en-US&ot_source=Restaurant%20website&corrid=101dc0a0-81a4-46bf-9144-9c1c28478d1b#
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-party#
+link: https://thebreakfastclubdmv.com/silver-spring-the-breakfast-club-catering#
+entered: https://thebreakfastclubdmv.com/-specials
+entered: https://thebreakfastclubdmv.com/-events
+entered: https://thebreakfastclubdmv.com/-drink-menu
+entered: https://thebreakfastclubdmv.com/-food-menu
+
+19. issue key: WEB-172678, spot id: 88234, websiteURL: https://garciasfamousmex.com/
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-food-menu
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-drink-menu
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-catering#
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-events
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=88234&callback_url=http://garciasfamousmex.com/#
+link: https://garciasfamousmex.com/covington-garcia-s-famous-mexican-food-about
+entered: https://garciasfamousmex.com/-events
+entered: https://garciasfamousmex.com/-drink-menu
+entered: https://garciasfamousmex.com/-food-menu
+
+20. issue key: WEB-172252, spot id: 85123, websiteURL: https://emporiumsportsbar.com/
+link: https://emporiumnoco.com/fort-collins-west-campus-emporium-sports-bar-food-menu
+link: https://emporiumnoco.com/fort-collins-west-campus-emporium-sports-bar-drink-menu
+link: https://emporiumnoco.com/fort-collins-west-campus-emporium-sports-bar-happy-hours-specials
+link: https://emporiumnoco.com/fort-collins-west-campus-emporium-sports-bar-events
+link: https://emporiumnoco.com/fort-collins-west-campus-emporium-sports-bar-gift-cards
+entered: https://emporiumnoco.com/-specials
+entered: https://emporiumnoco.com/-events
+entered: https://emporiumnoco.com/-drink-menu
+entered: https://emporiumnoco.com/-food-menu
+entered: https://emporiumnoco.com/-gift-cards
+
+21. issue key: WEB-172238, spot id: 235456, websiteURL: https://jdanforth.co/
+link: https://j-danforth-mercantile.square.site/
+link: https://jdanforth.co/maryville-downtown-j-danforth-mercantile-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=235456&callback_url=http://jdanforth.co/#
+link: https://jdanforth.co/maryville-downtown-j-danforth-mercantile-contact
+
+23. issue key: WEB-171742, spot id: 186771, websiteURL: https://theredgrillmx.com/
+link: https://theredgrillmx.com/new-york-the-red-grill-food-menu
+link: https://theredgrillmx.com/new-york-the-red-grill-drink-menu
+link: https://theredgrillmx.com/new-york-the-red-grill-happy-hours-specials
+link: https://theredgrillmx.com/new-york-the-red-grill-events
+link: https://theredgrillmx.com/new-york-the-red-grill-reservations#
+link: https://theredgrillmx.com/new-york-the-red-grill-party#
+link: https://theredgrillmx.com/new-york-the-red-grill-catering#
+entered: https://theredgrillmx.com/-specials
+entered: https://theredgrillmx.com/-events
+entered: https://theredgrillmx.com/-drink-menu
+entered: https://theredgrillmx.com/-food-menu

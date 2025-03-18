@@ -1,0 +1,2 @@
+1. 0. issue key: WEB-173208, spot id: 400329, websiteURL: https://adelitasmexicancuisinemo.com/, INCOMPLETE NUMBER OF ORDER FOOTER LINKS!, Previous Hash: cd31eb6ae50c28b691d4d6ffb837eba33c1efe7f5618350891dbaa2ae03736a9, Hash: 70ecec1a873a8d32ea54bcdb3d3269fb6c4a142ff8cb9b3f51a2e81564eedc38
+2. 4. issue key: WEB-173203, spot id: 276144, websiteURL: https://johnnytsbrooklynpizzeria.com/ PROBLEM WITH V2 SMART FOOTER!, Previous Hash: 70ecec1a873a8d32ea54bcdb3d3269fb6c4a142ff8cb9b3f51a2e81564eedc38, Hash: e7e34df0e2fd4f2397088257f4e0c8672c9776800a7c67da166699f255bec4a1

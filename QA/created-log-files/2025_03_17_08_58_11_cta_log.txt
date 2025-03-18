@@ -1,0 +1,91 @@
+
+1. issue key: WEB-173207, spot id: 410307, websiteURL: https://burtsplacelafayette.com/
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-food-menu
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-drink-menu
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-happy-hours-specials
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-events
+link: https://burtsplacelafayette.com/#
+link: https://www.doordash.com/store/burt%E2%80%99s-place-lafayette-32880347/?event_type=autocomplete&pickup
+link: https://order.burtsplacelafayette.com/
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-reservations#
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-party#
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-catering#
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-about
+link: https://burtsplacelafayette.com/lafayette-burt-s-place-burts-story
+entered: https://burtsplacelafayette.com/-specials
+entered: https://burtsplacelafayette.com/-events
+entered: https://burtsplacelafayette.com/-drink-menu
+entered: https://burtsplacelafayette.com/-food-menu
+
+2. issue key: WEB-173206, spot id: 378261, websiteURL: https://kabobcalabasas.com/
+link: https://kabobcalabasas.com/calabasas-kabob-village-food-menu
+link: https://kabobcalabasas.com/calabasas-kabob-village-drink-menu
+link: https://kabobcalabasas.com/calabasas-kabob-village-events
+link: https://kabobcalabasas.com/calabasas-kabob-village-reservations#
+link: https://kabobcalabasas.com/calabasas-kabob-village-party#
+link: https://kabobcalabasas.com/calabasas-kabob-village-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=378261&callback_url=http://kabobcalabasas.com/#
+link: https://kabobcalabasas.com/#
+link: https://kabobcalabasas.com/calabasas-kabob-village-locations#item_0
+link: https://kabobcalabasas.com/calabasas-kabob-village-locations#item_1
+link: https://kabobcalabasas.com/calabasas-kabob-village-locations#item_2
+link: https://kabobcalabasas.com/calabasas-kabob-village-locations#item_3
+entered: https://kabobcalabasas.com/-events
+entered: https://kabobcalabasas.com/-drink-menu
+entered: https://kabobcalabasas.com/-food-menu
+
+3. issue key: WEB-173205, spot id: 388278, websiteURL: https://kabobglendale.com/
+link: https://kabobglendale.com/glendale-kabob-village-glendale-food-menu
+link: https://kabobglendale.com/glendale-kabob-village-glendale-drink-menu
+link: https://kabobglendale.com/glendale-kabob-village-glendale-events
+link: https://kabobglendale.com/glendale-kabob-village-glendale-reservations#
+link: https://kabobglendale.com/glendale-kabob-village-glendale-party#
+link: https://kabobglendale.com/glendale-kabob-village-glendale-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=388278&callback_url=http://kabobglendale.com/#
+link: https://kabobglendale.com/#
+link: https://kabobglendale.com/glendale-kabob-village-glendale-locations#item_0
+link: https://kabobglendale.com/glendale-kabob-village-glendale-locations#item_1
+link: https://kabobglendale.com/glendale-kabob-village-glendale-locations#item_2
+link: https://kabobglendale.com/glendale-kabob-village-glendale-locations#item_3
+entered: https://kabobglendale.com/-events
+entered: https://kabobglendale.com/-drink-menu
+entered: https://kabobglendale.com/-food-menu
+
+5. issue key: WEB-173201, spot id: 397221, websiteURL: https://biggermamas.com/
+link: https://biggermamas.com/copiague-mama-s-copiague-food-menu
+link: https://biggermamas.com/copiague-mama-s-copiague-drink-menu
+link: https://biggermamas.com/copiague-mama-s-copiague-happy-hours-specials
+link: https://biggermamas.com/copiague-mama-s-copiague-events
+link: https://www.getsauce.com/order/bigger-mamas-copiague/menu#
+link: https://biggermamas.com/copiague-mama-s-copiague-party#
+link: https://biggermamas.com/copiague-mama-s-copiague-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=397221&callback_url=http://biggermamas.com/#
+entered: https://biggermamas.com/-specials
+entered: https://biggermamas.com/-events
+entered: https://biggermamas.com/-drink-menu
+entered: https://biggermamas.com/-food-menu
+
+6. issue key: WEB-173199, spot id: 401445, websiteURL: https://hinsdaleprimesteakhouse.com/
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-about
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-food-menu
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-drink-menu
+link: https://www.toasttab.com/local/order/hinsdale-prime-steak-40-east-hinsdale-avenue/r-b2375b4b-230e-46c3-9df9-a986cb5a0d14?diningOption=takeout&rwg_token=AJKvS9UD7Qefcq6NY9phKiVTsFk3m2NBLP8APuGFoGV4cOrxIBOWtiNf7-lWWPd9xOqNFBLTUWYI-DDqzCuAFUKOfJ5irRwoEw%3D%3D#
+link: https://resy.com/cities/hinsdale-il/venues/hinsdale-prime-steak?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&seats=2&date=2025-02-26#
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-catering#
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-gift-cards
+link: https://hinsdaleprimesteakhouse.com/hinsdale-hinsdale-hinsdale-prime-steak-team
+entered: https://hinsdaleprimesteakhouse.com/-drink-menu
+entered: https://hinsdaleprimesteakhouse.com/-food-menu
+entered: https://hinsdaleprimesteakhouse.com/-gift-cards
+
+7. issue key: WEB-173198, spot id: 355009, websiteURL: https://www.hemingwaysmusicpub.com/
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-food-menu
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-drink-menu
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-happy-hours-specials
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-events
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-party#
+link: https://hemingwaysmusicpub.com/irmo-hemingway-s-catering#
+entered: https://hemingwaysmusicpub.com/-specials
+entered: https://hemingwaysmusicpub.com/-events
+entered: https://hemingwaysmusicpub.com/-drink-menu
+entered: https://hemingwaysmusicpub.com/-food-menu

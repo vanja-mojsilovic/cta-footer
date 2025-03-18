@@ -248,7 +248,7 @@ public class BuildPage extends WebsiteFeaturesPage {
 	        System.out.println("Cashe invalidated: " + invalidateCashtimeStamp);
 	        result = "\nCashe invalidated: " + invalidateCashtimeStamp;
 	    } else {
-	        System.out.println("Wcache comment not found");
+	        System.out.println("Wcashe comment not found");
 	    }
 	    return result;
 	}

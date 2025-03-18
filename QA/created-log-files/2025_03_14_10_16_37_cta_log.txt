@@ -1,0 +1,307 @@
+
+0. issue key: WEB-173061, spot id: 395360, websiteURL: https://golddustsaloon.net/
+1. issue key: WEB-173060, spot id: 402732, websiteURL: https://lasfavelarestaurantdtx.com/
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-food-menu
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-drink-menu
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-happy-hours-specials
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-events
+https://tmt.spotapps.co/ordering-menu?spot_id=402732&accordion=true&images=yes&callback_url=http://lasfavelarestaurantdtx.com/#
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-reservations#
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-party#
+https://lasfavelarestaurantdtx.com/dallas-lakewood-las-favela-restaurant-catering#
+entered: https://lasfavelarestaurantdtx.com/-specials
+entered: https://lasfavelarestaurantdtx.com/-events
+entered: https://lasfavelarestaurantdtx.com/-drink-menu
+entered: https://lasfavelarestaurantdtx.com/-food-menu
+2. issue key: WEB-172748, spot id: 66537, websiteURL: https://www.kyatchi.com/
+https://kyatchi.com/minneapolis-kingfield-kyatchi-food-menu
+https://kyatchi.com/minneapolis-kingfield-kyatchi-drink-menu
+https://kyatchi.com/minneapolis-kingfield-kyatchi-happy-hours-specials
+https://kyatchi.com/minneapolis-kingfield-kyatchi-events
+https://kyatchi.com/#resy
+https://kyatchi.com/minneapolis-kingfield-kyatchi-party#
+https://kyatchi.com/minneapolis-kingfield-kyatchi-catering#
+https://tmt.spotapps.co/job-listings?spot_id=66537&callback_url=http://kyatchi.com/#
+entered: https://kyatchi.com/-specials
+entered: https://kyatchi.com/-events
+entered: https://kyatchi.com/-drink-menu
+entered: https://kyatchi.com/-food-menu
+removed cta link: reservations
+3. issue key: WEB-172728, spot id: 405142, websiteURL: https://northforktavern.com/
+https://northforktavern.com/eugene-north-fork-tavern-food-menu
+https://northforktavern.com/eugene-north-fork-tavern-drink-menu
+https://northforktavern.com/eugene-north-fork-tavern-happy-hours-specials
+https://northforktavern.com/eugene-north-fork-tavern-events
+https://www.opentable.com/r/north-fork-tavern-eugene?corrid=1f1de2bc-cff1-41f6-bf09-fa502de11d89&p=2&sd=2024-05-01T22%3A30%3A00#
+https://northforktavern.com/eugene-north-fork-tavern-party#
+https://tmt.spotapps.co/job-listings?spot_id=405142&callback_url=http://northforktavern.com/#
+https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://northforktavern.com/-specials
+entered: https://northforktavern.com/-events
+entered: https://northforktavern.com/-drink-menu
+entered: https://northforktavern.com/-food-menu
+entered: https://urban-restaurants.com/gift-cards-universal-universal
+4. issue key: WEB-172727, spot id: 427383, websiteURL: https://mettavern.com/
+https://mettavern.com/portland-metropolitan-tavern-food-menu
+https://mettavern.com/portland-metropolitan-tavern-drink-menu
+https://mettavern.com/portland-metropolitan-tavern-happy-hours-specials
+https://mettavern.com/portland-metropolitan-tavern-events
+https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=0fa20593-5517-4f30-b3c4-a7277b5375e8&restRef=1204252&otSource#
+https://tmt.spotapps.co/job-listings?spot_id=427383&callback_url=http://mettavern.com/#
+https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://mettavern.com/-specials
+entered: https://mettavern.com/-events
+entered: https://mettavern.com/-drink-menu
+entered: https://mettavern.com/-food-menu
+entered: https://urban-restaurants.com/gift-cards-universal-universal
+5. issue key: WEB-172726, spot id: 400851, websiteURL: https://courtyardpub.ca/
+https://courtyardpub.ca/calgary-courtyard-food-menu
+https://courtyardpub.ca/calgary-courtyard-drink-menu
+https://courtyardpub.ca/calgary-courtyard-happy-hours-specials
+https://courtyardpub.ca/calgary-courtyard-events
+https://courtyardpub.ca/calgary-courtyard-reservations#
+https://courtyardpub.ca/calgary-courtyard-party#
+https://courtyardpub.ca/calgary-courtyard-catering#
+https://tmt.spotapps.co/job-listings?spot_id=400851&callback_url=http://courtyardpub.ca/#
+entered: https://courtyardpub.ca/-specials
+entered: https://courtyardpub.ca/-events
+entered: https://courtyardpub.ca/-drink-menu
+entered: https://courtyardpub.ca/-food-menu
+6. issue key: WEB-172724, spot id: 397750, websiteURL: https://cityviewrestaurant.com/
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-food-menu
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-drink-menu
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-happy-hours-specials
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-events
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-reservations#
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-party#
+https://cityviewrestaurant.com/whitehall-new-city-view-diner-catering#
+https://tmt.spotapps.co/job-listings?spot_id=397750&callback_url=http://cityviewrestaurant.com/#
+entered: https://cityviewrestaurant.com/-specials
+entered: https://cityviewrestaurant.com/-events
+entered: https://cityviewrestaurant.com/-drink-menu
+entered: https://cityviewrestaurant.com/-food-menu
+entered: https://cityviewrestaurant.com/-party
+entered: https://cityviewrestaurant.com/-reservations
+entered: https://cityviewrestaurant.com/-catering
+7. issue key: WEB-172721, spot id: 65458, websiteURL: https://www.noloskitchen.com/
+https://noloskitchen.com/minneapolis-nolo-s-kitchen-and-bar-food-menu
+https://noloskitchen.com/minneapolis-nolo-s-kitchen-and-bar-drink-menu
+https://www.toasttab.com/nolo-s-kitchen-and-bar-515-washington-av-n/v3#
+https://noloskitchen.com/minneapolis-nolo-s-kitchen-and-bar-catering#
+https://www.opentable.com/restref/client/?restref=986185&lang=en-US&ot_source=Restaurant%20website&corrid=98bd972a-6e23-493c-a8e5-504a4a6511ef#
+https://noloskitchen.com/minneapolis-nolo-s-kitchen-and-bar-party#
+https://tmt.spotapps.co/job-listings?spot_id=65458&callback_url=http://noloskitchen.com/#
+entered: https://noloskitchen.com/-drink-menu
+entered: https://noloskitchen.com/-food-menu
+8. issue key: WEB-172719, spot id: 419059, websiteURL: https://3rdsttavern.com/
+https://3rdsttavern.com/highland-third-street-tavern-food-menu
+https://3rdsttavern.com/highland-third-street-tavern-drink-menu
+https://3rdsttavern.com/highland-third-street-tavern-happy-hours-specials
+https://3rdsttavern.com/highland-third-street-tavern-events
+https://3rdsttavern.com/highland-third-street-tavern-reservations#
+https://3rdsttavern.com/highland-third-street-tavern-party#
+https://3rdsttavern.com/highland-third-street-tavern-catering#
+https://tmt.spotapps.co/job-listings?spot_id=419059&callback_url=http://3rdsttavern.com/#
+entered: https://3rdsttavern.com/-specials
+entered: https://3rdsttavern.com/-events
+entered: https://3rdsttavern.com/-drink-menu
+entered: https://3rdsttavern.com/-food-menu
+9. issue key: WEB-172716, spot id: 119336, websiteURL: https://www.ferdinyc.com/
+https://ferdinyc.com/new-york-ferdi-ristorante-food-menu
+https://ferdinyc.com/new-york-ferdi-ristorante-drink-menu
+https://ferdinyc.com/new-york-ferdi-ristorante-happy-hours-specials
+https://ferdinyc.com/new-york-ferdi-ristorante-events
+https://www.getsauce.com/order/ferdi-west-village/menu#
+https://resy.com/cities/new-york-ny/venues/ferdi#
+https://ferdinyc.com/new-york-ferdi-ristorante-party#
+https://ferdinyc.com/new-york-ferdi-ristorante-catering#
+https://tmt.spotapps.co/job-listings?spot_id=119336&callback_url=http://ferdinyc.com/#
+https://ferdinyc.com/new-york-ferdi-ristorante-press
+entered: https://ferdinyc.com/-specials
+entered: https://ferdinyc.com/-events
+entered: https://ferdinyc.com/-drink-menu
+entered: https://ferdinyc.com/-food-menu
+10. issue key: WEB-172715, spot id: 82903, websiteURL: https://nopalitoscafe.com/
+https://nopalitoscafe.com/sacramento-nopalitos-southwestern-cafe-food-menu
+https://nopalitoscafe.com/sacramento-nopalitos-southwestern-cafe-drink-menu
+https://nopalitoscafe.com/sacramento-nopalitos-southwestern-cafe-happy-hours-specials
+https://nopalitoscafe.com/sacramento-nopalitos-southwestern-cafe-party#
+https://nopalitoscafe.com/sacramento-nopalitos-southwestern-cafe-catering#
+entered: https://nopalitoscafe.com/-specials
+entered: https://nopalitoscafe.com/-drink-menu
+entered: https://nopalitoscafe.com/-food-menu
+11. issue key: WEB-172711, spot id: 354839, websiteURL: https://ponykegkent.com/
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-food-menu
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-drink-menu
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-happy-hours-specials
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-catering#
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-party#
+https://ponykegkent.com/kent-pony-keg-grill-and-bar-events
+entered: https://ponykegkent.com/-specials
+entered: https://ponykegkent.com/-events
+entered: https://ponykegkent.com/-drink-menu
+entered: https://ponykegkent.com/-food-menu
+12. issue key: WEB-172708, spot id: 399729, websiteURL: https://cortaditokc.com/
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-food-menu
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-drink-menu
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-happy-hours-specials
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-events
+https://www.doordash.com/store/cortadito-kansas-city-32182053/48195350/?srsltid=AfmBOor2m6CZZes696d8aZWJ6kHdU98FK2BPvuRrxLaMGv4a-tcju2Db#
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-party#
+https://cortaditokc.com/kansas-city-cortadito-cuban-cafe-catering#
+entered: https://cortaditokc.com/-specials
+entered: https://cortaditokc.com/-events
+entered: https://cortaditokc.com/-drink-menu
+entered: https://cortaditokc.com/-food-menu
+13. issue key: WEB-172703, spot id: 98856, websiteURL: https://maharajindiangrill.com/
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-about
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-food-menu
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-drink-menu
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-events
+https://maharajindiangrill.com/#
+https://order.toasttab.com/online/maharaj-the-indian-grill-northbrook-3111-dundee-rd
+https://order.toasttab.com/online/maharaj-the-indian-grill-chicago-state-st-333-south-state-street
+https://order.toasttab.com/online/maharaj-the-indian-grill-elmhurst-117-n-addison-ave
+https://order.toasttab.com/online/maharaj-the-indian-grill-franklin-park-3400-river-road
+https://maharajindiangrill.com/#
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-reservations
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-reservations-chicago-st
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-reservations-elmhurst
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-reservations-franklin
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-party#
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-catering#
+https://tmt.spotapps.co/job-listings?spot_id=98856&callback_url=http://maharajindiangrill.com/#
+https://maharajindiangrill.com/northbrook-maharaj-indian-grill-locations
+entered: https://maharajindiangrill.com/-events
+entered: https://maharajindiangrill.com/-drink-menu
+entered: https://maharajindiangrill.com/-food-menu
+14. issue key: WEB-172699, spot id: 80807, websiteURL: https://magazinepizzanola.com/
+https://magazinepizzanola.com/#
+https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-food-menu
+https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-drink-menu
+https://magazinepizzanola.com/new-orleans-cbd-warehouse-district-magazine-pizza-happy-hours-specials
+https://magazine-pizza-order-online.securebrygid.com/zgrid/themes/10547/intro/index.jsp#
+15. issue key: WEB-172683, spot id: 99733, websiteURL: https://rexsinnkeeper.com/
+https://rexsinnkeeper.com/waunakee-waunakee-rex-s-innkeeper-food-menu
+https://rexsinnkeeper.com/waunakee-waunakee-rex-s-innkeeper-drink-menu
+https://rexsinnkeeper.com/waunakee-waunakee-rex-s-innkeeper-events
+https://rexsinnkeeper.com/waunakee-waunakee-rex-s-innkeeper-party#
+https://tmt.spotapps.co/job-listings?spot_id=99733&callback_url=http://rexsinnkeeper.com/#
+entered: https://rexsinnkeeper.com/-events
+entered: https://rexsinnkeeper.com/-drink-menu
+entered: https://rexsinnkeeper.com/-food-menu
+entered: https://rexsinnkeeper.com/-party
+16. issue key: WEB-172259, spot id: 315645, websiteURL: https://farmerboycf.com/
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-food-menu
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-drink-menu
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-happy-hours-specials
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-events
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-reservations#
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-party#
+https://farmerboycf.com/akron-akron-farmer-boy-restaurant-catering#
+https://tmt.spotapps.co/job-listings?spot_id=315645&callback_url=http://farmerboycf.com/#
+entered: https://farmerboycf.com/-specials
+entered: https://farmerboycf.com/-events
+entered: https://farmerboycf.com/-drink-menu
+entered: https://farmerboycf.com/-food-menu
+17. issue key: WEB-172244, spot id: 149769, websiteURL: https://splashsupperlounge.vegas/
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-food-menu
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-drink-menu
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-events
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-reservations#
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-party#
+https://splashsupperlounge.vegas/las-vegas-splash-supper-club-catering#
+https://tmt.spotapps.co/job-listings?spot_id=149769&callback_url=http://splashsupperlounge.vegas/#
+entered: https://splashsupperlounge.vegas/-events
+entered: https://splashsupperlounge.vegas/-drink-menu
+entered: https://splashsupperlounge.vegas/-food-menu
+18. issue key: WEB-172242, spot id: 384187, websiteURL: https://arceneauxs.com/
+19. issue key: WEB-172239, spot id: 346368, websiteURL: https://jallikattuindian.com/
+https://jallikattuindian.com/katy-jallikattu-indian-grill-food-menu
+https://jallikattuindian.com/katy-jallikattu-indian-grill-drink-menu
+https://jallikattuindian.com/katy-jallikattu-indian-grill-happy-hours-specials
+https://jallikattuindian.com/katy-jallikattu-indian-grill-events
+https://order.toasttab.com/online/jallikattu-indian-grill#
+https://jallikattuindian.com/katy-jallikattu-indian-grill-reservations#
+https://jallikattuindian.com/katy-jallikattu-indian-grill-catering#
+entered: https://jallikattuindian.com/-specials
+entered: https://jallikattuindian.com/-events
+entered: https://jallikattuindian.com/-drink-menu
+entered: https://jallikattuindian.com/-food-menu
+entered: https://jallikattuindian.com/-reservations
+20. issue key: WEB-172235, spot id: 129197, websiteURL: https://thekeecolumbus.com/
+https://thekeecolumbus.com/columbus-the-warehouse-district-the-kee-events
+https://thekeecolumbus.com/columbus-the-warehouse-district-the-kee-booking
+https://thekeecolumbus.com/columbus-the-warehouse-district-the-kee-rooms-venues
+https://thekeecolumbus.com/columbus-the-warehouse-district-the-kee-faq
+https://tmt.spotapps.co/job-listings?spot_id=129197&callback_url=http://thekeecolumbus.com/#
+entered: https://thekeecolumbus.com/-events
+21. issue key: WEB-172234, spot id: 321519, websiteURL: https://veracruzbatonrouge.com/
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-drink-menu
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-food-menu
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-happy-hours-specials
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-catering#
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-party#
+https://veracruzbatonrouge.com/baton-rouge-veracruz-coastal-mexican-events
+https://tmt.spotapps.co/job-listings?spot_id=321519&callback_url=http://veracruzbatonrouge.com/#
+entered: https://veracruzbatonrouge.com/-specials
+entered: https://veracruzbatonrouge.com/-events
+entered: https://veracruzbatonrouge.com/-drink-menu
+entered: https://veracruzbatonrouge.com/-food-menu
+entered: https://veracruzbatonrouge.com/-party
+entered: https://veracruzbatonrouge.com/-catering
+22. issue key: WEB-172220, spot id: 266094, websiteURL: https://citybearcafe.com/
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-food-menu
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-drink-menu
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-happy-hours-specials
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-events
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-reservations#
+https://citybearcafe.com/#
+https://tmt.spotapps.co/ordering-menu?spot_id=266094&accordion=true&images=yes&callback_url=http://citybearcafe.com/
+https://www.doordash.com/store/morales-diner-restaurant-chicago-28727106/
+https://www.ubereats.com/store/morales-diner/oQyN2IsCUwy-qTbEzP4MpQ?srsltid=AfmBOorw7DQKSA2wLw1T5jNBdNJopM4ru062L0bnRDW8ZjWaRvvylv0t
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-party#
+https://citybearcafe.com/chicago-albany-park-city-bear-cafe-catering#
+https://tmt.spotapps.co/job-listings?spot_id=266094&callback_url=http://citybearcafe.com/#
+entered: https://citybearcafe.com/-specials
+entered: https://citybearcafe.com/-events
+entered: https://citybearcafe.com/-drink-menu
+entered: https://citybearcafe.com/-food-menu
+entered: https://citybearcafe.com/-party
+entered: https://citybearcafe.com/-reservations
+entered: https://citybearcafe.com/-catering
+23. issue key: WEB-172134, spot id: 138453, websiteURL: https://ospreyspokane.com/
+https://ospreyspokane.com/#
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-food-menu
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-drink-menu
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-happy-hours-specials
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-party#
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-catering#
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-about
+https://ospreyspokane.com/#about_us_reservations_section
+https://ospreyspokane.com/spokane-osprey-restaurant-and-bar-events
+https://osprey.alohaorderonline.com/Engage.aspx?#/engage/ordering/menu#
+entered: https://ospreyspokane.com/-specials
+entered: https://ospreyspokane.com/-events
+entered: https://ospreyspokane.com/-drink-menu
+entered: https://ospreyspokane.com/-food-menu
+entered: https://ospreyspokane.com/-reservations
+removed cta link: job listing
+24. issue key: WEB-170044, spot id: 110022, websiteURL: https://thereefnewport.com/
+https://thereefnewport.com/newport-the-reef-newport-food-menu
+https://thereefnewport.com/newport-the-reef-newport-drink-menu
+https://thereefnewport.com/newport-the-reef-newport-happy-hours-specials
+https://thereefnewport.com/newport-the-reef-newport-standard-events
+https://thereefnewport.com/newport-the-reef-newport-private-event
+https://thereefnewport.com/#reservations_open_table_v2
+https://tmt.spotapps.co/job-listings?spot_id=110022&callback_url=http://thereefnewport.com/#
+https://www.heritagerestaurantgroup.com/giftcards
+https://thereefnewport.com/newport-the-reef-newport-press
+https://the-reef-newport.myspreadshop.com/
+entered: https://thereefnewport.com/-specials
+entered: https://thereefnewport.com/-events
+entered: https://thereefnewport.com/-drink-menu
+entered: https://thereefnewport.com/-food-menu
+entered: https://www.heritagerestaurantgroup.com/giftcards
+entered: https://thereefnewport.com/-reservations
+25. issue key: WEB-162887, spot id: 313911, websiteURL: https://www.beansrestaurantfl.com/

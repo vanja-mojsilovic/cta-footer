@@ -71,6 +71,32 @@ public class VariablesAndUrlsPage extends AbstractComponent {
 	public List<String> parent_child_add_menus = new ArrayList<>();
 	public String twitterUserNameFile ;
 	public String instagramUserNameFile;
+	public String listOfQaMembersNames = "6201161deaf9e20070737924, "
+			+ "624ab599fd5e45007046851a, "
+			+ "63bbd7b824db796721235e13,"
+			+ "63106e0e55b0a9e29f1ae60d, "
+			+ "6405a88c2847866310ffdcb1, "
+			+ "642ac9ce551f476a04685954, "
+			+ "638478162acfad92d7b2a41c, "
+			+ "712020:2ec53619-4525-4e3f-bbea-f57f209074ef,"
+			+ "712020:94bcabc8-7a59-4228-b064-20fff37454d0, "
+			+ "712020:6cffa8dc-7b35-4c76-a7af-1b9816fd9dbc, "
+			+ "712020:f77ed01f-96d6-492b-a3a8-8bc5af83ea77, "
+			+ "6201161cf5d29a0068fa75b3,"
+			+ "712020:cd832742-7b26-410d-8e24-63fb09a948e4, "
+			+ "642ac9ce9f314a0a30144195, "
+			+ "633aac93748d1bfcb85b0f7a, "
+			+ "633ff94e8b75455be459503a, "
+			+ "6368fdd911c69c741844dccb,"
+			+ "712020:43b4ceca-2c92-4efa-b804-87c11ad183dc, "
+			+ "712020:cd92f95f-f13e-4334-a6e6-99e1385bbae7, "
+			+ "712020:024ca126-b2f8-4878-a896-c83c4aeeeb39, "
+			+ "712020:ff3bf219-07e4-48f2-bce7-90c84915e2fc,"
+			+ "712020:d5d4d64f-73ab-4947-9664-3face76684af, "
+			+ "712020:8ee9b3a3-39c6-4c00-bc98-ba7a481838a1,"
+			+ "712020:28f2889d-6895-472a-a1eb-cf5a61c975eb, "
+			+ "712020:6a18abe4-4aaa-4125-9a51-768090e8796e,"
+			+ "712020:f8d0a823-a2b3-468e-bb8d-f3008a564be7";
 	
 
 	

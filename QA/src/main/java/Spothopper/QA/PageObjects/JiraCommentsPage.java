@@ -8,6 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -107,6 +108,101 @@ public class JiraCommentsPage extends AbstractComponent {
 	
 	
 	//methods
+	public int getIssueKeySpotIdFromApi(WebDriver driver,String apiUrl,List<String> issueKeyCollection,List<String> spotIdCollection) throws InterruptedException {
+		int numberResult = 0;
+		System.out.println(apiUrl);
+		String script = 
+				"return (async function() {" +
+					    "  const url = '" + apiUrl + "';" +
+					    "  const response = await fetch(url, {" +
+					    "    method: 'GET'," +
+					    "    headers: {" +
+					    "      'Content-Type': 'application/json'," +
+					    "    }" +
+					    "  });" +
+					    "  const data = await response.json();" +
+					    "  if (data && data.issues) {" +
+					    "    return data.issues.map(issue => ({" +
+					    "      key: issue.key," +
+					    "      spotId: issue.fields.customfield_10053" +
+					    "    }));" +
+					    "  } else {" +
+					    "    return 'No issues found';" +
+					    "  }" +
+					    "})()";
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        Object result = js.executeScript(script);
+        int k = 0;
+        if (result instanceof List) {
+            List<Map<String, String>> issues = (List<Map<String, String>>) result;
+            for(Map<String, String> issue:issues) {
+            	String key = issue.get("key");
+                issueKeyCollection.add(key);
+                String spotId = issue.get("spotId");
+                spotIdCollection.add(spotId);
+                System.out.println(k+". Key: " + key + ", Spot ID: " + spotId);
+                k++;
+            }
+            numberResult = k;
+        } else {
+            System.out.println(result);
+        }
+        return numberResult;
+	}
+	
+	public int getIssueKeySpotIdWebsiteUrlFromApi(WebDriver driver,String apiUrl,List<String> issueKeyCollection,List<String> spotIdCollection,List<String> websiteUrlCollection) throws InterruptedException {
+		int numberResult = 0;
+		System.out.println(apiUrl);
+		String script = 
+				"return (async function() {" +
+					    "  const url = '" + apiUrl + "';" +
+					    "  const response = await fetch(url, {" +
+					    "    method: 'GET'," +
+					    "    headers: {" +
+					    "      'Content-Type': 'application/json'," +
+					    "    }" +
+					    "  });" +
+					    "  const data = await response.json();" +
+					    "  if (data && data.issues) {" +
+					    "    return data.issues.map(issue => ({" +
+					    "      key: issue.key," +
+					    "      spotId: issue.fields.customfield_10053," +
+					    "      websiteUrl: issue.fields.customfield_10068" +
+					    "    }));" +
+					    "  } else {" +
+					    "    return 'No issues found';" +
+					    "  }" +
+					    "})()";
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        Object result = js.executeScript(script);
+        int[] k = {0};
+        if (result instanceof List) {
+            List<Map<String, String>> issues = (List<Map<String, String>>) result;
+             
+            issues.forEach(issue -> {
+            	
+                String key = issue.get("key");
+                issueKeyCollection.add(key);
+                String spotId = issue.get("spotId");
+                spotIdCollection.add(spotId);
+                String websiteUrl = issue.get("websiteUrl");
+                if(websiteUrl == null || websiteUrl.isEmpty()) {
+                	websiteUrl="null";
+                }
+                websiteUrlCollection.add(websiteUrl);
+                System.out.println(k[0]+". Key: " + key + ", Spot ID: " + spotId + ", Website URL: " + websiteUrl);
+                k[0]++;
+            });
+        } else {
+            System.out.println(result);
+        }
+        numberResult = k[0];
+        return numberResult;
+	}
+		
+
+	
+	
 	public int loadCollectionsCtaFromApi(WebDriver driver,
 			String jql,
 			//String enteredKeyIssues,
@@ -125,6 +221,8 @@ public class JiraCommentsPage extends AbstractComponent {
 	    Matcher keyIssueMatcher = keyIssuePattern.matcher(tasksInJson);
 	    //String spotIdRegex = "\"customfield_10053\":\"(\\d+)\"";
 	    String spotIdRegex = "\"customfield_10053\"\\s*:\\s*\"(\\d+)\"";
+	    //String spotIdRegex = "\"customfield_10053\"\\s*:\\s*\"(.*?)\"\\s*,";
+
 		Pattern spotIdPattern = Pattern.compile(spotIdRegex);
 	    Matcher spotIdMatcher = spotIdPattern.matcher(tasksInJson);
 	    //String websitUrlRegex = "\"customfield_10068\":\"(https?://[^\"]+)\"";
@@ -137,7 +235,7 @@ public class JiraCommentsPage extends AbstractComponent {
         	//String keyIssueFeched = matcher.group().substring(9,matcher.group().length()-10);
         	String keyIssueFetched = keyIssueMatcher.group(1);
         	if(keyIssueFetched.isEmpty()) {
-        		keyIssueFetched = "";
+        		keyIssueFetched = "null";
         	}
         	System.out.println(numb+". keyIssueFetched: "+keyIssueFetched);
         	issueKeyCollection.add(keyIssueFetched);
@@ -146,9 +244,10 @@ public class JiraCommentsPage extends AbstractComponent {
         while (spotIdMatcher.find()) {
         	numb++;
         	//String spotIdFetched = spotIdMatcher.group().substring(9,matcher.group().length()-1);
-        	String spotIdFetched = spotIdMatcher.group(1);
+        	//String spotIdFetched = spotIdMatcher.group(1);
+        	String spotIdFetched = spotIdMatcher.find() ? spotIdMatcher.group(1) : "null";
         	if(spotIdFetched.isEmpty()) {
-        		spotIdFetched = "";
+        		spotIdFetched = "null";
         	}
         	System.out.println(numb+". spotIdFetched: "+spotIdFetched);
         	spotIdCollection.add(spotIdFetched);
@@ -157,9 +256,10 @@ public class JiraCommentsPage extends AbstractComponent {
         while (websitUrlMatcher.find()) {
         	numb++;
         	//String websiteUrlFetched = spotIdMatcher.group().substring(9,matcher.group().length()-1);
-        	String websiteUrlFetched = websitUrlMatcher.group(1);
+        	//String websiteUrlFetched = websitUrlMatcher.group(1);
+        	String websiteUrlFetched = websitUrlMatcher.find() ? websitUrlMatcher.group(1) : "null";
         	if(websiteUrlFetched.isEmpty()) {
-        		websiteUrlFetched = "";
+        		websiteUrlFetched = "null";
         	}
         	System.out.println(numb+". websiteUrlFetched: "+websiteUrlFetched);
         	websiteUrlCollection.add(websiteUrlFetched);
@@ -195,7 +295,7 @@ public class JiraCommentsPage extends AbstractComponent {
 	            }
 	            //System.out.println(numb+". "+matcher.group());
 	        }
-	    System.out.println("Number of tasks: "+numb+", enteredKeyIssues: "+enteredKeyIssues);
+	    System.out.println("Number of tasks: "+numb+", KeyIssues: "+enteredKeyIssues);
 	    return enteredKeyIssues;
 	}
 	
@@ -394,7 +494,7 @@ public class JiraCommentsPage extends AbstractComponent {
 			int numberOfTasks) {
 		List<WebElement> spotIdElements = waitForVisibilityOfElements(driver, spotIdLocator, 15);
 		List<WebElement> issueKeyElements = waitForVisibilityOfElements(driver, issueKeyLocator, 15);
-		List<WebElement> websiteUrlElements = waitForVisibilityOfElements(driver, websiteUrlLocator, 15);
+		//List<WebElement> websiteUrlElements = waitForVisibilityOfElements(driver, websiteUrlLocator, 15);
 		for (int j = 0; j<numberOfTasks; j++) {
 			String spotId = spotIdElements.get(j).getText();
 			System.out.println(j+". "+spotId);

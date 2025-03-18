@@ -1,0 +1,2 @@
+1. 0. issue key: WEB-173208, spot id: 400329, websiteURL: https://adelitasmexicancuisinemo.com/, INCOMPLETE NUMBER OF ORDER FOOTER LINKS!, Previous Hash: a6864935eaf3d964bd5865325cc684986c94306214f479dad65ca25b187ec10e, Hash: 8a74b8b7e12e37b57a8f203f89bcdda00aa39c5d49e00de812f19b582e37e600
+2. 1. issue key: WEB-173126, spot id: 423093, websiteURL: https://villadolcecafe.com/, NO WEB ELEMENTS ON WEBSITE!, Previous Hash: 8a74b8b7e12e37b57a8f203f89bcdda00aa39c5d49e00de812f19b582e37e600, Hash: 29b87810f3ac297531a9b0f7ba40c8622a762587bac7bf785e464b62ad73cd10
