@@ -7,14 +7,14 @@
   <test thread-count="5" parallel="tests" name="Website features(failed)">
     <parameter name="dataProviderCounter" value="0"/>
     <classes>
-      <class name="Spothopper.QA.TestCases.BuildTest">
+      <class name="Spothopper.QA.TestCases.PlaceHolderTest">
         <methods>
           <include name="closeWindow"/>
           <include name="launchApplication"/>
-          <include name="bSuite"/>
           <include name="getWebsiteFeatures"/>
+          <include name="bSuite"/>
         </methods>
-      </class> <!-- Spothopper.QA.TestCases.BuildTest -->
+      </class> <!-- Spothopper.QA.TestCases.PlaceHolderTest -->
     </classes>
   </test> <!-- Website features(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -159,7 +159,7 @@ public class BuildTest extends BaseTest {
 	       	String apiUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=issue%20in%20%28WEB-171414%2CWEB-171412%2CWEB-171411%2CWEB-171366%2CWEB-171353%29&maxResults=1000";
 	        
 	        // comment out
-	        //resultTasks = "labels NOT IN (WordPress) AND issue in (WEB-168203)";
+	        //resultTasks = "labels NOT IN (WordPress) AND issue in (WEB-173967)";
 	        
 	       	String encodedJql = URLEncoder.encode(resultTasks, "UTF-8");
 	        String apiQueryUrl = "https://spothopper.atlassian.net/rest/api/3/search?jql=" + encodedJql+"&maxResults=1000";
@@ -192,7 +192,8 @@ public class BuildTest extends BaseTest {
 	        	//websiteFeaturesPage.goToWithResponseCode(testSiteUrl);
 	        	//String pageHtml = websiteFeaturesPage.getWebsitePageHtml(driver,testSiteUrl);
 	        	String branchName = jiraCommentsPage.getBranchName(driver,testSiteUrl);
-	        	System.out.println("\n"+j+". issueKey "+issueKey+", spotId "+spotId+", testSiteUrl "+testSiteUrl+", branchName "+branchName);
+	        	buildLogComment = "\n<><><> "+j+". issueKey "+issueKey+", spotId "+spotId+", testSiteUrl "+testSiteUrl+", branchName "+branchName;
+	        	System.out.println(buildLogComment);
 	        	
 	        	// github issue
 	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
@@ -200,6 +201,8 @@ public class BuildTest extends BaseTest {
 	        	String githubIssueLink = jiraCommentsPage.getGithubIssueLink(driver);
 	        	jiraCommentsPage.goToWithResponseCode(githubIssueLink);
 	        	Thread.sleep(3000);
+	        	String oldDomain = buildPage.getOldDomain(driver);
+	        	System.out.println("oldDomain "+oldDomain);
 	        	boolean hasLanding = githubIssuePage.checkLanding(driver);
 	        	boolean hasPlaceHolder = githubIssuePage.checkPlaceHolder(driver);      	
 	        	if(hasPlaceHolder) {
@@ -236,26 +239,28 @@ public class BuildTest extends BaseTest {
 	        	Thread.sleep(2000);
 	        	
 	        	// website elements
-	        	//jiraCommentsPage.goToWithResponseCode("https://www.spothopperapp.com/admin/spots/"+spotId+"/business_info");
-	        	//String oldDomain = buildPage.getOldDomain(driver);
-	        	//System.out.println("oldDomain "+oldDomain);
-	        	//buildPage.goToWithResponseCode(testSiteUrl);
-	        	//Thread.sleep(2000);
-	        	//buildPage.closeNewsLetter(driver);
-	        	//successLog += buildPage.getAllHrefLinks(driver,oldDomain);
-	        	//buildPage.aHrefOnButtons(driver);
+	        	buildPage.goToWithResponseCode(testSiteUrl);
+	        	Thread.sleep(2000);
+	        	buildPage.closeNewsLetter(driver);
+	        	successLog += buildPage.getAllHrefLinks(driver,oldDomain);
 	        	buildLogComment += successLog;
+	        	successLog += buildPage.checkVissualyHidden(driver);
+	        	successLog += buildPage.checkPhoneNumber(driver);
 	        	
-	       
+	        	
+	        	
+	        	
+	        	
+	        	
+	        	
 	        	//save comment in jira
 	        	jiraCommentsPage.goToWithResponseCode("https://spothopper.atlassian.net/issues/"+issueKey);
 	        	Thread.sleep(4000);
-	        	
 	        	String buildComment = "Note for QA:"+successLog+"\nBuild settings done by automation.";
 	        	jiraCommentsPage.enterComment(driver,buildComment);
 	        	jiraCommentsPage.saveComment(driver);
 	        	
-	        	String resultString = issueKey+","+spotId+","+testSiteUrl+","+branchName;
+	        	String resultString =j+". "+ issueKey+","+spotId+","+testSiteUrl+","+branchName;
 	        	
 	        	readWriteFilePage.createBuildsLogFile(driver,currentTimeString,buildLogComment);
 	        	readWriteFilePage.createBuildSucessFile(driver,resultString,currentTimeString,firtsEntering);

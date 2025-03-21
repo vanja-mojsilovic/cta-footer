@@ -147,7 +147,7 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		boolean result=false;
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
 		for(WebElementPage element:navBarElements) {
-			List<String> substrings = Arrays.asList("chownow", "grubhub","tel:+","securebrygid");
+			List<String> substrings = Arrays.asList("chownow", "grubhub","tel:+","securebrygid","ubereats","doordash");
 	        boolean containsSubstring = substrings.stream().anyMatch(element.href::contains);
 			if(containsSubstring) {
 				 continue;
@@ -281,8 +281,8 @@ public class WebsiteFeaturesPage extends AbstractComponent {
 		            		System.out.println("endOfCtaLink changed to -parties, "+element.href);
 		            	}
 		            	if(element.href.contains("private-parties")) {
-		            		feature.endOfCtaLink = "-private-parties";
-		            		System.out.println("endOfCtaLink changed to -private-parties, "+element.href);
+		            		feature.endOfCtaLink = "private-parties";
+		            		System.out.println("endOfCtaLink changed to private-parties, "+element.href);
 		            	}		        
 		            }
 	            	if(feature.shCtaName.toLowerCase().trim().equals("reservations")) {

@@ -1,0 +1,25 @@
+
+1. issue key: WEB-173570, spot id: 370470, websiteURL: https://saucecaribbean.com/
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-about
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-food-menu
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-drink-menu
+link: https://sauce-modern-caribbean-cuisine.square.site/#
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-reservations#
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-party#
+link: https://saucecaribbean.com/edmonton-sauce-caribbean-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=370470&callback_url=http://saucecaribbean.com/#
+entered: https://saucecaribbean.com/-drink-menu
+entered: https://saucecaribbean.com/-food-menu
+
+2. issue key: WEB-173197, spot id: 390852, websiteURL: https://legendspacificislandgrill.com/
+link: https://www.legendspacificislandgrill.com/menu/
+link: https://www.legendspacificislandgrill.com/menus
+link: https://www.legendspacificislandgrill.com/drinks/
+link: https://www.legendspacificislandgrill.com/specials/
+link: https://www.legendspacificislandgrill.com/events/
+link: https://www.clover.com/online-ordering/legends-pacific-island-g-greer#
+link: https://www.legendspacificislandgrill.com/party
+link: https://www.legendspacificislandgrill.com/catering
+entered: https://www.legendspacificislandgrill.com/-specials
+entered: https://www.legendspacificislandgrill.com/-events
+entered: https://www.legendspacificislandgrill.com/-catering

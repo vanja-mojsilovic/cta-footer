@@ -1,0 +1,82 @@
+
+1. issue key: WEB-174324, spot id: 420143, websiteURL: https://islanddeliandsmoothie.com/
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-food-menu
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-drink-menu
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-happy-hours-specials
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-events
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-party#
+link: https://islanddeliandsmoothie.com/las-vegas-huntridge-district-island-deli-and-smoothie-bar-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=420143&callback_url=http://islanddeliandsmoothie.com/#
+link: https://islanddeliandsmoothie.com/#
+entered: https://islanddeliandsmoothie.com/-specials
+entered: https://islanddeliandsmoothie.com/-events
+entered: https://islanddeliandsmoothie.com/-drink-menu
+entered: https://islanddeliandsmoothie.com/-food-menu
+
+2. issue key: WEB-174072, spot id: 273174, websiteURL: https://solaztecamexgrill.com/
+link: https://solaztecamexgrill.com/madisonville-sol-azteca-mexican-grill-food-menu
+link: https://solaztecamexgrill.com/madisonville-sol-azteca-mexican-grill-drink-menu
+link: https://solaztecamexgrill.com/madisonville-sol-azteca-mexican-grill-reservations#
+link: https://solaztecamexgrill.com/madisonville-sol-azteca-mexican-grill-party#
+link: https://solaztecamexgrill.com/madisonville-sol-azteca-mexican-grill-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=273174&callback_url=http://solaztecamexgrill.com/#
+entered: https://solaztecamexgrill.com/-drink-menu
+entered: https://solaztecamexgrill.com/-food-menu
+
+3. issue key: WEB-174071, spot id: 435138, websiteURL: https://looperspub.com/
+link: https://looperspub.com/st-charles-loopers-drink-menu-870986
+link: https://looperspub.com/st-charles-loopers-drink-menu-870988
+link: https://looperspub.com/st-charles-loopers-liquor
+link: https://looperspub.com/st-charles-loopers-events
+link: https://looperspub.com/st-charles-loopers-party#
+link: https://tmt.spotapps.co/catering?spot_id=108276&callback_url=false
+link: https://www.gimmegolfclub.com/
+entered: https://looperspub.com/-events
+entered: https://looperspub.com/-drink-menu
+entered: https://looperspub.com/-drink-menu
+https://looperspub.com/-catering replaced with: https://tmt.spotapps.co/-catering?spot_id=435138
+
+4. issue key: WEB-174070, spot id: 140555, websiteURL: https://mamasitalian.com/
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-food-menu
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-drink-menu
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-happy-hours-specials
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-events
+link: https://order.spoton.com/bnc-mamas-italian-restaurant-19676/dracut-ma/6660b64d275481682e8372d3#
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-reservations#
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-party#
+link: https://mamasitalian.com/dracut-mama-s-italian-restaurant-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=140555&callback_url=http://mamasitalian.com/#
+entered: https://mamasitalian.com/-specials
+entered: https://mamasitalian.com/-events
+entered: https://mamasitalian.com/-drink-menu
+entered: https://mamasitalian.com/-food-menu
+
+5. issue key: WEB-174069, spot id: 28503, websiteURL: https://cornerstonepuboconomowoc.com/
+link: https://cornerstonepuboconomowoc.com/#
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-catering
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-events
+link: https://tmt.spotapps.co/private-parties?spot_id=28503&callback_url=http://cornerstonepuboconomowoc.com/#
+link: https://www.toasttab.com/cornerstone-sports-pub-eatery-1-24-south-main-street#
+link: https://tables.toasttab.com/restaurants/8f4287fc-e1a8-426d-96cb-aa2e044009e0/findTime#
+link: https://tmt.spotapps.co/job-listings?spot_id=28503&callback_url=http://cornerstonepuboconomowoc.com/#
+link: https://www.toasttab.com/cornerstone-sports-pub-eatery-1-24-south-main-street/giftcards
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-rooms-at-cornerstone
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-food-menu
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-drink-menu
+link: https://cornerstonepuboconomowoc.com/oconomowoc-main-street-cornerstone-pub-and-eatery-happy-hours-specials
+entered: https://cornerstonepuboconomowoc.com/-specials
+entered: https://cornerstonepuboconomowoc.com/-events
+entered: https://cornerstonepuboconomowoc.com/-drink-menu
+entered: https://cornerstonepuboconomowoc.com/-food-menu
+entered: https://www.toasttab.com/cornerstone-sports-pub-eatery-1-24-south-main-street/giftcards
+https://tmt.spotapps.co/private-parties?spot_id=28503 replaced with: https://tmt.spotapps.co/-private-parties?spot_id=28503
+
+6. issue key: WEB-174068, spot id: 401549, websiteURL: https://kantunilartisancuisine.com/
+link: https://kantunilartisancuisine.com/covington-kantunil-artisan-restaurant-food-menu
+link: https://kantunilartisancuisine.com/covington-kantunil-artisan-restaurant-drink-menu
+link: https://kantunilartisancuisine.com/covington-kantunil-artisan-restaurant-reservations#
+link: https://kantunilartisancuisine.com/covington-kantunil-artisan-restaurant-party#
+link: https://kantunilartisancuisine.com/covington-kantunil-artisan-restaurant-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=401549&callback_url=http://kantunilartisancuisine.com/#
+entered: https://kantunilartisancuisine.com/-drink-menu
+entered: https://kantunilartisancuisine.com/-food-menu

@@ -1,0 +1,8 @@
+
+0. issueKey WEB-173543, spotId 287545, testSiteUrl http://spot-sample-287545-website-v1.spotapps.co/, branchName 287545-website-v1
+Wcashe activated
+Wcashe Test Location activated
+287545-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-20 13:13:57

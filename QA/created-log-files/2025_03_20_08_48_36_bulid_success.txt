@@ -1,0 +1,17 @@
+1. WEB-173544,453090,https://spot-sample-453090-website-v1.spotapps.co/,453090-website-v1
+2. WEB-173534,463122,https://spot-sample-463122-website-v1.spotapps.co/,463122-website-v1
+4. WEB-173502,374804,https://spot-sample-374804-website-v1.spotapps.co/,374804-website-v1
+5. WEB-173501,449493,http://spot-sample-449493-website-v1.spotapps.co/,449493-website-v1
+6. WEB-173499,251064,https://spot-sample-251064-website-v1.spotapps.co/,251064-website-v1
+7. WEB-173494,440914,https://spot-sample-440914-website-v1.spotapps.co/,440914-website-v1
+8. WEB-173491,436821,http://spot-sample-436821-website-v1.spotapps.co/,436821-website-v1
+9. WEB-173490,213859,http://spot-sample-213859-website-v1.spotapps.co/,213859-website-v1
+10. WEB-173100,56126,http://spot-sample-56126-website-v1.spotapps.co/,56126-website-v1
+11. WEB-173096,431145,http://spot-sample-431145-website-v1.spotapps.co/,431145-website-v1
+12. WEB-173086,449262,http://spot-sample-449262-website-v1.spotapps.co/,449262-website-v1
+13. WEB-173085,451143,http://spot-sample-451143-website-v1.spotapps.co/,451143-website-v1
+14. WEB-173084,460087,http://spot-sample-460087-website-v1.spotapps.co/,460087-website-v1
+16. WEB-172206,405144,http://spot-sample-405144-website-v1.spotapps.co/,405144-website-v1
+17. WEB-172191,445698,http://spot-sample-445698-website-v1.spotapps.co/,445698-website-v1
+18. WEB-168641,382405,http://spot-sample-382405-website-v1.spotapps.co/,382405-website-v1
+19. WEB-74428,143821,http://spot-sample-143821-website-v1.spotapps.co/,143821-website-v1

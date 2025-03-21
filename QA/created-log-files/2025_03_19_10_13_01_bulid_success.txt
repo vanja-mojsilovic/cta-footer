@@ -1,0 +1,16 @@
+WEB-173981,370958,https://spot-sample-370958-website.spotapps.co/,370958-website
+WEB-173977,429297,https://spot-sample-429297-website.spotapps.co/,429297-website
+WEB-172675,450946,http://spot-sample-450946-website-v1.spotapps.co/,450946-website-v1
+WEB-172674,29577,http://spot-sample-29577-website-v1.spotapps.co/,29577-website-v1
+WEB-172672,101854,http://spot-sample-101854-website-v1.spotapps.co/,101854-website-v1
+WEB-172671,62019,https://spot-sample-62019-website-v1.spotapps.co/,62019-website-v1
+WEB-172655,61590,http://spot-sample-61590-website-v1.spotapps.co/,61590-website-v1
+WEB-172645,431310,http://spot-sample-431310-website-v1.spotapps.co/,431310-website-v1
+WEB-172634,450003,http://spot-sample-450003-website-v1.spotapps.co/,450003-website-v1
+WEB-172189,186734,https://spot-sample-186734-website-v1.spotapps.co/,186734-website-v1
+WEB-171760,460417,http://spot-sample-460417-website-v1.spotapps.co/,460417-website-v1
+WEB-171758,465498,http://spot-sample-465498-website-v1.spotapps.co/,465498-website-v1
+WEB-171746,231681,https://spot-sample-231681-website-v1.spotapps.co/,231681-website-v1
+WEB-171744,444246,http://spot-sample-444246-website-v1.spotapps.co/,444246-website-v1
+WEB-171285,340125,http://spot-sample-340125-website-v1.spotapps.co/,340125-website-v1
+WEB-168353,431509,https://spot-sample-431509-website.spotapps.co/,431509-website

@@ -1,0 +1,91 @@
+
+0. issue key: WEB-173603, spot id: 365438, websiteURL: https://missourihick.com/
+link: https://missourihick.com/cuba-missouri-hick-bbq-food-menu
+link: https://missourihick.com/cuba-missouri-hick-bbq-drink-menu
+link: https://missourihick.com/cuba-missouri-hick-bbq-happy-hours-specials
+link: https://missourihick.com/cuba-missouri-hick-bbq-events
+link: https://missourihick.com/cuba-missouri-hick-bbq-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=365438&callback_url=http://missourihick.com/#
+entered: https://missourihick.com/-specials
+entered: https://missourihick.com/-events
+entered: https://missourihick.com/-drink-menu
+entered: https://missourihick.com/-food-menu
+
+1. issue key: WEB-173602, spot id: 107443, websiteURL: https://benjaminspizzaandbar.com/
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-about
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-food-menu
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-drink-menu
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-happy-hours-specials
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=107443&accordion=true&images=yes&callback_url=http://benjaminspizzaandbar.com/#
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-party#
+link: https://benjaminspizzaandbar.com/roanoke-benjamin-s-pizza-kitchen-and-bar-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=107443&callback_url=http://benjaminspizzaandbar.com/#
+entered: https://benjaminspizzaandbar.com/-specials
+entered: https://benjaminspizzaandbar.com/-events
+entered: https://benjaminspizzaandbar.com/-drink-menu
+entered: https://benjaminspizzaandbar.com/-food-menu
+
+3. issue key: WEB-173598, spot id: 214137, websiteURL: https://casamialatincuisine.com/
+link: https://lewisville.casamialatincuisine.com/
+link: https://littleelm.casamialatincuisine.com/
+entered: https://casamialatincuisine.com/-food-menu
+removed cta link: food menu
+
+4. issue key: WEB-173597, spot id: 424545, websiteURL: https://www.1933barkitchen.com/
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-food-menu
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-drink-menu
+link: https://www.toasttab.com/1933-bar-and-kitchen#
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-reservations#
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-party#
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-catering#
+link: https://1933barkitchen.com/marysville-1933-bar-kitchen-about
+entered: https://1933barkitchen.com/-drink-menu
+entered: https://1933barkitchen.com/-food-menu
+removed cta link: job listing
+
+5. issue key: WEB-173596, spot id: 395322, websiteURL: https://sushinero.com/
+link: https://sushinero.com/miamisburg-sushinero-food-menu
+link: https://sushinero.com/miamisburg-sushinero-drink-menu
+link: https://order.toasttab.com/online/sushi-nero-20-s-1st-st#
+link: https://sushinero.com/miamisburg-sushinero-reservations#
+link: https://sushinero.com/miamisburg-sushinero-party#
+link: https://sushinero.com/miamisburg-sushinero-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=395322&callback_url=http://sushinero.com/#
+link: https://sushinero.com/miamisburg-sushinero-about
+entered: https://sushinero.com/-drink-menu
+entered: https://sushinero.com/-food-menu
+
+6. issue key: WEB-173595, spot id: 429660, websiteURL: https://skippersseafood.com/
+link: https://skippersseafood.com/#
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-food-menu
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-happy-hours-specials
+link: https://skippersseafood.com/#
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-catering
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-party
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-events
+link: https://tmt.spotapps.co/job-listings?spot_id=429660&callback_url=http://skippersseafood.com/#
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-about
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-press
+link: https://skippersseafood.com/#
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-niantic
+link: https://skippersseafood.com/niantic-east-lyme-skippers-seafood-restaurant-old-saybrook
+link: https://order.toasttab.com/online/skippers-niantic#
+entered: https://skippersseafood.com/-specials
+entered: https://skippersseafood.com/-events
+entered: https://skippersseafood.com/-food-menu
+
+7. issue key: WEB-173593, spot id: 96191, websiteURL: https://www.koffeekupwi.com/
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-food-menu
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-drink-menu
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-happy-hours-specials
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-events
+link: https://order.toasttab.com/online/koffee-kup-restaurant-355-e-main-st#
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-party#
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=96191&callback_url=http://koffeekupwi.com/#
+link: https://koffeekupwi.com/stoughton-stoughton-koffee-kup-about
+entered: https://koffeekupwi.com/-specials
+entered: https://koffeekupwi.com/-events
+entered: https://koffeekupwi.com/-drink-menu
+entered: https://koffeekupwi.com/-food-menu

@@ -1,0 +1,9 @@
+0. WEB-175245,397265,http://spot-sample-397265-website-v1.spotapps.co/,397265-website-v1
+1. WEB-174366,451275,https://spot-sample-451275-website-v1.spotapps.co/,451275-website-v1
+2. WEB-174352,435106,http://spot-sample-435106-website-v1.spotapps.co/,435106-website-v1
+3. WEB-174344,94634,http://spot-sample-94634-website-v1.spotapps.co/,94634-website-v1
+4. WEB-174002,463749,http://spot-sample-463749-website-v1.spotapps.co/,463749-website-v1
+5. WEB-174001,362936,https://spot-sample-362936-website-v1.spotapps.co/,362936-website-v1
+6. WEB-173967,459921,https://spot-sample-459921-website-v1.spotapps.co/,459921-website-v1
+7. WEB-173934,477346,http://spot-sample-477346-website-v1.spotapps.co/,477346-website-v1
+8. WEB-172673,59030,https://spot-sample-59030-website-v1.spotapps.co/,59030-website-v1

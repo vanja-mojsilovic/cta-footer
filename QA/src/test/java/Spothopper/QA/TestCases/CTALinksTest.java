@@ -142,7 +142,7 @@ public class CTALinksTest extends BaseTest {
         jiraCommentsPage.jiraSignIn(driver);
        
         
-        String changeDate = "2025-03-12";
+        String changeDate = "2025-03-19";
         String jql = "type = Publish AND summary ~ \"Go Live\" AND status = Done  AND statusCategoryChangedDate >= \""+changeDate+" 00:00\"AND statusCategoryChangedDate <= \""+changeDate+" 23:59\"";
         // comment out
         //jql = "issue in(WEB-166199)";
@@ -187,7 +187,7 @@ public class CTALinksTest extends BaseTest {
         	//issueKey = websites.get(j).get("issue_key");
         	issueKey = issueKeyCollection.get(j);
         	String errorMessage = j+". issue key: "+issueKey+", spot id: "+spotIdFromPopupOrJson+", websiteURL: "+websiteURL;
-        	System.out.println(errorMessage);
+        	System.out.println("<><><>"+errorMessage+"<><><>");
         	ctaLogMessage.add("\n"+errorMessage);
         	//Website desktop
  	        int responseCode = websiteFeaturesPageDesktop.goToWithResponseCode(websiteURL);

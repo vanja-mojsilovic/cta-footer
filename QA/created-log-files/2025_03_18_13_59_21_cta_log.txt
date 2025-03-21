@@ -1,0 +1,173 @@
+
+1. issue key: WEB-173572, spot id: 427549, websiteURL: https://billysdowntowndinerfranchise.com/
+link: https://billysdowntowndinerfranchise.com/bethlehem-billy-s-downtown-diner-franchise-about
+link: https://billysdowntowndinerfranchise.com/bethlehem-billy-s-downtown-diner-franchise-franchise
+link: https://billysdowntowndinerfranchise.com/bethlehem-billy-s-downtown-diner-franchise-locations
+link: https://billysdowntowndinerfranchise.com/bethlehem-billy-s-downtown-diner-franchise-press
+
+2. issue key: WEB-173571, spot id: 203549, websiteURL: https://b52bombers.com/
+link: https://b52bombers.com/menomonee-falls-b52-bombers-food-menu
+link: https://b52bombers.com/menomonee-falls-b52-bombers-drink-menu
+link: https://b52bombers.com/#
+link: https://www.doordash.com/store/b-52-restaurant-menomonee-falls-941785/1371765/?rwg_token=AAiGsoYsN01_82wYmpTNPiJwhiEwvH1
+link: https://www.ubereats.com/store/b-52-restaurant/W1zdtiaqTeWoAThRaLqClg?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas
+link: https://b52bombers.com/menomonee-falls-b52-bombers-catering#
+link: https://b52bombers.com/menomonee-falls-b52-bombers-happy-hours-specials
+link: https://b52bombers.com/menomonee-falls-b52-bombers-events
+link: https://b52bombers.com/menomonee-falls-b52-bombers-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=203549&callback_url=http://b52bombers.com/#
+entered: https://b52bombers.com/-specials
+entered: https://b52bombers.com/-events
+entered: https://b52bombers.com/-drink-menu
+entered: https://b52bombers.com/-food-menu
+
+4. issue key: WEB-173569, spot id: 311652, websiteURL: https://richieshotchickensatx.com/
+link: https://richieshotchickensatx.com/san-antonio-richie-s-hot-chicken-food-menu
+link: https://richieshotchickensatx.com/san-antonio-richie-s-hot-chicken-drink-menu
+link: https://order.toasttab.com/online/richies-hot-chicken-satx?diningOption=takeout&rwg_token=AAiGsobW6dO_ui88ESEKsqjfH0KATYWfGrR5FAM5V9HLsfMprZF877PdW7Kg9W83tK3QkP8Au5zzyfFi0w-OZgVTIk9KXA1UlQ%3D%3D#
+link: https://richieshotchickensatx.com/san-antonio-richie-s-hot-chicken-party#
+link: https://richieshotchickensatx.com/san-antonio-richie-s-hot-chicken-catering#
+entered: https://richieshotchickensatx.com/-drink-menu
+entered: https://richieshotchickensatx.com/-food-menu
+
+5. issue key: WEB-173564, spot id: 359635, websiteURL: https://bloomkitchenbar.com/
+link: https://bloomkitchenbar.com/
+link: https://bloomkitchenbar.com/york-bloom-kitchen-and-bar-food-menu
+link: https://bloomkitchenbar.com/york-bloom-kitchen-and-bar-drink-menu
+link: https://bloomkitchenbar.com/york-bloom-kitchen-and-bar-reservations#
+link: https://bloomkitchenbar.com/york-bloom-kitchen-and-bar-party#
+link: https://bloomkitchenbar.com/york-bloom-kitchen-and-bar-catering#
+entered: https://bloomkitchenbar.com/-drink-menu
+entered: https://bloomkitchenbar.com/-food-menu
+entered: https://bloomkitchenbar.com/-reservations
+
+6. issue key: WEB-173563, spot id: 216585, websiteURL: https://www.casadelsoloc.com/
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-about
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-food-menu
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-drink-menu
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-happy-hours-specials
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-mariachi
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-party#
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-events
+link: https://casadelsoloc.com/tustin-casa-del-sol-cocina-mexicana-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=216585&callback_url=http://casadelsoloc.com/#
+entered: https://casadelsoloc.com/-specials
+entered: https://casadelsoloc.com/-events
+entered: https://casadelsoloc.com/-drink-menu
+entered: https://casadelsoloc.com/-food-menu
+
+7. issue key: WEB-173561, spot id: 388311, websiteURL: https://kaboboc.com/
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-food-menu
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-drink-menu
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-events
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-reservations#
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-party#
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=388311&callback_url=http://kaboboc.com/#
+link: https://kaboboc.com/#
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-locations#item_0
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-locations#item_1
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-locations#item_2
+link: https://kaboboc.com/san-juan-capistrano-kabob-village-san-juan-capistrano-locations#item_3
+entered: https://kaboboc.com/-events
+entered: https://kaboboc.com/-drink-menu
+entered: https://kaboboc.com/-food-menu
+
+8. issue key: WEB-173537, spot id: 409566, websiteURL: https://blueagavetacosandbeer.com/
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-food-menu
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-drink-menu
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-happy-hours-specials
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=409566&accordion=true&images=yes&callback_url=http://blueagavetacosandbeer.com/#
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-reservations#
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-catering#
+link: https://blueagavetacosandbeer.com/agoura-hills-blue-agave-tacos-and-beer-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=409566&callback_url=http://blueagavetacosandbeer.com/#
+entered: https://blueagavetacosandbeer.com/-specials
+entered: https://blueagavetacosandbeer.com/-events
+entered: https://blueagavetacosandbeer.com/-drink-menu
+entered: https://blueagavetacosandbeer.com/-food-menu
+
+9. issue key: WEB-173532, spot id: 336163, websiteURL: https://zambistro.com/
+link: https://zambistro.com/medina-zambistro-food-menu
+link: https://zambistro.com/medina-zambistro-drink-menu
+link: https://zambistro.com/#
+link: https://zambistro.com/medina-zambistro-offsite-catering-page
+link: https://zambistro.com/medina-zambistro-our-venue-partners
+link: https://zambistro.com/medina-zambistro-parties-page
+link: https://zambistro.com/medina-zambistro-job-listings
+link: https://order.toasttab.com/online/zambistro#
+link: https://tables.toasttab.com/restaurants/19675513-4023-480d-a815-908eaf658121/findTime#
+link: https://www.toasttab.com/zambistro/giftcards
+link: https://zambistro.com/medina-zambistro-zambistro-rooftop
+entered: https://zambistro.com/-drink-menu
+entered: https://zambistro.com/-food-menu
+entered: https://www.toasttab.com/zambistro/giftcards
+entered: https://zambistro.com/-parties
+entered: https://zambistro.com/job-listings
+
+10. issue key: WEB-173204, spot id: 388279, websiteURL: https://kabobwoodlandhills.com/
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-food-menu
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-drink-menu
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-events
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-reservations#
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-party#
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=388279&callback_url=http://kabobwoodlandhills.com/#
+link: https://kabobwoodlandhills.com/#
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-locations#item_0
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-locations#item_1
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-locations#item_2
+link: https://kabobwoodlandhills.com/woodland-hills-kabob-village-woodland-hills-locations#item_3
+entered: https://kabobwoodlandhills.com/-events
+entered: https://kabobwoodlandhills.com/-drink-menu
+entered: https://kabobwoodlandhills.com/-food-menu
+
+11. issue key: WEB-173200, spot id: 364140, websiteURL: https://eatatgusto.com/
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-food-menu
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-happy-hours-specials
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-events
+link: https://www.clover.com/online-ordering/gusto-wood-fired-pizza-east-rutherford#
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-reservations#
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-party#
+link: https://eatatgusto.com/#
+link: https://www.clover.com/online-ordering/gusto-wood-fired-pizza-east-rutherford
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-catering
+link: https://tmt.spotapps.co/job-listings?spot_id=364140&callback_url=http://eatatgusto.com/#
+link: https://eatatgusto.com/east-rutherford-gusto-woodfired-pizza-about
+entered: https://eatatgusto.com/-specials
+entered: https://eatatgusto.com/-events
+entered: https://eatatgusto.com/-food-menu
+
+13. issue key: WEB-173167, spot id: 285055, websiteURL: https://castrovillebarbecuecompany.com/
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-food-menu
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-drink-menu
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-happy-hours-specials
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-events
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-reservations#
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-party#
+link: https://castrovillebarbecuecompany.com/castroville-castroville-barbecue-company-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=285055&callback_url=http://castrovillebarbecuecompany.com/#
+entered: https://castrovillebarbecuecompany.com/-specials
+entered: https://castrovillebarbecuecompany.com/-events
+entered: https://castrovillebarbecuecompany.com/-drink-menu
+entered: https://castrovillebarbecuecompany.com/-food-menu
+entered: https://castrovillebarbecuecompany.com/-party
+entered: https://castrovillebarbecuecompany.com/-reservations
+entered: https://castrovillebarbecuecompany.com/-catering
+
+15. issue key: WEB-168992, spot id: 329297, websiteURL: https://fujiyamabistro.com/
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-about
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-food-menu
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-drink-menu
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-happy-hours-specials
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-events
+link: https://www.onlineorderlogin.com/ordering/restaurant/menu?restaurant_uid=9d0c6dd8-d9cc-4ca8-b530-5ae20864151a#
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-reservations#
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-party#
+link: https://fujiyamabistro.com/grand-rapids-fuji-yama-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=329297&callback_url=http://fujiyamabistro.com/#
+entered: https://fujiyamabistro.com/-specials
+entered: https://fujiyamabistro.com/-events
+entered: https://fujiyamabistro.com/-drink-menu
+entered: https://fujiyamabistro.com/-food-menu

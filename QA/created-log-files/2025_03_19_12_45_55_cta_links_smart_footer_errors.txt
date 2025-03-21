@@ -1,0 +1,1 @@
+1. 0. issue key: WEB-174388, spot id: 88600, websiteURL: https://grill.diamondbackgrill.com/, NO WEB ELEMENTS ON WEBSITE!, Previous Hash: a5c0651bc06ceeef21c0a42037cf389a8dd3c1072b37f478b9078c4352a563cb, Hash: acb14d3903acb36ae97954c7ad91165f835882614664116fbf6074111560d33d

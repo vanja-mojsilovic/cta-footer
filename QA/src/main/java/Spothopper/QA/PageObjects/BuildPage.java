@@ -2,6 +2,7 @@ package Spothopper.QA.PageObjects;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
@@ -75,17 +76,96 @@ public class BuildPage extends WebsiteFeaturesPage {
 	@FindBy(xpath = "//a[contains(@ng-click,'websiteInProgress')]")
 	List<WebElement> startBuildButtonLocator;
 	
-	
 	@FindBy(xpath = "//a[not(@role='button') and not(contains(@class,'slidenav'))]")
 	List<WebElement> allAElementsInLocator;
 
+	@FindBy(xpath = "//p[@dir='auto']/a")
+	List<WebElement> currentSiteLocator;
+	
+	@FindBy(xpath ="//a[contains(@class,'custom-temp-btn')]")
+	List<WebElement> buttonVisuallyHiddenLocator;
+	
+	@FindBy(xpath = "(//a[contains(@id, 'phone')])")
+	List<WebElement> phoneNumberLocator;
 	
 	//methods
-	public void getSizeOfImages(WebDriver driver){
-		
-		//DevTools devTools = driver.getDevTools();
+	public String checkPhoneNumber(WebDriver driver) {
+		String result = "";
+		List<WebElement> elements = waitForVisibilityOfElements(driver, phoneNumberLocator, 3);
+		for(WebElement element:elements) {
+			if(!elements.isEmpty()) {
+				String href = element.getAttribute("href").replaceAll("[^\\d]", "").substring(1);
+				String aText = element.getText().replaceAll("[^\\d]", "");
+				System.out.println("Compare phone numbers: "+href+" : "+aText);
+				if(!href.equals(aText)) {
+					result ="Phone number link should be corrected.";
+				}
+			}
+		}
+		return result;
 	}
 	
+	public String validateVisually(WebDriver driver,WebElement aElement,String spanText,String fullText){
+		String result = "";
+		String href = aElement.getAttribute("href");
+		if(!(href== null) && !href.isEmpty()) {
+			if(href.contains("about")) {
+				if(!spanText.equals("about us")) {
+					result +="About Us visually hidden should be corrected: "+fullText+" "+spanText;
+				}
+			}
+			if(href.contains("cater")) {
+				if(!spanText.equals("about catering")) {
+					result +="Catering visually hidden should be corrected: "+fullText+" "+spanText;
+				}
+			}
+			if(href.contains("parties")||href.contains("party")) {
+				if(!spanText.equals("a private party")) {
+					result +="Private parties visually hidden should be corrected: "+fullText+" "+spanText;
+				}
+			}
+			if(href.contains("reserv")) {
+				if(!spanText.equals("a table")) {
+					result +="Reservations visually hidden should be corrected: "+fullText+" "+spanText;
+				}
+			}
+			if(href.contains("job")) {
+				if(!spanText.equals("for a job")) {
+					result +="Jobs visually hidden should be corrected: "+fullText+" "+spanText;
+				}
+			}
+		}
+		return result;
+	}
+	
+	public String checkVissualyHidden(WebDriver driver) {
+		String result="";
+		List<WebElement> elements = buttonVisuallyHiddenLocator;
+		List<String> visuallyHiddenTexts = Arrays.asList("read more", "inquire", "show details", "learn more","book now","apply");
+		if(!elements.isEmpty()) {
+			for(WebElement aElement:elements) {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+	            String fullText = ((String) js.executeScript("return arguments[0].textContent;", aElement)).toLowerCase().trim();
+				boolean isVisuallyHidden = visuallyHiddenTexts.stream().anyMatch(fullText::contains);
+				String message = "";
+				if(isVisuallyHidden) {
+	                try {
+	                    WebElement spanElement = aElement.findElement(By.xpath(".//span[contains(@class,'visuallyhidden')]"));
+	                    String spanText = ((String) js.executeScript("return arguments[0].textContent;", spanElement)).toLowerCase().trim();
+	                    fullText = fullText.replace(spanText, "").trim();
+	                    message = fullText + ", visually hidden: " + spanText;
+	                    result += validateVisually(driver,aElement,spanText,fullText);
+	                } catch (NoSuchElementException e) {
+	                	message = fullText+" : " + "No span visually hidden element found inside!";
+	                    result += message;
+	                }
+	                System.out.println(message);
+	             }
+			}
+		}
+		return result;
+	}
+
 	public boolean hasPromotionPopUpParent(WebElement element) {
 	    // Get the parent element
 	    WebElement parent = element.findElement(By.xpath("./parent::*"));
@@ -121,11 +201,11 @@ public class BuildPage extends WebsiteFeaturesPage {
 			    	    ".filter(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0)" +
 			    	    ".map(node => node.textContent.trim())" +
 			    	    ".join(' ');", element);
-			    String text = scriptResult != null ? scriptResult.toString().trim().toLowerCase() : "";
-				if(aHref == null || aHref.isEmpty()) {
+			    String aElementText = scriptResult != null ? scriptResult.toString().trim().toLowerCase() : "";
+				if(aHref == null || aHref.isEmpty() || aElementText.equals("")) {
 					System.out.println("> This href is empty!");
 				}else {
-					System.out.println("   "+i+". "+aHref+"; "+text+"; "+className);
+					System.out.println("   "+i+". "+aHref+"; "+aElementText+"; "+className);
 					if(aHref.contains(oldDomain) && !oldDomain.trim().isEmpty() && !aHref.contains("@")) {
 					System.out.println(">>>>> Href contains old domain!");
 					result += "\n"+aHref+" Href contains old domain!";
@@ -214,15 +294,18 @@ public class BuildPage extends WebsiteFeaturesPage {
 	
 	public String getOldDomain(WebDriver driver) {
 		String result = "";
-		WebElement element = waitForVisibilityOfElement(driver, domainInputLocator, 15);
-		result = element.getAttribute("value");
-		result = clearUrlFromHttp(driver, result);
-		if (result.startsWith("www.")) {
-	        result = result.substring(4);  // Remove "www."
-	    }
-	    if (result.endsWith("/")) {
-	        result = result.substring(0, result.length() - 1);  // Remove the last character
-	    }
+		List<WebElement> elements = waitForVisibilityOfElements(driver, currentSiteLocator, 3);
+		if(elements.size()>1) {
+			result = elements.get(2).getAttribute("href");
+			result = clearUrlFromHttp(driver, result);
+			if (result.startsWith("www.")) {
+		        result = result.substring(4);  // Remove "www."
+		    }
+		    if (result.endsWith("/")) {
+		        result = result.substring(0, result.length() - 1);  // Remove the last character
+		    }
+		}
+		
 		return result;
 	}
 	

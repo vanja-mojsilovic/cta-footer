@@ -1,0 +1,105 @@
+
+1. issue key: WEB-173592, spot id: 151268, websiteURL: https://www.mojoseastcoasteats.com/
+link: https://order.toasttab.com/online/mojos-east-coast-eats#!/#
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-food-menu
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-drink-menu
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-happy-hours-specials
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-events
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-party#
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=151268&callback_url=http://mojoseastcoasteats.com/#
+link: https://mojoseastcoasteats.com/downers-grove-downers-grove-mojo-s-east-coast-eats-press
+entered: https://mojoseastcoasteats.com/-specials
+entered: https://mojoseastcoasteats.com/-events
+entered: https://mojoseastcoasteats.com/-drink-menu
+entered: https://mojoseastcoasteats.com/-food-menu
+
+2. issue key: WEB-173591, spot id: 438702, websiteURL: https://buddystavern2.com/
+link: https://buddystavern2.com/newton-buddy-s-tavern-2-drink-menu
+link: https://buddystavern2.com/newton-buddy-s-tavern-2-food-menu
+link: https://buddystavern2.com/newton-buddy-s-tavern-2-happy-hours-specials
+link: https://buddystavern2.com/newton-buddy-s-tavern-2-events
+link: https://buddystavern2.com/newton-buddy-s-tavern-2-reservations#
+entered: https://buddystavern2.com/-specials
+entered: https://buddystavern2.com/-events
+entered: https://buddystavern2.com/-drink-menu
+entered: https://buddystavern2.com/-food-menu
+
+3. issue key: WEB-173590, spot id: 279675, websiteURL: https://www.negrilvillage.com/
+link: https://negrilvillage.com/new-york-city-negril-village-food-menu
+link: https://negrilvillage.com/new-york-city-negril-village-events
+link: https://order.online/store/negril-village-restaurant-new-york-491269/?hideModal=true&pickup=true&rwg_token=AAiGsoZGvrBCdUIbKRlKi-ww_Jm_sghBv9dX8tRUgkONAUcbgLtl4BxmQGx5b8mqtCKrpcG9rYOPmqDPzHEvEoqmbEdVWGDfng==&utm_source=gfo#
+link: https://resy.com/cities/new-york-ny/venues/negril-village#
+link: https://negrilvillage.com/new-york-city-negril-village-party#
+link: https://negrilvillage.com/new-york-city-negril-village-catering#
+entered: https://negrilvillage.com/-events
+entered: https://negrilvillage.com/-food-menu
+
+4. issue key: WEB-173585, spot id: 361115, websiteURL: https://mesondeltacoexpress.com/
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-about
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-food-menu
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-drink-menu
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-happy-hours-specials
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=361115&accordion=true&images=yes&callback_url=http://mesondeltacoexpress.com/#
+link: https://mesondeltacoexpress.com/chicago-dunning-meson-del-taco-express-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=361115&callback_url=http://mesondeltacoexpress.com/#
+entered: https://mesondeltacoexpress.com/-specials
+entered: https://mesondeltacoexpress.com/-events
+entered: https://mesondeltacoexpress.com/-drink-menu
+entered: https://mesondeltacoexpress.com/-food-menu
+
+5. issue key: WEB-173578, spot id: 114491, websiteURL: https://sloopjohnbrva.com/
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-menu-nuckols
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-menu-north-parham
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-order-nuckols
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-order-north-parham
+link: https://reserve.spoton.com/restaurant/70689
+link: https://spotonreserve.com/web/restaurant.html?restaurantId=64578/Sloop-John-B
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-events-nuckols
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-events
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-private-parties
+link: https://twinhickorytavern.com/henrico-twin-hickory-tavern-jobs
+entered: https://twinhickorytavern.com/-events
+entered: https://twinhickorytavern.com/-events
+entered: https://twinhickorytavern.com/-private-parties
+entered: https://twinhickorytavern.com/jobs
+removed cta link: drink menu
+removed cta link: food menu
+
+6. issue key: WEB-173576, spot id: 322848, websiteURL: https://somerset.pourhousemaine.com/
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-food-menu
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-happy-hours-specials
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-events
+link: https://app.joinit.com/o/pour-house-maine-1/
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-catering#
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-party#
+link: https://somerset.pourhousemaine.com/palmyra-somerset-pour-house-fundraising
+link: https://tmt.spotapps.co/job-listings?spot_id=322848&callback_url=http://somerset.pourhousemaine.com/#
+entered: https://somerset.pourhousemaine.com/-specials
+entered: https://somerset.pourhousemaine.com/-events
+entered: https://somerset.pourhousemaine.com/-food-menu
+
+7. issue key: WEB-173575, spot id: 394878, websiteURL: https://hancock.pourhousemaine.com/
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-food-menu
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-happy-hours-specials
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-events
+link: https://app.joinit.com/o/pour-house-maine-1/
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-catering#
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-party#
+link: https://hancock.pourhousemaine.com/orland-hancock-pour-house-fundraising
+link: https://tmt.spotapps.co/job-listings?spot_id=394878&callback_url=http://hancock.pourhousemaine.com/#
+entered: https://hancock.pourhousemaine.com/-specials
+entered: https://hancock.pourhousemaine.com/-events
+entered: https://hancock.pourhousemaine.com/-food-menu
+
+8. issue key: WEB-173574, spot id: 394879, websiteURL: https://penobscot.pourhousemaine.com/
+link: https://penobscot.pourhousemaine.com/bangor-penobscot-pour-house-live-music-and-events
+link: https://penobscot.pourhousemaine.com/bangor-penobscot-pour-house-happy-hours-specials
+link: https://app.joinit.com/o/pour-house-maine-1/
+link: https://penobscot.pourhousemaine.com/bangor-penobscot-pour-house-food-trucks
+link: https://penobscot.pourhousemaine.com/bangor-penobscot-pour-house-catering#
+link: https://penobscot.pourhousemaine.com/bangor-penobscot-pour-house-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=394879&callback_url=http://penobscot.pourhousemaine.com/#
+entered: https://penobscot.pourhousemaine.com/-specials
+entered: https://penobscot.pourhousemaine.com/-events

@@ -258,14 +258,18 @@ public class CtaLinksPage extends AbstractComponent {
 								if(!(textInInputElement.equals("https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson))) {
 									inputElement.clear();
 									inputElement.sendKeys("https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson);
-									System.out.println(textInInputElement+" replaced with: "+"https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson);
+									String message = textInInputElement+" replaced with: "+"https://tmt.spotapps.co/"+feature.endOfCtaLink+"?spot_id="+spotIdFromPopupOrJson;
+									System.out.println(message);
+									ctaLogMessage.add("\n"+message);
 								}
 							}else {
 								if(!textInInputElement.equals(domain+feature.endOfCtaLink)) {					
 									inputElement.clear();
 									inputElement.sendKeys(domain + feature.endOfCtaLink);
 									ctaLogMessage.add("\nentered: "+domain + feature.endOfCtaLink);
-									System.out.println(textInInputElement+" replaced with: "+domain+feature.endOfCtaLink);
+									String message = textInInputElement+" replaced with: "+domain+feature.endOfCtaLink;
+									System.out.println(message);
+									ctaLogMessage.add("\n"+message);									
 								}
 							}
 					}
@@ -332,6 +336,7 @@ public class CtaLinksPage extends AbstractComponent {
 	        					&&!(feature.href.contains("spotapps"))){
 	        					shorterLink = feature.href;
 	        				}else {
+	        					
 	        					shorterLink = domain+feature.endOfCtaLink;
 	        				}
 	        			}

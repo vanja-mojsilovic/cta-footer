@@ -1,0 +1,2 @@
+1. 0. issue key: WEB-173600, spot id: 73484, websiteURL: https://casamialatincuisine.com/, DIFFERENT LINKS WITH DOMAIN IN SH AND ON WEBSITE!, Previous Hash: 47cbb891148d2e51ede358e334ef734552e9742fd906817a2182cba4a5ac71e0, Hash: 9c256514a4e94dd3702e7865c2a442efaffe714ecb160355a1c46a8dcbd037e8
+2. 3. issue key: WEB-173122, spot id: 405537, websiteURL: https://thebogtavern.com/, INCOMPLETE NUMBER OF ORDER FOOTER LINKS!, Previous Hash: 9c256514a4e94dd3702e7865c2a442efaffe714ecb160355a1c46a8dcbd037e8, Hash: 321f6919646b5deb9a5422564ea3fdc733abf523b64335503cae432bd6ade597

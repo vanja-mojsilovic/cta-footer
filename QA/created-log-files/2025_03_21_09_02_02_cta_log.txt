@@ -1,0 +1,521 @@
+
+0. issue key: WEB-174861, spot id: 400395, websiteURL: https://bodegagso.com/
+link: https://bodegagso.com/greensboro-the-bodega-food-menu
+link: https://bodegagso.com/greensboro-the-bodega-drink-menu
+link: https://bodegagso.com/greensboro-the-bodega-happy-hours-specials
+link: https://bodegagso.com/greensboro-the-bodega-events
+link: https://bodegagso.com/greensboro-the-bodega-party#
+link: https://bodegagso.com/greensboro-the-bodega-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=400395&callback_url=http://bodegagso.com/#
+link: https://bodegagso.com/#
+link: https://tmt.spotapps.co/ordering-menu?spot_id=400395&accordion=true&images=yes&callback_url=http://bodegagso.com/
+link: https://bodegagso.com/greensboro-the-bodega-store
+link: https://bodegagso.com/bodegacreations
+entered: https://bodegagso.com/-specials
+entered: https://bodegagso.com/-events
+entered: https://bodegagso.com/-drink-menu
+entered: https://bodegagso.com/-food-menu
+
+1. issue key: WEB-174787, spot id: 420992, websiteURL: https://coachscornerpizza.com/
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-food-menu
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-drink-menu
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-happy-hours-specials
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-events
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-reservations#
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-party#
+link: https://coachscornerpizza.com/cypress-coach-s-corner-pizza-and-brew-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=420992&callback_url=http://coachscornerpizza.com/#
+entered: https://coachscornerpizza.com/-specials
+entered: https://coachscornerpizza.com/-events
+entered: https://coachscornerpizza.com/-drink-menu
+entered: https://coachscornerpizza.com/-food-menu
+
+2. issue key: WEB-174454, spot id: 115069, websiteURL: https://thefabsj.com/
+link: https://thefabsj.com/san-jose-the-fab-food-menu
+link: https://thefabsj.com/san-jose-the-fab-drink-menu
+link: https://thefabsj.com/san-jose-the-fab-happy-hours-specials
+link: https://thefabsj.com/san-jose-the-fab-events
+link: https://thefabsj.com/#
+link: https://www.toasttab.com/local/order/the-fab-110-paseo-de-san-antonio/r-9789c872-dd06-40f4-8f58-f3f60c843df3
+link: https://thefabsj.com/san-jose-the-fab-reservations#
+link: https://thefabsj.com/san-jose-the-fab-party#
+link: https://thefabsj.com/san-jose-the-fab-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=115069&callback_url=http://thefabsj.com/#
+entered: https://thefabsj.com/-specials
+entered: https://thefabsj.com/-events
+entered: https://thefabsj.com/-drink-menu
+entered: https://thefabsj.com/-food-menu
+
+3. issue key: WEB-174452, spot id: 368315, websiteURL: https://tommyskoreanexpress.com/
+link: https://tommyskoreanexpress.com/el-paso-tommy-s-korean-express-food-menu
+link: https://tommyskoreanexpress.com/el-paso-tommy-s-korean-express-drink-menu
+link: https://order.toasttab.com/online/tommys-korean-express-9477-dyer-street#
+link: https://tommyskoreanexpress.com/el-paso-tommy-s-korean-express-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=368315&callback_url=http://tommyskoreanexpress.com/#
+link: https://tommyskoreanexpress.com/el-paso-tommy-s-korean-express-franchise
+entered: https://tommyskoreanexpress.com/-drink-menu
+entered: https://tommyskoreanexpress.com/-food-menu
+entered: https://tommyskoreanexpress.com/-catering
+https://tmt.spotapps.co/catering?spot_id=368315 replaced with: https://tommyskoreanexpress.com/-catering
+
+4. issue key: WEB-174451, spot id: 75042, websiteURL: https://capeharbouroysterbar.com/
+link: https://capeharbouroysterbar.com/cape-coral-cape-harbour-marina-cape-harbour-oyster-bar-and-grill-food-menu
+link: https://capeharbouroysterbar.com/cape-coral-cape-harbour-marina-cape-harbour-oyster-bar-and-grill-drink-menu
+link: https://capeharbouroysterbar.com/cape-coral-cape-harbour-marina-cape-harbour-oyster-bar-and-grill-happy-hours-specials
+link: https://capeharbouroysterbar.com/cape-coral-cape-harbour-marina-cape-harbour-oyster-bar-and-grill-events
+link: https://tmt.spotapps.co/job-listings?spot_id=75042&callback_url=http://capeharbouroysterbar.com/#
+entered: https://capeharbouroysterbar.com/-specials
+entered: https://capeharbouroysterbar.com/-events
+entered: https://capeharbouroysterbar.com/-drink-menu
+entered: https://capeharbouroysterbar.com/-food-menu
+
+5. issue key: WEB-174450, spot id: 246052, websiteURL: https://tequilamockingbyrdbar.com/
+link: https://tequilamockingbyrdbar.com/el-paso-tequila-mockingbyrd-food-menu
+link: https://tequilamockingbyrdbar.com/el-paso-tequila-mockingbyrd-drink-menu
+link: https://tequilamockingbyrdbar.com/el-paso-tequila-mockingbyrd-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=246052&callback_url=http://tequilamockingbyrdbar.com/#
+link: https://tequilamockingbyrdbar.com/el-paso-tequila-mockingbyrd-reservations#
+entered: https://tequilamockingbyrdbar.com/-drink-menu
+entered: https://tequilamockingbyrdbar.com/-food-menu
+
+6. issue key: WEB-174449, spot id: 86272, websiteURL: https://taquerialaspalmas1.com/
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-food-menu
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-drink-menu
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-happy-hours-specials
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-catering#
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-party#
+link: https://taquerialaspalmas1.com/golden-colorado-mills-las-palmas-i-events
+link: https://taquerialaspalmas1.com/#
+link: https://www.clover.com/online-ordering/las-palmas-1-golden
+entered: https://taquerialaspalmas1.com/-specials
+entered: https://taquerialaspalmas1.com/-events
+entered: https://taquerialaspalmas1.com/-drink-menu
+entered: https://taquerialaspalmas1.com/-food-menu
+
+7. issue key: WEB-174448, spot id: 264430, websiteURL: https://back40nashville.com/
+link: https://back40nashville.com/nashville-back-40-food-menu
+link: https://back40nashville.com/nashville-back-40-drink-menu
+link: https://back40nashville.com/nashville-back-40-happy-hours-specials
+link: https://back40nashville.com/nashville-back-40-catering#
+link: https://back40nashville.com/nashville-back-40-events
+link: https://back40nashville.com/nashville-back-40-party#
+link: https://www.opentable.com/restref/client/?restref=1415065&lang=en-US&ot_source=Restaurant%20website&corrid=260c268b-6479-440b-bb4a-dd63085c54ad#
+link: https://tmt.spotapps.co/job-listings?spot_id=264430&callback_url=http://back40nashville.com/#
+entered: https://back40nashville.com/-specials
+entered: https://back40nashville.com/-events
+entered: https://back40nashville.com/-drink-menu
+entered: https://back40nashville.com/-food-menu
+
+8. issue key: WEB-174446, spot id: 394567, websiteURL: https://tedsspringlake.com/
+link: https://tedsspringlake.com/spring-lake-ted-s-food-menu
+link: https://tedsspringlake.com/spring-lake-ted-s-drink-menu
+link: https://tedsspringlake.com/spring-lake-ted-s-happy-hours-specials
+link: https://tedsspringlake.com/spring-lake-ted-s-events
+link: https://order.toasttab.com/online/teds-of-spring-lake-14977-cleveland-st#
+link: https://tedsspringlake.com/spring-lake-ted-s-reservations#
+link: https://tedsspringlake.com/spring-lake-ted-s-party#
+link: https://tedsspringlake.com/spring-lake-ted-s-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=394567&callback_url=http://tedsspringlake.com/#
+link: https://www.toasttab.com/teds-of-spring-lake-14977-cleveland-st/giftcards
+link: https://tedsspringlake.com/spring-lake-ted-s-locations
+link: https://tedsspringlake.com/spring-lake-ted-s-donation-requests
+entered: https://tedsspringlake.com/-specials
+entered: https://tedsspringlake.com/-events
+entered: https://tedsspringlake.com/-drink-menu
+entered: https://tedsspringlake.com/-food-menu
+entered: https://www.toasttab.com/teds-of-spring-lake-14977-cleveland-st/giftcards
+
+10. issue key: WEB-174439, spot id: 125040, websiteURL: https://pizzeriarustica.com/
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-food-menu
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-drink-menu
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-happy-hours-specials
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-events
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-reservations#
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-party#
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=125040&callback_url=http://pizzeriarustica.com/#
+link: https://pizzeriarustica.com/colorado-springs-occ-pizzeria-rustica-about
+entered: https://pizzeriarustica.com/-specials
+entered: https://pizzeriarustica.com/-events
+entered: https://pizzeriarustica.com/-drink-menu
+entered: https://pizzeriarustica.com/-food-menu
+
+11. issue key: WEB-174438, spot id: 402271, websiteURL: https://yarlingspupuseria.com/
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-food-menu
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-drink-menu
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-happy-hours-specials
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=402271&accordion=true&images=yes&callback_url=http://yarlingspupuseria.com/#
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-reservations#
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-party#
+link: https://yarlingspupuseria.com/albuquerque-yarling-s-pupuseria-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=402271&callback_url=http://yarlingspupuseria.com/#
+entered: https://yarlingspupuseria.com/-specials
+entered: https://yarlingspupuseria.com/-events
+entered: https://yarlingspupuseria.com/-drink-menu
+entered: https://yarlingspupuseria.com/-food-menu
+
+12. issue key: WEB-174437, spot id: 184236, websiteURL: https://bushibushidimsumplace.com/
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-food-menu
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-drink-menu
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-happy-hours-specials
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-events
+link: https://order.mealkeyway.com/customer/release/index?mid=7936364b6c485a624f79444253376b31756136786c773d3d#/main#
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-reservations#
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-party#
+link: https://bushibushidimsumplace.com/frisco-bushi-bushi-dim-sum-place-frisco-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=184236&callback_url=http://bushibushidimsumplace.com/#
+entered: https://bushibushidimsumplace.com/-specials
+entered: https://bushibushidimsumplace.com/-events
+entered: https://bushibushidimsumplace.com/-drink-menu
+entered: https://bushibushidimsumplace.com/-food-menu
+
+13. issue key: WEB-174435, spot id: 333986, websiteURL: https://mamifinas.com/
+link: https://mamifinas.com/waynesville-mami-finas-food-menu
+link: https://mamifinas.com/waynesville-mami-finas-drink-menu
+link: https://mamifinas.com/waynesville-mami-finas-happy-hours-specials
+link: https://mamifinas.com/waynesville-mami-finas-events
+link: https://mamifinas.com/waynesville-mami-finas-party#
+link: https://mamifinas.com/waynesville-mami-finas-catering#
+entered: https://mamifinas.com/-specials
+entered: https://mamifinas.com/-events
+entered: https://mamifinas.com/-drink-menu
+entered: https://mamifinas.com/-food-menu
+
+14. issue key: WEB-174434, spot id: 84072, websiteURL: https://wichoshouse.com/
+link: https://wichoshouse.com/grapevine-wicho-s-house-food-menu
+link: https://wichoshouse.com/grapevine-wicho-s-house-drink-menu
+link: https://wichoshouse.com/grapevine-wicho-s-house-happy-hours-specials
+link: https://order.spoton.com/so-wichos-house-restaurant-15728/grapevine-tx/65121d5a36d69aa9100f6708#
+link: https://wichoshouse.com/grapevine-wicho-s-house-reservations#
+link: https://wichoshouse.com/grapevine-wicho-s-house-party#
+link: https://wichoshouse.com/grapevine-wicho-s-house-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=84072&callback_url=http://wichoshouse.com/#
+link: https://wichoshouse.com/grapevine-wicho-s-house-events
+link: https://wichoshouse.com/grapevine-wicho-s-house-about
+entered: https://wichoshouse.com/-specials
+entered: https://wichoshouse.com/-events
+entered: https://wichoshouse.com/-drink-menu
+entered: https://wichoshouse.com/-food-menu
+
+15. issue key: WEB-174432, spot id: 299100, websiteURL: https://decabezaelunico.com/
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-food-menu
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-drink-menu
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-happy-hours-specials
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-catering#
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=299100&accordion=true&images=yes&callback_url=http://decabezaelunico.com/#
+link: https://decabezaelunico.com/chula-vista-de-cabeza-el-unico-reservations#
+entered: https://decabezaelunico.com/-specials
+entered: https://decabezaelunico.com/-events
+entered: https://decabezaelunico.com/-drink-menu
+entered: https://decabezaelunico.com/-food-menu
+
+16. issue key: WEB-174425, spot id: 379401, websiteURL: https://thaithaicuisineescondido.com/
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-food-menu
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-drink-menu
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=379401&accordion=true&images=yes&callback_url=http://thaithaicuisineescondido.com/#
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-reservations#
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-party#
+link: https://thaithaicuisineescondido.com/escondido-thai-thai-cuisine-escondido-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=379401&callback_url=http://thaithaicuisineescondido.com/#
+entered: https://thaithaicuisineescondido.com/-events
+entered: https://thaithaicuisineescondido.com/-drink-menu
+entered: https://thaithaicuisineescondido.com/-food-menu
+
+17. issue key: WEB-174422, spot id: 401566, websiteURL: https://hikariramennoodles.com/
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-food-menu
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-drink-menu
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-happy-hours-specials
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-events
+link: https://www.hikariramenla.com/eg136kti/hikari-ramen-baton-rouge-70809/order-online#
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-party#
+link: https://hikariramennoodles.com/baton-rouge-hikari-ramen-noodles-catering#
+entered: https://hikariramennoodles.com/-specials
+entered: https://hikariramennoodles.com/-events
+entered: https://hikariramennoodles.com/-drink-menu
+entered: https://hikariramennoodles.com/-food-menu
+
+18. issue key: WEB-174418, spot id: 350988, websiteURL: https://www.shiverscreek.com/
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-food-menu
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-drink-menu
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-party#
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-catering#
+link: https://order.toasttab.com/online/shivers-creek-location-2-24188-hwy-27#
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-about
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-press
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-events
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-reservations#
+link: https://tmt.spotapps.co/job-listings?spot_id=350988&callback_url=http://shiverscreek.com/#
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-awards-certifications
+link: https://shiverscreek.com/#
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-crystal-springs
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-shivers-express-star
+link: https://shiverscreek.com/crystal-springs-shivers-creek-catfish-house-simpson-county
+entered: https://shiverscreek.com/-events
+entered: https://shiverscreek.com/-drink-menu
+entered: https://shiverscreek.com/-food-menu
+
+19. issue key: WEB-174404, spot id: 424017, websiteURL: https://86speakeasy.com/
+link: https://86speakeasy.com/eugene-86-speakeasy-about
+link: https://86speakeasy.com/eugene-86-speakeasy-food-menu
+link: https://86speakeasy.com/eugene-86-speakeasy-drink-menu
+link: https://86speakeasy.com/#reservation_section
+link: https://86speakeasy.com/eugene-86-speakeasy-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=424017&callback_url=http://86speakeasy.com/#
+link: https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://86speakeasy.com/-drink-menu
+entered: https://86speakeasy.com/-food-menu
+entered: https://urban-restaurants.com/gift-cards-universal-universal
+entered: https://86speakeasy.com/-reservations
+ replaced with: https://86speakeasy.com/-reservations
+
+20. issue key: WEB-174403, spot id: 154053, websiteURL: https://romamiarestaurant.com/
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-food-menu
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-drink-menu
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-happy-hours-specials
+link: https://romamiarestaurant.com/#
+link: https://order.online/store/roma-mia-ristorante-italiano-rome-2812387/?hideModal=true&pickup=true&rwg_token=AAiGsoYzxYEEMqpEaAJDRP4boBuvfddTYd02UzYwtmoyK1LPa8TiQ-cSQ_DVhf7RlhZoRSMY4MRBs3O3qVR0FZSxzcZh3bYYVQ==&utm_source=gfo
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-events
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-reservations#
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-party#
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=154053&callback_url=http://romamiarestaurant.com/#
+link: https://romamiarestaurant.com/rome-armuchee-roma-mia-ristorante-italiano-about
+entered: https://romamiarestaurant.com/-specials
+entered: https://romamiarestaurant.com/-events
+entered: https://romamiarestaurant.com/-drink-menu
+entered: https://romamiarestaurant.com/-food-menu
+entered: https://romamiarestaurant.com/-party
+https://romamiagrill.com/-party replaced with: https://romamiarestaurant.com/-party
+entered: https://romamiarestaurant.com/-reservations
+https://romamiagrill.com/-reservations replaced with: https://romamiarestaurant.com/-reservations
+entered: https://romamiarestaurant.com/-catering
+https://romamiagrill.com/-catering replaced with: https://romamiarestaurant.com/-catering
+
+21. issue key: WEB-174400, spot id: 423523, websiteURL: https://lahonkytonksa.com/
+link: https://lahonkytonksa.com/san-antonio-la-honky-tonk-food-menu
+link: https://lahonkytonksa.com/san-antonio-la-honky-tonk-drink-menu
+link: https://lahonkytonksa.com/san-antonio-la-honky-tonk-reservations#
+link: https://lahonkytonksa.com/san-antonio-la-honky-tonk-party#
+link: https://lahonkytonksa.com/san-antonio-la-honky-tonk-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=423523&callback_url=http://lahonkytonksa.com/#
+entered: https://lahonkytonksa.com/-drink-menu
+entered: https://lahonkytonksa.com/-food-menu
+entered: https://lahonkytonksa.com/-party
+https://lahonkytonkk.xyz/-party replaced with: https://lahonkytonksa.com/-party
+entered: https://lahonkytonksa.com/-reservations
+https://lahonkytonkk.xyz/-reservations replaced with: https://lahonkytonksa.com/-reservations
+entered: https://lahonkytonksa.com/-catering
+https://lahonkytonkk.xyz/-catering replaced with: https://lahonkytonksa.com/-catering
+
+22. issue key: WEB-174399, spot id: 196251, websiteURL: https://perfectseasoningllc.com/
+link: https://perfectseasoningllc.com/atlanta-midtown-perfect-seasoning-food-menu
+link: https://perfectseasoningllc.com/atlanta-midtown-perfect-seasoning-drink-menu
+link: https://perfectseasoningllc.com/atlanta-midtown-perfect-seasoning-reservations#
+link: https://perfectseasoningllc.com/atlanta-midtown-perfect-seasoning-party#
+link: https://perfectseasoningllc.com/atlanta-midtown-perfect-seasoning-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=196251&callback_url=http://perfectseasoningllc.com/#
+entered: https://perfectseasoningllc.com/-drink-menu
+entered: https://perfectseasoningllc.com/-food-menu
+
+23. issue key: WEB-174397, spot id: 89327, websiteURL: https://soholasvegas.com/
+link: https://soholasvegas.com/las-vegas-soho-japanese-restaurant-drink-menu
+link: https://soholasvegas.com/las-vegas-soho-japanese-restaurant-food-menu
+link: https://soholasvegas.com/#
+link: https://tmt.spotapps.co/ordering-menu?spot_id=89327&accordion=true&images=yes&callback_url=http://soholasvegas.com/
+link: https://soholasvegas.com/las-vegas-soho-japanese-restaurant-catering#
+link: https://www.opentable.com/restref/client/?restref=201037&lang=en-US&ot_source=Restaurant%20website&corrid=d60fdcde-13fd-41b1-9056-844aaecf0669#
+link: https://soholasvegas.com/las-vegas-soho-japanese-restaurant-party#
+link: https://soholasvegas.com/las-vegas-soho-japanese-restaurant-about
+entered: https://soholasvegas.com/-drink-menu
+entered: https://soholasvegas.com/-food-menu
+
+25. issue key: WEB-174395, spot id: 113339, websiteURL: https://blindsquirrelflorence.com/
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-about
+link: https://blindsquirrelflorence.com/#
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-food-menu
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-drink-menu
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-happy-hours-specials
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-events
+link: https://blindsquirrelflorence.com/#
+link: https://order.toasttab.com/online/blind-squirrel-restaurant-florence
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=113339&callback_url=http://blindsquirrelflorence.com/#
+link: https://blindsquirrelflorence.com/#
+link: https://www.toasttab.com/blindsquirrel/giftcards?utmCampaign=onlineOrdering
+link: https://www.toasttab.com/blindsquirrel/findcard
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-apparel
+link: https://19thholeindoorgolf.com/
+link: https://blindsquirrelflorence.com/florence-blind-squirrel-florence-band-info
+entered: https://blindsquirrelflorence.com/-specials
+entered: https://blindsquirrelflorence.com/-events
+entered: https://blindsquirrelflorence.com/-drink-menu
+entered: https://blindsquirrelflorence.com/-food-menu
+entered: https://www.toasttab.com/blindsquirrel/giftcards?utmCampaign=onlineOrdering
+
+27. issue key: WEB-174392, spot id: 362902, websiteURL: https://eventsbycibula.com/
+link: https://eventsbycibula.com/forest-park-events-by-cibula-info
+link: https://eventsbycibula.com/forest-park-events-by-cibula-gallery
+link: https://eventsbycibula.com/forest-park-events-by-cibula-rates
+link: https://eventsbycibula.com/forest-park-events-by-cibula-faqs
+link: https://eventsbycibula.com/forest-park-events-by-cibula-cater
+link: https://eventsbycibula.hbportal.co/public/eventrequestform/1-Inquiry_form#
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-events
+entered: https://eventsbycibula.com/-cater
+ replaced with: https://eventsbycibula.com/-cater
+
+28. issue key: WEB-174391, spot id: 355278, websiteURL: https://peanut-bar.com/
+link: https://peanut-bar.com/carbondale-peanut-bar-food-menu
+link: https://peanut-bar.com/carbondale-peanut-bar-drink-menu
+link: https://peanut-bar.com/carbondale-peanut-bar-events
+link: https://order.toasttab.com/online/the-peanut-bar-134-cottage-street#
+link: https://peanut-bar.com/carbondale-peanut-bar-party#
+link: https://peanut-bar.com/carbondale-peanut-bar-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=355278&callback_url=http://peanut-bar.com/#
+link: https://www.toasttab.com/the-peanut-bar-134-cottage-street/giftcards
+link: https://peanut-bar.com/carbondale-peanut-bar-locations
+link: https://peanut-bar.com/carbondale-peanut-bar-merchandise
+link: https://peanut-bar.com/#
+link: https://www.toasttab.com/the-peanut-bar-134-cottage-street/rewardsSignup
+link: https://www.toasttab.com/the-peanut-bar-134-cottage-street/rewardsLookup
+entered: https://peanut-bar.com/-events
+entered: https://peanut-bar.com/-drink-menu
+entered: https://peanut-bar.com/-food-menu
+entered: https://www.toasttab.com/the-peanut-bar-134-cottage-street/giftcards
+
+29. issue key: WEB-174389, spot id: 395967, websiteURL: https://nelsonspizzahouse.com/
+link: https://nelsonspizzahouse.com/oxford-nelson-s-pizza-house-food-menu
+link: https://nelsonspizzahouse.com/oxford-nelson-s-pizza-house-drink-menu
+link: https://nelsonspizzahouse.com/oxford-nelson-s-pizza-house-events
+link: https://nelsonspizzahouse.com/oxford-nelson-s-pizza-house-catering#
+entered: https://nelsonspizzahouse.com/-events
+entered: https://nelsonspizzahouse.com/-drink-menu
+entered: https://nelsonspizzahouse.com/-food-menu
+entered: https://nelsonspizzahouse.com/-catering
+https://tmt.spotapps.co/catering?spot_id=395967 replaced with: https://nelsonspizzahouse.com/-catering
+
+30. issue key: WEB-174379, spot id: 370953, websiteURL: https://usmomkitchen.com/
+link: https://usmomkitchen.com/san-diego-mom-kitchen-food-menu
+link: https://usmomkitchen.com/san-diego-mom-kitchen-drink-menu
+link: https://usmomkitchen.com/san-diego-mom-kitchen-happy-hours-specials
+link: https://usmomkitchen.com/san-diego-mom-kitchen-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=370953&accordion=true&images=yes&callback_url=http://usmomkitchen.com/#
+entered: https://usmomkitchen.com/-specials
+entered: https://usmomkitchen.com/-events
+entered: https://usmomkitchen.com/-drink-menu
+entered: https://usmomkitchen.com/-food-menu
+
+31. issue key: WEB-174373, spot id: 177186, websiteURL: https://tadasushilakeoswego.com/
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-about
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-food-menu
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-drink-menu
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-happy-hours-specials
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-events
+link: https://order.toasttab.com/online/tada-sushi-studio-455-2nd-st#
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-reservations#
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-party#
+link: https://tadasushilakeoswego.com/lake-oswego-tada-sushi-studio-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=177186&callback_url=http://tadasushilakeoswego.com/#
+entered: https://tadasushilakeoswego.com/-specials
+entered: https://tadasushilakeoswego.com/-events
+entered: https://tadasushilakeoswego.com/-drink-menu
+entered: https://tadasushilakeoswego.com/-food-menu
+
+32. issue key: WEB-174359, spot id: 85598, websiteURL: https://nazos.com/
+link: https://nazos.com/#
+link: https://nazos.com/charlotte-wrapway-food-menu
+link: https://nazos.com/charlotte-wrapway-drink-menu
+link: https://nazos.com/charlotte-wrapway-happy-hours-specials
+link: https://nazos.com/charlotte-wrapway-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=85598&callback_url=http://nazos.com/#
+link: https://nazos.com/charlotte-wrapway-events
+link: https://nazos.com/charlotte-wrapway-locations
+link: https://nazos.com/charlotte-wrapway-catering-page
+link: https://nazos.com/charlotte-wrapway-order-online-page
+entered: https://nazos.com/-specials
+entered: https://nazos.com/-events
+entered: https://nazos.com/-drink-menu
+entered: https://nazos.com/-food-menu
+entered: https://nazos.com/-catering
+ replaced with: https://nazos.com/-catering
+
+33. issue key: WEB-174049, spot id: 77121, websiteURL: https://edgewildwinery.com/
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-jobs
+link: https://edgewildwinery.com/#
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-food-menu
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-drinks-custom
+link: https://edgewildwinery.com/#
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-happy-hours-specials
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-events
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-parties
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-catering#
+link: https://edgewildwinery.com/chesterfield-edgewild-restaurant-and-winery-loyalty-club
+link: https://edgewildwinery.com/#
+link: https://order.toasttab.com/online/edgewild-restaurant-winery-chesterfield
+link: https://edgewildwinery.com/#
+link: https://www.toasttab.com/edgewild-restaurant-winery-chesterfield/giftcards
+entered: https://edgewildwinery.com/-specials
+entered: https://edgewildwinery.com/-events
+entered: https://edgewildwinery.com/-food-menu
+entered: https://www.toasttab.com/edgewild-restaurant-winery-chesterfield/giftcards
+entered: https://edgewildwinery.com/-parties
+ replaced with: https://edgewildwinery.com/-parties
+entered: https://edgewildwinery.com/jobs
+ replaced with: https://edgewildwinery.com/jobs
+
+34. issue key: WEB-172701, spot id: 370871, websiteURL: https://702churrosandmore.com/
+link: https://702churrosandmore.com/las-vegas-702-churros-and-more-food-menu
+link: https://702churrosandmore.com/las-vegas-702-churros-and-more-drink-menu
+link: https://702churrosandmore.com/las-vegas-702-churros-and-more-party#
+link: https://702churrosandmore.com/las-vegas-702-churros-and-more-catering#
+entered: https://702churrosandmore.com/-drink-menu
+entered: https://702churrosandmore.com/-food-menu
+
+35. issue key: WEB-172207, spot id: 36411, websiteURL: https://southerngirldesserts.com/
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-food-menu
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-drink-menu
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-happy-hours-specials
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-events
+link: https://southerngirldessertsmartinlutherkingblvd.toast.site/order/southern-girl-desserts-martin-luther-blvd/item-red-velvet-cupcake_abe8c5c3-8b57-4132-9b16-993943cd6852#
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=36411&callback_url=http://southerngirldesserts.com/#
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-about
+link: https://southerngirldesserts.com/los-angeles-southern-girl-desserts-faq
+link: https://www.goldbelly.com/restaurants/southern-girl-desserts
+entered: https://southerngirldesserts.com/-specials
+entered: https://southerngirldesserts.com/-events
+entered: https://southerngirldesserts.com/-drink-menu
+entered: https://southerngirldesserts.com/-food-menu
+
+36. issue key: WEB-170505, spot id: 154803, websiteURL: https://berninihonolulu.com/
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-food-menu
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-drink-menu
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-happy-hours-specials
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-events
+link: https://www.opentable.com/r/bernini-honolulu-reservations-honolulu?restref=1076245&lang=en-US&ot_source=Restaurant%20website%22#
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-party#
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=154803&callback_url=http://berninihonolulu.com/#
+link: https://berninihonolulu.com/honolulu-ala-moana-bernini-honolulu-chefs
+entered: https://berninihonolulu.com/-specials
+entered: https://berninihonolulu.com/-events
+entered: https://berninihonolulu.com/-drink-menu
+entered: https://berninihonolulu.com/-food-menu
+
+37. issue key: WEB-164179, spot id: 108086, websiteURL: https://thefrenchpressla.com/
+link: https://thefrenchpressla.com/lafayette-70503-the-french-press-food-menu
+link: https://thefrenchpressla.com/lafayette-70503-the-french-press-drink-menu
+link: https://thefrenchpressla.com/lafayette-70503-the-french-press-events
+link: https://thefrenchpressla.com/lafayette-70503-the-french-press-party#
+link: https://thefrenchpressla.com/lafayette-70503-the-french-press-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=108086&callback_url=http://thefrenchpressla.com/#
+entered: https://thefrenchpressla.com/-events
+entered: https://thefrenchpressla.com/-drink-menu
+entered: https://thefrenchpressla.com/-food-menu

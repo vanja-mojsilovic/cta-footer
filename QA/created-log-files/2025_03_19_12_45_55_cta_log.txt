@@ -1,0 +1,230 @@
+
+1. issue key: WEB-174067, spot id: 349240, websiteURL: https://madwatersaloon.com/
+link: https://madwatersaloon.com/dixon-dixon-mad-water-saloon-events
+link: https://madwatersaloon.com/dixon-dixon-mad-water-saloon-party#
+entered: https://madwatersaloon.com/-events
+entered: https://madwatersaloon.com/-party
+https://tmt.spotapps.co/private-parties?spot_id=349240 replaced with: https://madwatersaloon.com/-party
+
+2. issue key: WEB-174066, spot id: 86361, websiteURL: https://theteaspoonbydaycocina.com/
+link: https://theteaspoon.net/alvin-the-teaspoon-by-day-cocina-food-menu
+link: https://theteaspoon.net/alvin-the-teaspoon-by-day-cocina-drink-menu
+link: https://order.spoton.com/669e9f547e2009834d193d5e#
+link: https://theteaspoon.net/#custom-about-us-item-2
+entered: https://theteaspoon.net/-drink-menu
+entered: https://theteaspoon.net/-food-menu
+removed cta link: reservations
+
+3. issue key: WEB-174064, spot id: 102649, websiteURL: https://elcarnivalmiami.com/
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-drink-menu
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-food-menu
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-happy-hours-specials
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-catering#
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-reservations#
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-party#
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-events
+link: https://tmt.spotapps.co/job-listings?spot_id=102649&callback_url=http://elcarnivalmiami.com/#
+link: https://elcarnivalmiami.com/miami-beach-miami-beach-el-carnival-churrascaria-about
+entered: https://elcarnivalmiami.com/-specials
+entered: https://elcarnivalmiami.com/-events
+entered: https://elcarnivalmiami.com/-drink-menu
+entered: https://elcarnivalmiami.com/-food-menu
+
+4. issue key: WEB-174063, spot id: 416526, websiteURL: https://bosnarestaurantva.com/
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-food-menu
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-drink-menu
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-events
+link: https://www.bosnarestaurant18.com/#
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-reservations#
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-party#
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=416526&callback_url=http://bosnarestaurantva.com/#
+link: https://bosnarestaurantva.com/henrico-bosna-restaurant-happy-hours-specials
+entered: https://bosnarestaurantva.com/-specials
+entered: https://bosnarestaurantva.com/-events
+entered: https://bosnarestaurantva.com/-drink-menu
+entered: https://bosnarestaurantva.com/-food-menu
+
+5. issue key: WEB-174058, spot id: 394536, websiteURL: https://coopersvillebrewing.com/
+link: https://coopersvillebrewing.com/#
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-drink-menu
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-food-menu
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-happy-hours-specials
+link: https://coopersvillebrewing.com/#
+link: https://order.toasttab.com/online/one-eyed-petes-1275-w-randall-st
+link: https://www.ninjaaxpress.com/order/restaurant/one-eyed-petes-menu/194
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-reservations#
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-catering#
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-events
+link: https://coopersvillebrewing.com/coopersville-coopersville-brewing-company-about
+link: https://a193dd-b6.myshopify.com/
+entered: https://coopersvillebrewing.com/-specials
+entered: https://coopersvillebrewing.com/-events
+entered: https://coopersvillebrewing.com/-drink-menu
+entered: https://coopersvillebrewing.com/-food-menu
+
+6. issue key: WEB-174056, spot id: 122451, websiteURL: https://thenorthendgrill.com/
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-food-menu
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-drink-menu
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-happy-hours-specials
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-events
+link: https://www.toasttab.com/local/order/north-end-grille-1301-north-avenue/r-8e997be1-0417-4782-9a96-02d9bf4a694a/item-fanta-pineapple-12-oz_05be169a-ee91-4f23-8e30-3738c40d2dc7#
+link: https://tables.toasttab.com/restaurants/8e997be1-0417-4782-9a96-02d9bf4a694a/reserve#
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-party#
+link: https://thenorthendgrill.com/new-rochelle-the-north-end-grill-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=122451&callback_url=http://thenorthendgrill.com/#
+entered: https://thenorthendgrill.com/-specials
+entered: https://thenorthendgrill.com/-events
+entered: https://thenorthendgrill.com/-drink-menu
+entered: https://thenorthendgrill.com/-food-menu
+
+7. issue key: WEB-174055, spot id: 383328, websiteURL: https://wienerstuberestaurant.com/
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-food-menu
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-drink-menu
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-happy-hours-specials
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-events
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-reserve
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=383328&callback_url=http://wienerstuberestaurant.com/#
+link: https://wienerstuberestaurant.com/basalt-willits-wienerstube-restaurant-locations
+entered: https://wienerstuberestaurant.com/-specials
+entered: https://wienerstuberestaurant.com/-events
+entered: https://wienerstuberestaurant.com/-drink-menu
+entered: https://wienerstuberestaurant.com/-food-menu
+entered: https://wienerstuberestaurant.com/-party
+https://tmt.spotapps.co/private-parties?spot_id=383328 replaced with: https://wienerstuberestaurant.com/-party
+entered: https://wienerstuberestaurant.com/-reserve
+https://tmt.spotapps.co/reservations?spot_id=383328 replaced with: https://wienerstuberestaurant.com/-reserve
+
+8. issue key: WEB-174054, spot id: 422533, websiteURL: https://marylandpkwy.tastebudzcreolekitchen.com/
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-food-menu
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-drink-menu
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-happy-hours-specials
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-events
+link: https://tmt.spotapps.co/ordering-menu?spot_id=422533&accordion=true&images=yes&callback_url=http://marylandpkwy.tastebudzcreolekitchen.com/#
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-party#
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=422533&callback_url=http://marylandpkwy.tastebudzcreolekitchen.com/#
+link: https://marylandpkwy.tastebudzcreolekitchen.com/las-vegas-tastebudz-creole-kitchen-ii-locations
+entered: https://marylandpkwy.tastebudzcreolekitchen.com/-specials
+entered: https://marylandpkwy.tastebudzcreolekitchen.com/-events
+entered: https://marylandpkwy.tastebudzcreolekitchen.com/-drink-menu
+entered: https://marylandpkwy.tastebudzcreolekitchen.com/-food-menu
+
+9. issue key: WEB-174053, spot id: 411742, websiteURL: https://elportalauburn.com/
+link: https://elportalauburn.com/auburn-el-portal-taqueria-about
+link: https://elportalauburn.com/auburn-el-portal-taqueria-food-menu
+link: https://elportalauburn.com/auburn-el-portal-taqueria-drink-menu
+link: https://snap.town/OrderElPortalAuburn#
+link: https://elportalauburn.com/auburn-el-portal-taqueria-party#
+link: https://elportalauburn.com/auburn-el-portal-taqueria-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=411742&callback_url=http://elportalauburn.com/#
+link: https://elportalauburn.com/auburn-el-portal-taqueria-happy-hours-specials
+entered: https://elportalauburn.com/-specials
+entered: https://elportalauburn.com/-drink-menu
+entered: https://elportalauburn.com/-food-menu
+
+10. issue key: WEB-174052, spot id: 126100, websiteURL: https://lafamigliareno.com/
+link: https://lafamigliareno.com/reno-la-famiglia-food-menu
+link: https://lafamigliareno.com/reno-la-famiglia-drink-menu
+link: https://lafamigliareno.com/reno-la-famiglia-events
+link: https://www.opentable.com/r/la-famiglia-ristorante-reno#
+link: https://lafamigliareno.com/reno-la-famiglia-party#
+link: https://lafamigliareno.com/reno-la-famiglia-about
+entered: https://lafamigliareno.com/-events
+entered: https://lafamigliareno.com/-drink-menu
+entered: https://lafamigliareno.com/-food-menu
+
+11. issue key: WEB-174051, spot id: 400302, websiteURL: https://eggrollexpressaustin.com/
+link: https://eggrollexpressaustin.com/austin-egg-roll-express-food-menu
+link: https://eggrollexpressaustin.com/austin-egg-roll-express-drink-menu
+link: https://eggrollexpressaustin.com/austin-egg-roll-express-happy-hours-specials
+link: https://www.toasttab.com/local/order/eggroll-express/r-c19b64b7-ceac-4e5b-bf8e-cbb5708f743d#
+link: https://eggrollexpressaustin.com/austin-egg-roll-express-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=400302&callback_url=http://eggrollexpressaustin.com/#
+entered: https://eggrollexpressaustin.com/-specials
+entered: https://eggrollexpressaustin.com/-drink-menu
+entered: https://eggrollexpressaustin.com/-food-menu
+
+12. issue key: WEB-174050, spot id: 419314, websiteURL: https://taqueria52.com/
+link: https://taqueria52.com/duluth-taqueria-52-food-menu
+link: https://taqueria52.com/duluth-taqueria-52-drink-menu
+link: https://taqueria52.com/duluth-taqueria-52-happy-hours-specials
+link: https://taqueria52.com/duluth-taqueria-52-about
+link: https://taqueria52.com/duluth-taqueria-52-events
+link: https://www.toasttab.com/local/order/taqueria-52-suwanee-1290-old-peachtree-rd/r-776990db-5154-48ab-a38f-4c1e4301c928?diningOption=takeout#
+link: https://taqueria52.com/duluth-taqueria-52-reservations#
+link: https://taqueria52.com/duluth-taqueria-52-party#
+link: https://taqueria52.com/duluth-taqueria-52-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=419314&callback_url=http://taqueria52.com/#
+entered: https://taqueria52.com/-specials
+entered: https://taqueria52.com/-events
+entered: https://taqueria52.com/-drink-menu
+entered: https://taqueria52.com/-food-menu
+
+13. issue key: WEB-174048, spot id: 400983, websiteURL: https://fallscitybeer.com/
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-shop
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-about
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-drink-menu
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-events
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-food-menu
+link: https://fallscitybeer.com/#
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-party
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-catering
+link: https://fallscitybeer.com/louisville-nulu-falls-city-beer-wholesale
+entered: https://fallscitybeer.com/-events
+entered: https://fallscitybeer.com/-drink-menu
+entered: https://fallscitybeer.com/-food-menu
+
+14. issue key: WEB-174009, spot id: 69822, websiteURL: https://tomoramenpdx.com/
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-food-menu
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-drink-menu
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-about
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-happy-hours-specials
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-events
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-party#
+link: https://tomoramenpdx.com/portland-woodstock-tomo-ramen-and-izakaya-locations
+entered: https://tomoramenpdx.com/-specials
+entered: https://tomoramenpdx.com/-events
+entered: https://tomoramenpdx.com/-drink-menu
+entered: https://tomoramenpdx.com/-food-menu
+
+15. issue key: WEB-173998, spot id: 89250, websiteURL: https://www.spicytunahd.com/
+link: https://spicytunahd.com/henderson-spicy-tuna-food-menu
+link: https://spicytunahd.com/henderson-spicy-tuna-drink-menu
+link: https://spicytunalv.menu11.com/henderson/order#
+link: https://spicytunahd.com/henderson-spicy-tuna-reservations#
+link: https://spicytunahd.com/henderson-spicy-tuna-party#
+link: https://spicytunahd.com/henderson-spicy-tuna-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=89250&callback_url=http://spicytunahd.com/#
+entered: https://spicytunahd.com/-drink-menu
+entered: https://spicytunahd.com/-food-menu
+
+16. issue key: WEB-173997, spot id: 360591, websiteURL: https://www.kaizenhenderson.com/
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-food-menu
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-drink-menu
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-happy-hours-specials
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-events
+link: https://order.online/store/kaizen-fusion-roll-and-sushi-henderson-891016/#
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-reservations#
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-party#
+link: https://kaizenhenderson.com/henderson-kaizen-fusion-roll-and-sushi-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=360591&callback_url=http://kaizenhenderson.com/#
+entered: https://kaizenhenderson.com/-specials
+entered: https://kaizenhenderson.com/-events
+entered: https://kaizenhenderson.com/-drink-menu
+entered: https://kaizenhenderson.com/-food-menu
+
+17. issue key: WEB-173996, spot id: 403920, websiteURL: https://gigi-wasabihouse.com/
+link: https://gigi-wasabihouse.com/pace-wasabi-house-food-menu
+link: https://gigi-wasabihouse.com/pace-wasabi-house-drink-menu
+link: https://gigi-wasabihouse.com/pace-wasabi-house-happy-hours-specials
+link: https://gigi-wasabihouse.com/pace-wasabi-house-events
+link: https://www.clover.com/online-ordering/wasabihouse#
+link: https://gigi-wasabihouse.com/pace-wasabi-house-party#
+link: https://gigi-wasabihouse.com/pace-wasabi-house-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=403920&callback_url=http://gigi-wasabihouse.com/#
+entered: https://gigi-wasabihouse.com/-specials
+entered: https://gigi-wasabihouse.com/-events
+entered: https://gigi-wasabihouse.com/-drink-menu
+entered: https://gigi-wasabihouse.com/-food-menu

@@ -1,0 +1,2 @@
+1. 2. issue key: WEB-173600, spot id: 73484, websiteURL: https://casamialatincuisine.com/, DIFFERENT LINKS WITH DOMAIN IN SH AND ON WEBSITE!, Previous Hash: b5b9eb3b32b4ef68eec5c81e6e70def2818fc913df241aae113bf9a9dbdc41c5, Hash: 016244d5dd6c462d68160c82266698c056be4e1507cb1d308f796bf3da9ea767
+2. 8. issue key: WEB-173592, spot id: 151268, websiteURL: https://www.mojoseastcoasteats.com/, PROBLEM WITH LINK ON HOME PAGE!, Previous Hash: 016244d5dd6c462d68160c82266698c056be4e1507cb1d308f796bf3da9ea767, Hash: b1528c6a7c5328767e9b500d3aa218e23bdea546003318c619697159603c1632

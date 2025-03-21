@@ -1,0 +1,123 @@
+
+1. issueKey WEB-173544, spotId 453090, testSiteUrl https://spot-sample-453090-website-v1.spotapps.co/, branchName 453090-website-v1
+Wcashe activated
+Wcashe Test Location activated
+453090-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-19 13:04:58
+
+2. issueKey WEB-173534, spotId 463122, testSiteUrl https://spot-sample-463122-website-v1.spotapps.co/, branchName 463122-website-v1
+Wcashe activated
+Wcashe Test Location activated
+463122-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-19 16:39:19
+
+4. issueKey WEB-173502, spotId 374804, testSiteUrl https://spot-sample-374804-website-v1.spotapps.co/, branchName 374804-website-v1
+Wcashe activated
+Wcashe Test Location activated
+374804-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-19 13:14:56
+
+5. issueKey WEB-173501, spotId 449493, testSiteUrl http://spot-sample-449493-website-v1.spotapps.co/, branchName 449493-website-v1
+Wcashe activated
+Wcashe Test Location activated
+449493-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-19 12:34:44
+
+6. issueKey WEB-173499, spotId 251064, testSiteUrl https://spot-sample-251064-website-v1.spotapps.co/, branchName 251064-website-v1
+Wcashe activated
+Wcashe Test Location activated
+251064-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 13:57:27
+
+7. issueKey WEB-173494, spotId 440914, testSiteUrl https://spot-sample-440914-website-v1.spotapps.co/, branchName 440914-website-v1
+Wcashe activated
+Wcashe Test Location activated
+440914-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 12:38:30
+
+8. issueKey WEB-173491, spotId 436821, testSiteUrl http://spot-sample-436821-website-v1.spotapps.co/, branchName 436821-website-v1
+Wcashe activated
+Wcashe Test Location activated
+436821-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-20 07:57:30
+
+9. issueKey WEB-173490, spotId 213859, testSiteUrl http://spot-sample-213859-website-v1.spotapps.co/, branchName 213859-website-v1
+Wcashe activated
+Wcashe Test Location activated
+213859-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 14:51:39
+
+10. issueKey WEB-173100, spotId 56126, testSiteUrl http://spot-sample-56126-website-v1.spotapps.co/, branchName 56126-website-v1
+Wcashe activated
+Wcashe Test Location activated
+56126-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-20 07:59:20
+
+11. issueKey WEB-173096, spotId 431145, testSiteUrl http://spot-sample-431145-website-v1.spotapps.co/, branchName 431145-website-v1
+Wcashe activated
+Wcashe Test Location activated
+431145-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-19 13:07:14
+
+12. issueKey WEB-173086, spotId 449262, testSiteUrl http://spot-sample-449262-website-v1.spotapps.co/, branchName 449262-website-v1
+Wcashe activated
+Wcashe Test Location activated
+449262-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 12:32:18
+
+13. issueKey WEB-173085, spotId 451143, testSiteUrl http://spot-sample-451143-website-v1.spotapps.co/, branchName 451143-website-v1
+Wcashe activated
+Wcashe Test Location activated
+451143-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 14:22:33
+
+14. issueKey WEB-173084, spotId 460087, testSiteUrl http://spot-sample-460087-website-v1.spotapps.co/, branchName 460087-website-v1
+Wcashe activated
+Wcashe Test Location activated
+460087-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 15:49:59
+
+16. issueKey WEB-172206, spotId 405144, testSiteUrl http://spot-sample-405144-website-v1.spotapps.co/, branchName 405144-website-v1
+Wcashe activated
+Wcashe Test Location activated
+405144-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 13:06:50
+
+17. issueKey WEB-172191, spotId 445698, testSiteUrl http://spot-sample-445698-website-v1.spotapps.co/, branchName 445698-website-v1
+Wcashe activated
+Wcashe Test Location activated
+445698-website-v1 entered
+Real Website radio button clicked
+Cashe invalidated: 2025-03-19 12:34:29
+
+18. issueKey WEB-168641, spotId 382405, testSiteUrl http://spot-sample-382405-website-v1.spotapps.co/, branchName 382405-website-v1
+Wcashe activated
+Wcashe Test Location activated
+382405-website-v1 entered
+Real Website radio button clicked
+Start Build button clicked
+Cashe invalidated: 2025-03-20 08:10:00
+
+19. issueKey WEB-74428, spotId 143821, testSiteUrl http://spot-sample-143821-website-v1.spotapps.co/, branchName 143821-website-v1
+Real Website radio button clicked
+Cashe invalidated: 2025-03-20 08:11:16

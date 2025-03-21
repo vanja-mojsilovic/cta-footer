@@ -1,0 +1,60 @@
+
+2. issue key: WEB-173588, spot id: 315018, websiteURL: https://tadaimasf.com/
+link: https://tadaimasf.com/san-francisco-suite-b-tadaima-sf-food-menu
+link: https://tadaimasf.com/san-francisco-suite-b-tadaima-sf-drink-menu
+link: https://tadaimasf.com/#
+link: https://www.toasttab.com/local/order/taidama-sf-3515-20th-st/r-71d70d92-ae77-4a99-9eb4-83405a7cb5b1
+link: https://tadaimasf.com/san-francisco-suite-b-tadaima-sf-catering#
+entered: https://tadaimasf.com/-drink-menu
+entered: https://tadaimasf.com/-food-menu
+
+4. issue key: WEB-173584, spot id: 419221, websiteURL: https://mypotsticker.com/
+link: https://mypotsticker.com/saint-paul-potsticker-food-menu
+link: https://mypotsticker.com/saint-paul-potsticker-drink-menu
+link: https://mypotsticker.com/saint-paul-potsticker-happy-hours-specials
+link: https://mypotsticker.com/saint-paul-potsticker-catering#
+link: https://mypotsticker.com/saint-paul-potsticker-events
+link: https://mypotsticker.com/saint-paul-potsticker-party#
+link: https://tmt.spotapps.co/job-listings?spot_id=419221&callback_url=http://mypotsticker.com/#
+link: https://order.toasttab.com/online/mypotsticker#
+link: https://mypotsticker.com/saint-paul-potsticker-reservations#
+entered: https://mypotsticker.com/-specials
+entered: https://mypotsticker.com/-events
+entered: https://mypotsticker.com/-drink-menu
+entered: https://mypotsticker.com/-food-menu
+
+6. issue key: WEB-173566, spot id: 373428, websiteURL: https://beanandvinecafe.com/
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-food-menu
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-drink-menu
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-happy-hours-specials
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-events
+link: https://www.toasttab.com/local/order/bean-vine/r-e5a61361-ec60-4b76-bc36-4a78ce36f337#
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-reservations#
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-party#
+link: https://beanandvinecafe.com/lake-lotawana-bean-and-vine-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=373428&callback_url=http://beanandvinecafe.com/#
+entered: https://beanandvinecafe.com/-specials
+entered: https://beanandvinecafe.com/-events
+entered: https://beanandvinecafe.com/-drink-menu
+entered: https://beanandvinecafe.com/-food-menu
+
+8. issue key: WEB-170533, spot id: 432466, websiteURL: https://skipperforsythsbbq.com/
+link: https://skipperforsythsbbq.com/henderson-skipper-forsyth-s-bar-b-q-food-menu
+link: https://skipperforsythsbbq.com/henderson-skipper-forsyth-s-bar-b-q-drink-menu
+link: https://skipperforsythsbbq.com/#
+link: https://order.online/store/skipper's-forsyths-bar-b-q-henderson-26000643/?hideModal=true&pickup=true&rwg_token=AAiGsobWSL3-iKsFG__sty1Btn4ZS5eafYK8xtMdig230V61GkD1ib3adLMkfO0kY5BHQ6uPDv3bQ47NFSe6xaVKNeGD8qpzTg==&utm_source=gfo
+link: https://skipperforsythsbbq.com/henderson-skipper-forsyth-s-bar-b-q-reservations#
+link: https://skipperforsythsbbq.com/henderson-skipper-forsyth-s-bar-b-q-party#
+link: https://skipperforsythsbbq.com/henderson-skipper-forsyth-s-bar-b-q-catering#
+link: https://tmt.spotapps.co/job-listings?spot_id=432466&callback_url=http://skipperforsythsbbq.com/#
+entered: https://skipperforsythsbbq.com/-drink-menu
+entered: https://skipperforsythsbbq.com/-food-menu
+
+11. issue key: WEB-162157, spot id: 337393, websiteURL: https://market.rothsocialhouse.com/
+link: https://market.rothsocialhouse.com/turlock-the-market-at-roth-food-menu
+link: https://market.rothsocialhouse.com/turlock-the-market-at-roth-drink-menu
+link: https://market.rothsocialhouse.com/turlock-the-market-at-roth-party#
+link: https://market.rothsocialhouse.com/turlock-the-market-at-roth-catering#
+link: https://apply.jobappnetwork.com/rothsocialhouse-turlock/en##
+entered: https://market.rothsocialhouse.com/-drink-menu
+entered: https://market.rothsocialhouse.com/-food-menu
